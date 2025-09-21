@@ -120,7 +120,8 @@ XPlanung ist der verbindliche Standard für den digitalen Austausch von Planungs
   - Testdaten über BitBucket Repository
 - **Kommentar**: Technische Spezifikation vorhanden, aber komplex. Praxisbeispiele fehlen noch. Wichtig für Softwareentwickler.
 
-## Kritische Bewertung
+## Kritische Bewertung durch Claude (Work in Pregress)
+*Kommentar Homann: Die folgenden Abschnitte sind noch nicht manuell überarbeitet und enthalten z.T. falsche Wertungen durch Claude. Bitte mit Vorsicht lesen*
 
 ### ✅ Stärken
 - Einheitlicher Standard verhindert Vendor-Lock-in
