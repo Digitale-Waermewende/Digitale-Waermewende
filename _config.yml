@@ -1,0 +1,59 @@
+# Jekyll Konfiguration für GitHub Pages
+# Digitale Wärmewende - Dokumentation
+
+title: Digitale Wärmewende
+description: Stakeholder-Analyse und Datenstandards für die digitale Wärmewende in Deutschland
+author: Digitale Wärmewende Initiative
+url: https://digitale-waermewende.github.io
+baseurl: /Digitale-Waermewende
+
+# Build settings
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+# Minima theme settings
+minima:
+  skin: classic
+
+# Header pages - diese erscheinen in der Navigation
+header_pages:
+  - index.md
+  - stakeholder.md
+  - standards.md
+  - docs.md
+
+# Defaults für Markdown-Dateien
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "stakeholder"
+    values:
+      layout: "documentation"
+      category: "stakeholder"
+  - scope:
+      path: "standards"
+    values:
+      layout: "documentation"
+      category: "standards"
+
+# Exclude from build
+exclude:
+  - CLAUDE.md
+  - LICENSE
+  - .gitignore
+  - "*.pdf"
+  - tools/
+  - tests/
+  - README.md  # README aus der Website ausschließen
+
+# Kramdown options
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 1..3
