@@ -14,10 +14,14 @@ desktop.ini
 *.temp
 *.log
 
-# Große Binärdateien (vorerst)
-*.pdf
+# Große Binärdateien
+# PDFs werden NICHT ignoriert - sie sind wichtige Primärquellen!
+# *.pdf  # DEAKTIVIERT - PDFs sollen versioniert werden
 *.zip
 *.tar.gz
+
+# Sehr große PDFs (>50MB) einzeln ausschließen falls nötig:
+# stakeholder/beispiel-sehr-grosse-datei.pdf
 
 # Persönliche Notizen
 personal/
