@@ -5,14 +5,14 @@ title: Digitale Wärmewende
 
 # Digitale Wärmewende
 
-## [Stakeholder](/stakeholder/)
-- [Bund](/stakeholder/bund/)
-- [Länder](/stakeholder/laender/)
-- [Kommunen](/stakeholder/kommunen/)
+## [Stakeholder]({{ site.baseurl }}/stakeholder/)
+- [Bund]({{ site.baseurl }}/stakeholder/bund/)
+- [Länder]({{ site.baseurl }}/stakeholder/laender/)
+- [Kommunen]({{ site.baseurl }}/stakeholder/kommunen/)
 
-## [Standards](/standards/)
+## [Standards]({{ site.baseurl }}/standards/)
 
-## [Docs](/docs/)
+## [Docs]({{ site.baseurl }}/docs/)
 
 ---
 [Repository](https://github.com/Digitale-Waermewende/Digitale-Waermewende)

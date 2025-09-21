@@ -6,5 +6,5 @@ permalink: /docs/
 
 # Dokumentation
 
-- [GitHub Pages Setup](/docs/github-pages-setup)
-- [Structure Guide](/STRUCTURE_GUIDE_Digitale-Waermewende)
+- [GitHub Pages Setup]({{ site.baseurl }}/docs/github-pages-setup)
+- [Structure Guide]({{ site.baseurl }}/STRUCTURE_GUIDE_Digitale-Waermewende)
