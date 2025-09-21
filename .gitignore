@@ -1,0 +1,25 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporäre Dateien
+*.tmp
+*.temp
+*.log
+
+# Große Binärdateien (vorerst)
+*.pdf
+*.zip
+*.tar.gz
+
+# Persönliche Notizen
+personal/
+private/
+TODO_local.md
