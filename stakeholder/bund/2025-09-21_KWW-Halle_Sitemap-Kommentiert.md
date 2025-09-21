@@ -2,7 +2,7 @@
 
 ## Metadaten
 - **Organisation**: Kompetenzzentrum Kommunale Wärmeplanung (KWW) Halle
-- **Datum**: 2025-01-21
+- **Erfassungsdatum**: 2025-09-21
 - **Typ**: Sitemap/Navigationsübersicht
 - **URL**: https://www.kww-halle.de
 - **Relevanz**: Zentrale Anlaufstelle für Kommunen zur Wärmeplanung in Deutschland

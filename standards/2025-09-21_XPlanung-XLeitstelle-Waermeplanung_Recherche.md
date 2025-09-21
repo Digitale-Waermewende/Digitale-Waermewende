@@ -2,7 +2,7 @@
 
 ## Metadaten
 - **Organisationen**: XLeitstelle Hamburg, IT-Planungsrat, BBSR, EU (INSPIRE)
-- **Datum**: 2025-01-21
+- **Erfassungsdatum**: 2025-09-21
 - **Typ**: Recherche/Übersichtsdokument
 - **Hauptquellen**: xleitstelle.de, gdi-de.org, EU-Richtlinien
 - **Relevanz**: Kritische Standards für digitale Wärmeplanung und Datenaustausch
@@ -204,4 +204,4 @@ XPlanung ist der verbindliche Standard für den digitalen Austausch von Planungs
 - [ ] Testdaten von BitBucket Repository analysieren
 
 ---
-*Letzte Aktualisierung: 2025-01-21*
+*Letzte Aktualisierung: 2025-09-21*
