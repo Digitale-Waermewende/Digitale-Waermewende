@@ -3,7 +3,7 @@ Dieses Repository ist das Ergebnis von Recherchen zu dem Themenkomplex und dient
 
 Auf nationaler Ebene haben wir u.a.
 * Die nationale Gesetzgebung zur Wärmewende
-* KWW-Halle als koordinierende Institution der koomunalen Wärmeplanung
+* KWW-Halle als koordinierende Institution der kommunalen Wärmeplanung
 * Bundesamt für Bauwesen und Raumordnung
 * XLeitstelle
 * Nationale Geodaten-Infrastruktur
