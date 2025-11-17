@@ -1,6 +1,8 @@
 ---
-layout: page
-title: Docs
+layout: default
+title: Dokumentation
+nav_order: 4
+has_children: true
 permalink: /docs/
 ---
 

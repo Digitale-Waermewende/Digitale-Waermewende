@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title: Stakeholder
+nav_order: 2
+has_children: true
 permalink: /stakeholder/
 ---
 

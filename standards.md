@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title: Standards
+nav_order: 3
+has_children: true
 permalink: /standards/
 ---
 

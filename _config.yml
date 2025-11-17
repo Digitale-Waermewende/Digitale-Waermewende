@@ -1,24 +1,25 @@
-# Jekyll Konfiguration für GitHub Pages
+# Jekyll Konfiguration für GitHub Pages mit Just the Docs Theme
 title: Digitale Wärmewende
-description: Stakeholder-Analyse und Datenstandards
+description: Stakeholder-Analyse und Datenstandards für die deutsche Wärmewende
 url: https://digitale-waermewende.github.io
 baseurl: /Digitale-Waermewende
 
-# Minimale Theme-Einstellungen
-theme: minima
-markdown: kramdown
+# Just the Docs Theme - Automatische Navigation für alle Markdown-Dateien
+remote_theme: just-the-docs/just-the-docs
 
-# Automatische Navigation basierend auf Ordnerstruktur
-header_pages:
-  - index.md
-  - stakeholder.md
-  - standards.md
-  - docs.md
+# Theme-Konfiguration
+color_scheme: light # oder "dark" für dunkles Theme
+search_enabled: true
+search.heading_level: 2
 
-# Alle MD-Dateien als HTML rendern
-include:
-  - "*.md"
-  - "**/*.md"
+# Navigation
+nav_enabled: true
+nav_sort: case_sensitive # Sortierung der Navigation
+back_to_top: true
+back_to_top_text: "Nach oben"
+
+# Footer
+footer_content: "Copyright &copy; 2025 Digitale Wärmewende. <a href=\"https://github.com/Digitale-Waermewende/Digitale-Waermewende\">GitHub Repository</a>"
 
 # Ausschlüsse
 exclude:
@@ -26,12 +27,17 @@ exclude:
   - LICENSE
   - .gitignore
   - "*.pdf"
-  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
 
-# Permalinks = Ordnerstruktur
-permalink: /:path/
+# Plugins für GitHub Pages
+plugins:
+  - jekyll-seo-tag
 
 # Kramdown für GitHub-kompatibles Markdown
 kramdown:
   input: GFM
   auto_ids: true
+  syntax_highlighter: rouge
