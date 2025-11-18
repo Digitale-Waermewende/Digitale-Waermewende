@@ -22,13 +22,13 @@ Das Fachschema Wärmeplan erweitert XPlanung um über 40 spezifische Objektarten
 ## 1. Offizielle Dokumentation (Verifizierte URLs)
 
 ### Hauptressourcen
-- **Objektartenkatalog Hauptseite**: https://xleitstelle.de/releases/objektartenkatalogWaermeplan ✅
-- **XPlanGML 6.1 Package-Übersicht**: https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/package-summary.html
+- **Objektartenkatalog Hauptseite**: [https://xleitstelle.de/releases/objektartenkatalogWaermeplan](https://xleitstelle.de/releases/objektartenkatalogWaermeplan) ✅
+- **XPlanGML 6.1 Package-Übersicht**: [https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/package-summary.html](https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/package-summary.html)
 
 ### Package-Dokumentation
-- **WP_Basisobjekte**: https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Basisobjekte/package-summary.html
-- **WP_Objekte**: https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/package-summary.html
-- **WP_Sonstiges**: https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Sonstiges/package-summary.html
+- **WP_Basisobjekte**: [https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Basisobjekte/package-summary.html](https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Basisobjekte/package-summary.html)
+- **WP_Objekte**: [https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/package-summary.html](https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/package-summary.html)
+- **WP_Sonstiges**: [https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Sonstiges/package-summary.html](https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Sonstiges/package-summary.html)
 
 ## 2. Package-Struktur und Hierarchie
 
@@ -85,7 +85,7 @@ Wärmeplan (Root Package)
 ### 4.1 Gebäude und ALKIS-Integration ⭐
 
 #### WP_Gebaeude (ALKIS-Schlüsselobjekt)
-- **URL**: https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/WP_Gebaeude.html
+- **URL**: [https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/WP_Gebaeude.html](https://xleitstelle.de/downloads/catalogues/468/XPlanGML%206_1/W%C3%A4rmeplan/WP_Objekte/WP_Gebaeude.html)
 - **Geometrie**: Fläche (XP_Flaechengeometrie)
 - **Zweck**: Zentrale Gebäuderepräsentation mit ALKIS-Verknüpfung
 - **🔗 ALKIS-Integration**:
@@ -107,7 +107,7 @@ Wärmeplan (Root Package)
 - **Attribute**: Durchfluss, Temperatur, Abwärmepotenzial
 
 #### WP_WaermeverbrauchLinie ✅
-- **URL**: https://xleitstelle.de/downloads/catalogues/437/XPlanGML/W%C3%A4rmeplan/WP_Objekte/WP_WaermeverbrauchLinie.html
+- **URL**: [https://xleitstelle.de/downloads/catalogues/437/XPlanGML/W%C3%A4rmeplan/WP_Objekte/WP_WaermeverbrauchLinie.html](https://xleitstelle.de/downloads/catalogues/437/XPlanGML/W%C3%A4rmeplan/WP_Objekte/WP_WaermeverbrauchLinie.html)
 - **Geometrie**: Linie
 - **Zweck**: Straßenabschnittsbezogene Wärmeliniendichte
 - **Hauptattribut**: waermedichte (kWh/m)
@@ -209,7 +209,7 @@ xmlns:gml="http://www.opengis.net/gml/3.2"
 
 ### 6.3 Validierung
 - **XSD-Schema**: Verfügbar über XLeitstelle
-- **Validator**: https://xleitstelle.de/validator
+- **Validator**: [https://xleitstelle.de/validator](https://xleitstelle.de/validator)
 - **Konformitätsstufen**: Minimal, Standard, Vollständig
 
 ## 7. Integration mit anderen Standards

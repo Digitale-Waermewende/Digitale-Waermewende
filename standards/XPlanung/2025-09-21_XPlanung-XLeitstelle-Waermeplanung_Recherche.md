@@ -91,7 +91,7 @@ XPlanung ist der verbindliche Standard für den digitalen Austausch von Planungs
 ## Primärquellen mit Kommentaren
 
 ### 1. **XLeitstelle Hauptseite**
-- **URL**: https://xleitstelle.de
+- **URL**: [https://xleitstelle.de](https://xleitstelle.de)
 - **Inhalt**: Zentrale Koordination aller X-Standards
 - **Kommentar**: Offizielle Quelle, aber technisch orientiert. Wenig praxisnahe Beispiele.
 
@@ -101,22 +101,22 @@ XPlanung ist der verbindliche Standard für den digitalen Austausch von Planungs
 - **Kommentar**: ⚠️ Rechtlich bindend! Übergangsfrist abgelaufen.
 
 ### 3. **BBSR Modellvorhaben XPlanung**
-- **URL**: https://www.bbsr.bund.de/BBSR/DE/forschung/programme/moro/studien/2014/XPlanung/01-start.html
+- **URL**: [https://www.bbsr.bund.de/BBSR/DE/forschung/programme/moro/studien/2014/XPlanung/01-start.html](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/moro/studien/2014/XPlanung/01-start.html)
 - **Organisation**: Bundesamt für Bauwesen und Raumordnung
 - **Kommentar**: Wissenschaftliche Begleitung, praktische Erprobung
 
 ### 4. **Geodatenportal Niedersachsen - XPlanung**
-- **URL**: https://www.geodaten.niedersachsen.de/startseite/kommunale_gdi/xplanung_xbau/
+- **URL**: [https://www.geodaten.niedersachsen.de/startseite/kommunale_gdi/xplanung_xbau/](https://www.geodaten.niedersachsen.de/startseite/kommunale_gdi/xplanung_xbau/)
 - **Kommentar**: Gutes Beispiel für Länderumsetzung, praxisnah
 
 ### 5. **INSPIRE-Richtlinie Deutschland**
-- **URL**: https://www.gdi-de.org/en/INSPIRE
+- **URL**: [https://www.gdi-de.org/en/INSPIRE](https://www.gdi-de.org/en/INSPIRE)
 - **Organisation**: Geodateninfrastruktur Deutschland
 - **Kommentar**: EU-Kontext, wichtig für Interoperabilität
 
 ### 6. **Fachschema Wärmeplan - Objektartenkatalog**
-- **URL**: https://xleitstelle.de/releases/objektartenkatalogWaermeplan
-- **Weitere Dokumentation**: https://xleitstelle.de/downloads/catalogues/437/XPlanGML/Wärmeplan/
+- **URL**: [https://xleitstelle.de/releases/objektartenkatalogWaermeplan](https://xleitstelle.de/releases/objektartenkatalogWaermeplan)
+- **Weitere Dokumentation**: [https://xleitstelle.de/downloads/catalogues/437/XPlanGML/Wärmeplan/](https://xleitstelle.de/downloads/catalogues/437/XPlanGML/Wärmeplan/)
 - **Status**: ✅ Veröffentlicht und online
 - **Inhalt**: 
   - WP_Objekte (Wärmeplan-spezifische Objektklassen)
