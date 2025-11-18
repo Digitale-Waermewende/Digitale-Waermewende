@@ -1,10 +1,18 @@
+---
+layout: default
+title: "KWW-Datenkompass"
+parent: KWW-Halle
+grand_parent: Bund
+nav_exclude: true
+---
+
 # KWW-Datenkompass - Zentrale Datenübersicht für die Wärmeplanung
 
 ## Metadaten
 - **Organisation**: Kompetenzzentrum Kommunale Wärmeplanung (KWW) Halle / Deutsche Energie-Agentur (dena)
 - **Erfassungsdatum**: 2025-09-21
 - **Typ**: Werkzeug/Datenübersicht
-- **URL**: https://www.kww-halle.de/werkzeuge/kww-datenkompass
+- **URL**: [KWW-Datenkompass](https://www.kww-halle.de/werkzeuge/kww-datenkompass)
 - **Relevanz**: Bundeslandspezifische Übersicht aller relevanten Datenquellen für die kommunale Wärmeplanung
 - **Status**: ✅ Vollständige Analyse aller 13 verfügbaren Bundesländer-Datenkompasse durchgeführt
 

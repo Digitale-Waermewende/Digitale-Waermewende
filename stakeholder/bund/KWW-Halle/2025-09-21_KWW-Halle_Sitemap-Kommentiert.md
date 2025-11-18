@@ -1,10 +1,18 @@
+---
+layout: default
+title: "KWW-Halle Sitemap"
+parent: KWW-Halle
+grand_parent: Bund
+nav_exclude: true
+---
+
 # KWW-Halle.de - Kommentierte Sitemap
 
 ## Metadaten
 - **Organisation**: Kompetenzzentrum Kommunale Wärmeplanung (KWW) Halle
 - **Erfassungsdatum**: 2025-09-21
 - **Typ**: Sitemap/Navigationsübersicht
-- **URL**: https://www.kww-halle.de
+- **URL**: [KWW-Halle Website](https://www.kww-halle.de)
 - **Relevanz**: Zentrale Anlaufstelle für Kommunen zur Wärmeplanung in Deutschland
 
 ## Übersicht
