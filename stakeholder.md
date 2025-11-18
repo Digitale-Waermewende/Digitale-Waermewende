@@ -8,23 +8,25 @@ permalink: /stakeholder/
 
 # Stakeholder
 
-## [Bund]({{ site.baseurl }}/stakeholder/bund/)
-- [KWW-Halle]({{ site.baseurl }}/stakeholder/bund/KWW-Halle/)
-- [BBSR]({{ site.baseurl }}/stakeholder/bund/BBSR/)
+Umfassende Analyse der beteiligten Akteure auf allen Verwaltungsebenen der deutschen Wärmewende.
 
-## [Länder]({{ site.baseurl }}/stakeholder/laender/)
-- [Baden-Württemberg]({{ site.baseurl }}/stakeholder/laender/Baden-Wuerttemberg/)
-- [Bayern]({{ site.baseurl }}/stakeholder/laender/Bayern/)
-- [Brandenburg]({{ site.baseurl }}/stakeholder/laender/Brandenburg/)
-- [Hessen]({{ site.baseurl }}/stakeholder/laender/Hessen/)
-- [Mecklenburg-Vorpommern]({{ site.baseurl }}/stakeholder/laender/Mecklenburg-Vorpommern/)
-- [Niedersachsen]({{ site.baseurl }}/stakeholder/laender/Niedersachsen/)
-- [Nordrhein-Westfalen]({{ site.baseurl }}/stakeholder/laender/Nordrhein-Westfalen/)
-- [Rheinland-Pfalz]({{ site.baseurl }}/stakeholder/laender/Rheinland-Pfalz/)
-- [Saarland]({{ site.baseurl }}/stakeholder/laender/Saarland/)
-- [Sachsen]({{ site.baseurl }}/stakeholder/laender/Sachsen/)
-- [Sachsen-Anhalt]({{ site.baseurl }}/stakeholder/laender/Sachsen-Anhalt/)
-- [Schleswig-Holstein]({{ site.baseurl }}/stakeholder/laender/Schleswig-Holstein/)
-- [Thüringen]({{ site.baseurl }}/stakeholder/laender/Thueringen/)
+## Übersicht
 
-## [Kommunen]({{ site.baseurl }}/stakeholder/kommunen/)
+Dieses Repository dokumentiert die komplexe Stakeholder-Landschaft der digitalen Wärmewende in Deutschland. Es identifiziert relevante Akteure auf Bundes-, Landes- und kommunaler Ebene und analysiert bestehende sowie fehlende Datenstandards für eine effiziente Wärmeplanung.
+
+## Verwaltungsebenen
+
+Die Stakeholder sind nach Verwaltungsebenen organisiert:
+
+**Bundesebene**
+Nationale Koordination, Forschung und Standards. Wichtige Akteure: BBSR (Forschung), KWW-Halle (Praxisunterstützung), XPlanung (Digitale Standards).
+
+**Länderebene**
+Landesspezifische Implementierungen der Wärmeplanung und Umsetzung digitaler Standards. Dokumentiert für alle 16 Bundesländer mit jeweiligen Besonderheiten bei Datenstandards und XPlanung-Integration.
+
+**Kommunale Ebene**
+Lokale Wärmeplanung und praktische Umsetzung vor Ort.
+
+---
+
+**Navigation:** Alle Unterbereiche und Organisationen sind in der Navigation auf der linken Seite hierarchisch aufgelistet. Die Struktur wird automatisch aktualisiert.

@@ -291,6 +291,55 @@ permalink: /stakeholder/bund/bbsr/
 - Gruppierung nach Themen/Kategorien
 - Kurze Beschreibung für jedes Dokument
 
+### Automatische Child-Page Navigation (Just the Docs)
+
+Just the Docs zeigt **automatisch** alle Unterseiten (Child Pages) in der Sidebar-Navigation an, wenn `has_children: true` gesetzt ist.
+
+**Wie es funktioniert:**
+
+Wenn eine Seite `has_children: true` hat, dann:
+1. **Sidebar**: Alle Unterseiten erscheinen automatisch hierarchisch
+2. **Content**: Die Seite selbst kann rein beschreibenden Text enthalten
+3. **Updates**: Bei neuen Unterseiten automatische Aktualisierung (kein manuelles Editieren nötig)
+
+**Best Practice für Parent-Seiten (Level 1-2):**
+
+```markdown
+---
+layout: default
+title: Stakeholder
+nav_order: 2
+has_children: true
+permalink: /stakeholder/
+---
+
+# Stakeholder
+
+Übersicht der beteiligten Akteure auf allen Verwaltungsebenen.
+
+## Bereiche
+
+Alle Unterbereiche sind in der Navigation auf der linken Seite aufgelistet:
+- **Bund** - Nationale Koordination und Standards
+- **Länder** - Landesspezifische Implementierungen
+
+Die Navigation wird automatisch von Just the Docs aus den Front Matter-Definitionen der Unterseiten generiert.
+```
+
+**Vorteile:**
+- ✅ **Keine Redundanz** - Links müssen nicht doppelt gepflegt werden
+- ✅ **Automatische Updates** - Neue Unterseiten erscheinen sofort in der Navigation
+- ✅ **Kein 404-Risiko** - Keine manuellen Links, die veralten können
+- ✅ **Konsistente Navigation** - Immer synchron mit der Sidebar
+
+**Nicht empfohlen:**
+- ❌ Manuelle Links zu Unterseiten im Content (parallel zur Sidebar)
+- ❌ Verwendung von `{{ site.baseurl }}` Links zu eigenen Child-Pages
+- ❌ Duplikation der Navigationsstruktur im Markdown-Content
+
+**Ausnahme: Level 3 Index-Seiten**
+Ebene-3-Seiten (wie `BBSR/index.md`) brauchen **manuelle Links** zu Level-4-Dokumenten, weil diese mit `nav_exclude: true` aus der Sidebar ausgeblendet sind.
+
 ## Aktuelle Struktur (Minimal)
 
 ```
