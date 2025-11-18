@@ -1,11 +1,19 @@
+---
+layout: default
+title: "BBSR Stakeholder-Dialog Ergebnispapier"
+parent: BBSR
+grand_parent: Bund
+nav_exclude: true
+---
+
 # Stakeholder-Dialog Wärmeplanung - Ergebnispapier 2025
 
 ## Metadaten
-- **Organisation**: Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) im Auftrag von BMWSB/BMWE
+- **Organisation**: Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR) im Auftrag von BMWSB/BMWK
 - **Erfassungsdatum**: 2025-09-21
 - **Publikationsdatum**: Juni 2025
 - **Typ**: Ergebnispapier/Handlungsempfehlungen
-- **URL**: https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/sonderveroeffentlichungen/2025/stakeholder-dialog-waermeplanung-dl.pdf
+- **URL**: [BBSR Stakeholder-Dialog Ergebnispapier PDF](https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/sonderveroeffentlichungen/2025/stakeholder-dialog-waermeplanung-dl.pdf)
 - **Lokal gespeichert**: stakeholder/bund/2025_BBSR_Stakeholder-Dialog-Waermeplanung.pdf (371.9KB)
 - **ISBN**: 978-3-98655-151-3
 - **DOI**: 10.58007/sxc3-d095

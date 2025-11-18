@@ -1,3 +1,11 @@
+---
+layout: default
+title: "BBSR Analysen KOMPAKT 07/2024"
+parent: BBSR
+grand_parent: Bund
+nav_exclude: true
+---
+
 # BBSR-Analysen KOMPAKT 07/2024 - Status quo der Kommunalen Wärmeplanung
 
 ## Metadaten
@@ -5,7 +13,7 @@
 - **Erfassungsdatum**: 2025-09-21
 - **Publikationsdatum**: Juli 2024
 - **Typ**: Analyse/Forschungsbericht
-- **URL**: https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2024/ak-07-2024.html
+- **URL**: [BBSR Analysen KOMPAKT 07/2024](https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2024/ak-07-2024.html)
 - **Lokal gespeichert**: stakeholder/bund/BBSR-Analysen-KOMPAKT-07-2024.pdf (4.7MB)
 - **ISBN**: 978-3-98655-085-1
 - **Umfang**: 16 Seiten

@@ -1,12 +1,20 @@
+---
+layout: default
+title: "BBSR Wärmeplanung Forschung"
+parent: BBSR
+grand_parent: Bund
+nav_exclude: true
+---
+
 # BBSR - Forschung und Stakeholder-Dialog zur kommunalen Wärmeplanung
 
 ## Metadaten
 - **Organisation**: Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)
 - **Erfassungsdatum**: 2025-09-21
 - **Typ**: Forschungsprojekte und Publikationen
-- **URLs**: 
-  - https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/jahr/2024/stakeholder-dialog-waermeplanung/01-start.html
-  - https://www.bbsr.bund.de/BBSR/DE/forschung/fachbeitraege/wohnen-immobilien/wohnungswirtschaft/kommunale-waermeplanung/waermeplanung.html
+- **URLs**:
+  - [BBSR Stakeholder-Dialog Wärmeplanung](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/jahr/2024/stakeholder-dialog-waermeplanung/01-start.html)
+  - [BBSR Kommunale Wärmeplanung](https://www.bbsr.bund.de/BBSR/DE/forschung/fachbeitraege/wohnen-immobilien/wohnungswirtschaft/kommunale-waermeplanung/waermeplanung.html)
 - **Relevanz**: Wissenschaftliche Begleitung und bundesweite Koordination der Wärmeplanung
 
 ## Zusammenfassung
