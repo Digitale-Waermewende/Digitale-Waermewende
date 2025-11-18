@@ -1,0 +1,67 @@
+---
+layout: default
+title: XBau
+parent: Standards
+nav_order: 3
+has_children: false
+permalink: /standards/xbau/
+---
+
+# XBau - Standard für Baugenehmigungsverfahren
+
+XBau ist der verbindliche Standard für den digitalen Datenaustausch im Baugenehmigungsverfahren in Deutschland.
+
+## Was ist XBau?
+
+**Definition**: XML-basierter Standard für den medienbruchfreien Austausch von Bauantrags- und Baugenehmigungsdaten
+
+**Status**:
+- **Seit 01.01.2023 Pflichtstandard** (IT-Planungsrat-Beschluss 2017/37)
+- Ermöglicht Online-Bauantrag (OBA)
+- Digitalisierung des gesamten Genehmigungsverfahrens
+
+**Anwendungsbereiche**:
+- Bauanträge und Bauvorlagen
+- Baugenehmigungen und Bescheide
+- Planunterlagen und technische Nachweise
+- Kommunikation zwischen Bauherr, Architekt und Behörde
+
+## Relevanz für die Wärmewende
+
+### Heizungseinbau und energetische Sanierung
+XBau ist relevant für wärmewende-bezogene Baugenehmigungen:
+- **Heizungsanlageneinbau**: Genehmigung neuer Heizungssysteme (Wärmepumpen, Fernwärmeanschlüsse)
+- **Energetische Sanierung**: Dämmmaßnahmen, Fensteraustausch
+- **Solaranlagen**: Photovoltaik und Solarthermie auf Dächern
+- **BHKW-Anlagen**: Blockheizkraftwerke in Gebäuden
+
+### Digitale Prozesskette
+XBau ermöglicht durchgängig digitale Verfahren:
+1. **Bauantrag** inkl. energetischer Nachweise (z.B. nach GEG)
+2. **Prüfung** durch Bauaufsicht (inkl. energetische Anforderungen)
+3. **Genehmigung** mit Auflagen
+4. **Überwachung** der Umsetzung
+
+### Verbindung zur Wärmeplanung
+- Überprüfung von Anschluss- und Benutzungspflichten aus kommunalen Wärmeplänen
+- Integration mit XPlanung-Festsetzungen zur Wärmeversorgung
+- Nachweispflichten nach Gebäudeenergiegesetz (GEG)
+
+## Verwaltende Organisation
+
+**[XLeitstelle Planen und Bauen](/stakeholder/bund/xleitstelle/)**
+- Koordination der XBau-Entwicklung
+- Pflege der Spezifikation
+- Bereitstellung von Validatoren
+
+## Externe Ressourcen
+
+- **XLeitstelle**: [XBau Releases](https://xleitstelle.de/xbau/releases-xbau)
+- **XLeitstelle Website**: [https://xleitstelle.de](https://xleitstelle.de)
+- **IT-Planungsrat**: Beschluss 2017/37
+
+## Verwandte Bereiche
+
+- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
+- **Weitere Standards**: [XPlanung](/standards/xplanung/), [XTrasse](/standards/xtrasse/)
+- **Rechtsgrundlage**: Gebäudeenergiegesetz (GEG), Landesbauordnungen

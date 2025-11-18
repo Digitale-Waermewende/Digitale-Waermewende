@@ -1,3 +1,11 @@
+---
+layout: default
+title: "XPlanung XLeitstelle Wärmeplanung"
+parent: XPlanung
+grand_parent: Standards
+nav_exclude: true
+---
+
 # XPlanung, XLeitstelle und digitale Standards für die Wärmeplanung
 
 ## Metadaten

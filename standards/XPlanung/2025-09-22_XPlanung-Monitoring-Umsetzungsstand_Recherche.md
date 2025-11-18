@@ -1,3 +1,11 @@
+---
+layout: default
+title: "XPlanung Monitoring Umsetzungsstand"
+parent: XPlanung
+grand_parent: Standards
+nav_exclude: true
+---
+
 # XPlanung-Monitoring: Verifizierte Quellen zum Umsetzungsstand
 
 ## Metadaten

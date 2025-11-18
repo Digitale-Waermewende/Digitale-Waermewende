@@ -1,3 +1,11 @@
+---
+layout: default
+title: "XPlanung Wärmeplan Objektartenkatalog"
+parent: XPlanung
+grand_parent: Standards
+nav_exclude: true
+---
+
 # XPlanung Fachschema Wärmeplan - Vollständiger Objektartenkatalog
 
 ## Metadaten

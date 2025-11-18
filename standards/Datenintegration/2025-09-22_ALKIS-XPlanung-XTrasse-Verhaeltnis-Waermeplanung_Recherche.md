@@ -1,3 +1,11 @@
+---
+layout: default
+title: "ALKIS-XPlanung-XTrasse Verhältnis"
+parent: Datenintegration
+grand_parent: Standards
+nav_exclude: true
+---
+
 # ALKIS, XPlanung und XTrasse: Verhältnis, Unterschiede und Bedeutung für die Wärmeplanung
 
 ## Metadaten

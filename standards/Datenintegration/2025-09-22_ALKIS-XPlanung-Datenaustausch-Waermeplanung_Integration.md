@@ -1,3 +1,11 @@
+---
+layout: default
+title: "ALKIS-XPlanung Datenaustausch"
+parent: Datenintegration
+grand_parent: Standards
+nav_exclude: true
+---
+
 # ALKIS-XPlanung Datenaustausch für die kommunale Wärmeplanung
 
 ## Metadaten

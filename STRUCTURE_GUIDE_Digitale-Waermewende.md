@@ -262,6 +262,55 @@ permalink: /stakeholder/bund/bbsr/waermeplanung-forschung/detail-xyz/
 4. **nav_order Konsistenz**: Innerhalb einer Ebene eindeutige Nummern verwenden
 5. **has_children**: Nur setzen bei Seiten, die tatsächlich Unterseiten haben
 
+### Konzept: Organisation vs. Standards
+
+**Wichtige konzeptionelle Trennung** im Repository:
+
+#### Organisationen (unter stakeholder/)
+**Zweck**: Dokumentation der Institutionen, die Standards verwalten
+
+**Beispiele**:
+- **XLeitstelle** (`stakeholder/bund/XLeitstelle/`)
+  - Verwaltet: XPlanung, XBau, XTrasse
+  - Fokus: Organisation, Aufgaben, Website-Links
+  - Verweis auf: Standards-Bereich
+
+- **AdV** (`stakeholder/bund/AdV/`)
+  - Verwaltet: ALKIS
+  - Fokus: Arbeitsgemeinschaft, Koordination
+  - Verweis auf: ALKIS-Standard
+
+#### Standards (unter standards/)
+**Zweck**: Dokumentation der technischen Standards selbst
+
+**Beispiele**:
+- **XPlanung** (`standards/XPlanung/`)
+  - Technische Spezifikation für Bauleitplanung
+  - Fachschema Wärmeplan
+  - Verweis auf: XLeitstelle (Organisation)
+
+- **ALKIS** (`standards/ALKIS/`)
+  - Amtliches Liegenschaftskatasterinformationssystem
+  - Technisches Datenmodell (AAA)
+  - Verweis auf: AdV (Organisation)
+
+#### Bidirektionale Verlinkung
+Organisationen und Standards verweisen wechselseitig aufeinander:
+
+**Organisation → Standards**:
+```markdown
+## Verwaltete Standards
+- [XPlanung](/standards/xplanung/)
+- [XBau](/standards/xbau/)
+- [XTrasse](/standards/xtrasse/)
+```
+
+**Standard → Organisation**:
+```markdown
+## Verwaltende Organisation
+[XLeitstelle](/stakeholder/bund/xleitstelle/)
+```
+
 ## Markdown-Datei Formatierungsstandards
 
 ### Datei-Aufbau
