@@ -9,6 +9,88 @@ Dieses Dokument definiert, wie das Repository organisch wachsen soll und nach we
 2. **Evolutionär**: Die Struktur wächst mit den Inhalten
 3. **Multi-Stakeholder**: Verschiedene Nutzergruppen (AI-Agenten, Entwickler, Domain-Experten)
 4. **Nachvollziehbar**: Jede Quelle wird dokumentiert und eingeordnet
+5. **URL-First**: Klickbare, verifizierte URLs zu Original-Informationen in allen Dokumenten
+
+## Repository-Philosophie: Schneller Zugang zu Original-Informationen
+
+### Kernzweck
+Dieses Repository dient der **Unterstützung von KI-Agenten und Menschen**, Original-Informationen **möglichst schnell** zu finden und darauf zuzugreifen.
+
+### URL-Anforderungen (KRITISCH)
+
+**Alle Markdown-Dokumente MÜSSEN:**
+
+✅ **Klickbare URLs enthalten**
+- Jede URL MUSS als Markdown-Link formatiert sein
+- NIEMALS Plain-Text-URLs verwenden
+- URLs müssen direkt zu Original-Quellen führen
+
+✅ **Verifizierte URLs**
+- URLs müssen zum Zeitpunkt der Dokumentation funktionieren
+- Bei toten Links: Archiv-URL (Wayback Machine) ergänzen
+- URL-Checks bei Updates durchführen
+
+✅ **Prominente Platzierung**
+- URLs in Metadaten-Abschnitt am Anfang
+- Wichtigste URLs im ersten Bildschirmbereich
+- Externe Links zu Original-Ressourcen klar gekennzeichnet
+
+**Beispiel (RICHTIG):**
+```markdown
+## Metadaten
+- **Organisation**: BBSR
+- **URLs**:
+  - [BBSR Stakeholder-Dialog](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/jahr/2024/stakeholder-dialog-waermeplanung/01-start.html)
+  - [BBSR Analysen KOMPAKT](https://www.bbsr.bund.de/BBSR/DE/veroeffentlichungen/analysen-kompakt/2024/ak-07-2024.html)
+
+## Externe Ressourcen
+- [BBSR Website](https://www.bbsr.bund.de/)
+- [BBSR Forschungsprogramm](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/)
+```
+
+**Beispiel (FALSCH):**
+```markdown
+## Metadaten
+- URL: https://www.bbsr.bund.de/...  ❌ (nicht klickbar)
+- Siehe BBSR Website für Details  ❌ (kein Link)
+```
+
+### Warum URLs zentral sind
+
+**Für KI-Agenten:**
+- Direkte Navigation zu Primärquellen
+- Automatische Verifikation möglich
+- Strukturierte Datenextraktion
+
+**Für Menschen:**
+- Ein Klick zu Original-Informationen
+- Keine manuelle URL-Suche nötig
+- Zeitersparnis bei Recherche
+
+**Für das Repository:**
+- Nachvollziehbarkeit der Informationen
+- Aktualitätsprüfung möglich
+- Qualitätssicherung durch Quellenangaben
+
+### Umgang mit Sitemaps und Navigations-Dokumenten
+
+**Besonderheit:** Dokumente, die Website-Strukturen beschreiben (z.B. Sitemaps), MÜSSEN tatsächliche URLs zu den beschriebenen Bereichen enthalten.
+
+**NICHT:**
+```markdown
+### KWP-Prozess
+- Vorbereitung der KWP
+- Durchführung der KWP
+```
+
+**SONDERN:**
+```markdown
+### [KWP-Prozess](https://www.kww-halle.de/kwp-prozess)
+- [Vorbereitung der KWP](https://www.kww-halle.de/kwp-prozess/vorbereitung)
+- [Durchführung der KWP](https://www.kww-halle.de/kwp-prozess/durchfuehrung)
+```
+
+Dies ermöglicht direkten Zugriff auf die Original-Ressourcen ohne manuelle Navigation auf der Ziel-Website.
 
 ## Jekyll Theme und GitHub Pages Konfiguration
 
