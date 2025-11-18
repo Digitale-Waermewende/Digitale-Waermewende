@@ -69,7 +69,7 @@ Der kommunale Wärmeplan kann über XPlanung:
 
 ## Verwaltende Organisation
 
-**[XLeitstelle Planen und Bauen](/stakeholder/bund/xleitstelle/)**
+**[XLeitstelle Planen und Bauen](../../stakeholder/bund/XLeitstelle/index.md)**
 - Zentrale Koordinierungsstelle für XPlanung
 - Entwicklung und Pflege des Standards
 - Bereitstellung von Validatoren und Testdaten
@@ -107,6 +107,6 @@ Verifizierte Quellen zum Umsetzungsstand von XPlanung in Deutschland. Bundesland
 
 ## Verwandte Bereiche
 
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
-- **Datenintegration**: [ALKIS-XPlanung Datenaustausch](/standards/datenintegration/)
-- **Weitere Standards**: [XBau](/standards/xbau/), [XTrasse](/standards/xtrasse/)
+- **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+- **Datenintegration**: [ALKIS-XPlanung Datenaustausch](../Datenintegration/index.md)
+- **Weitere Standards**: [XBau](../XBau/index.md), [XTrasse](../XTrasse/index.md)

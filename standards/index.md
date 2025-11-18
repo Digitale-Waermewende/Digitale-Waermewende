@@ -14,31 +14,31 @@ Technische Standards bilden das Rückgrat der digitalen Wärmeplanung in Deutsch
 
 Die digitale Wärmeplanung basiert auf **fünf komplementären Standards**, die unterschiedliche Aspekte der Planung und Datenhaltung abdecken:
 
-### [XPlanung](/standards/xplanung/) - Planungsdokumente
+### [XPlanung](XPlanung/index.md) - Planungsdokumente
 - **Funktion**: Standard für raumbezogene Planwerke (Bauleitpläne, Wärmepläne)
 - **Status**: Seit 2023 Pflichtstandard
 - **Wärmeplanung**: Fachschema Wärmeplan für kommunale Wärmepläne
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
+- **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
-### [XTrasse](/standards/xtrasse/) - Leitungsinfrastruktur
+### [XTrasse](XTrasse/index.md) - Leitungsinfrastruktur
 - **Funktion**: Standard für Modellierung von Leitungsnetzen
 - **Relevanz**: Wärmenetze, Gas-, Strom-, Wassernetze
 - **Status**: Seit 2021 verbindlich für Breitband
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
+- **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
-### [XBau](/standards/xbau/) - Baugenehmigungen
+### [XBau](XBau/index.md) - Baugenehmigungen
 - **Funktion**: Standard für Baugenehmigungsverfahren
 - **Relevanz**: Heizungseinbau, energetische Sanierung
 - **Status**: Seit 2023 Pflichtstandard
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
+- **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
-### [ALKIS](/standards/alkis/) - Liegenschaftsdaten
+### [ALKIS](ALKIS/index.md) - Liegenschaftsdaten
 - **Funktion**: Amtliche Gebäude- und Flurstücksdaten
 - **Relevanz**: Grundlage für Wärmebedarfsermittlung
 - **Status**: Seit 2015 bundesweit eingeführt
-- **Organisation**: [AdV](/stakeholder/bund/adv/)
+- **Organisation**: [AdV](../stakeholder/bund/AdV/index.md)
 
-### [Datenintegration](/standards/datenintegration/) - Zusammenspiel
+### [Datenintegration](Datenintegration/index.md) - Zusammenspiel
 - **Funktion**: Integration von ALKIS, XPlanung und XTrasse
 - **Relevanz**: Technische Schnittstellen und Workflows
 - **Dokumentation**: Best Practices und Herausforderungen
@@ -82,19 +82,19 @@ Verantwortlich für **XPlanung, XBau und XTrasse**:
 - Zentrale Koordinierungsstelle
 - Entwicklung und Pflege der Standards
 - Bereitstellung von Tools und Dokumentation
-- [→ Zur XLeitstelle](/stakeholder/bund/xleitstelle/)
+- [→ Zur XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
 ### AdV - Arbeitsgemeinschaft der Vermessungsverwaltungen
 Verantwortlich für **ALKIS**:
 - Koordination der 16 Landesvermessungsverwaltungen
 - Pflege des AAA-Datenmodells
 - GeoInfoDok-Dokumentation
-- [→ Zur AdV](/stakeholder/bund/adv/)
+- [→ Zur AdV](../stakeholder/bund/AdV/index.md)
 
 ## Weitere Ressourcen
 
 ### Praxisunterstützung
-- **[KWW-Halle](/stakeholder/bund/kww-halle/)**: Kompetenzzentrum Kommunale Wärmeplanung
+- **[KWW-Halle](../stakeholder/bund/KWW-Halle/index.md)**: Kompetenzzentrum Kommunale Wärmeplanung
   - Datenkompass (bundeslandspezifisch)
   - Leitfäden und Werkzeuge
   - Veranstaltungen und Schulungen

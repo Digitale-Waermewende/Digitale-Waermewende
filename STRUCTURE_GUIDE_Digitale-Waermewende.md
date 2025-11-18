@@ -297,18 +297,18 @@ permalink: /stakeholder/bund/bbsr/waermeplanung-forschung/detail-xyz/
 #### Bidirektionale Verlinkung
 Organisationen und Standards verweisen wechselseitig aufeinander:
 
-**Organisation → Standards**:
+**Organisation → Standards** (von `stakeholder/bund/XLeitstelle/index.md`):
 ```markdown
 ## Verwaltete Standards
-- [XPlanung](/standards/xplanung/)
-- [XBau](/standards/xbau/)
-- [XTrasse](/standards/xtrasse/)
+- [XPlanung](../../../standards/XPlanung/index.md)
+- [XBau](../../../standards/XBau/index.md)
+- [XTrasse](../../../standards/XTrasse/index.md)
 ```
 
-**Standard → Organisation**:
+**Standard → Organisation** (von `standards/XPlanung/index.md`):
 ```markdown
 ## Verwaltende Organisation
-[XLeitstelle](/stakeholder/bund/xleitstelle/)
+[XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 ```
 
 ## Markdown-Datei Formatierungsstandards
@@ -373,17 +373,110 @@ Jede Content-Markdown-Datei folgt dieser Struktur:
 - Im Fließtext: Option 1 (mit Kontext)
 - Für technische Referenzen: Option 2 (volle URL sichtbar)
 
-### Interne Verlinkung
+### Interne Verlinkung zwischen Index-Dateien
 
-**Relative Links verwenden**:
+**WICHTIG**: Für interne Links zwischen Index-Dateien und Dokumenten MÜSSEN **relative Pfade** verwendet werden, NICHT Permalinks.
+
+#### Warum relative Pfade?
+
+**Permalinks funktionieren nur nach Jekyll-Build**:
 ```markdown
-Siehe auch: [KWW Datenkompass](../KWW-Halle/2025-09-21_KWW-Datenkompass.md)
+❌ FALSCH: [XPlanung](/standards/xplanung/)
+```
+- Funktioniert nur auf GitHub Pages nach dem Build
+- Funktioniert NICHT im rohen Markdown auf GitHub
+- Funktioniert NICHT in lokalen Previews
+
+**Relative Pfade funktionieren überall**:
+```markdown
+✅ RICHTIG: [XPlanung](../../../standards/XPlanung/index.md)
+```
+- Funktioniert im rohen Markdown auf GitHub
+- Funktioniert nach Jekyll-Build auf GitHub Pages
+- Funktioniert in lokalen Editoren und Previews
+- Unabhängig von baseurl-Konfiguration
+
+#### Pfad-Berechnungs-Regeln
+
+**Von stakeholder/bund/[Organisation]/index.md zu:**
+
+- **standards/[Standard]/index.md**:
+  ```markdown
+  [XPlanung](../../../standards/XPlanung/index.md)
+  ```
+  Pfadlogik: 3x hoch (`../` zu bund, `../` zu stakeholder, `../` zu root), dann runter zu `standards/XPlanung/index.md`
+
+- **stakeholder/bund/[AndereOrg]/index.md**:
+  ```markdown
+  [KWW-Halle](../KWW-Halle/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu bund), gleiche Ebene, runter zu `KWW-Halle/index.md`
+
+**Von standards/index.md zu:**
+
+- **standards/[Standard]/index.md**:
+  ```markdown
+  [XPlanung](XPlanung/index.md)
+  ```
+  Pfadlogik: Direkt runter zu Unterordner
+
+- **stakeholder/bund/[Org]/index.md**:
+  ```markdown
+  [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
+
+**Von standards/[Standard]/index.md zu:**
+
+- **standards/[AndererStandard]/index.md**:
+  ```markdown
+  [XTrasse](../XTrasse/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu standards), gleiche Ebene, runter zu `XTrasse/index.md`
+
+- **stakeholder/bund/[Org]/index.md**:
+  ```markdown
+  [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+  ```
+  Pfadlogik: 2x hoch (`../` zu standards, `../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
+
+#### Vollständige Beispiele
+
+**Beispiel 1: XLeitstelle verlinkt auf Standards**
+
+Datei: `stakeholder/bund/XLeitstelle/index.md`
+```markdown
+## Verwaltete Standards
+- [XPlanung](../../../standards/XPlanung/index.md)
+- [XBau](../../../standards/XBau/index.md)
+- [XTrasse](../../../standards/XTrasse/index.md)
 ```
 
-**Oder mit Jekyll-Variablen**:
+**Beispiel 2: Standard verlinkt auf Organisation**
+
+Datei: `standards/XPlanung/index.md`
 ```markdown
-Siehe auch: [KWW Datenkompass]({{ site.baseurl }}/stakeholder/bund/kww-halle/datenkompass/)
+## Verwaltende Organisation
+[XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 ```
+
+**Beispiel 3: Standard verlinkt auf andere Standards**
+
+Datei: `standards/ALKIS/index.md`
+```markdown
+## Verwandte Standards
+- [XPlanung](../XPlanung/index.md)
+- [XTrasse](../XTrasse/index.md)
+```
+
+**Beispiel 4: Links zu Dokumenten im gleichen Ordner**
+
+Datei: `stakeholder/bund/BBSR/index.md`
+```markdown
+## Dokumente
+- [BBSR Wärmeplanung Forschung](2025-09-21_BBSR_Waermeplanung-Forschung.md)
+```
+Pfadlogik: Gleicher Ordner, kein `../` nötig
 
 ### Index-Seiten für Ebene 3 (Organisationen/Themen)
 

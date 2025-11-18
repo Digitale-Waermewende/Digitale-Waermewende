@@ -21,7 +21,7 @@ Die Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepubl
 
 ## Verwalteter Standard
 
-### [ALKIS](/standards/alkis/)
+### [ALKIS](../../../standards/ALKIS/index.md)
 **ALKIS** (Amtliches Liegenschaftskatasterinformationssystem) ist das zentrale System für:
 - Flurstücks- und Eigentumsdaten
 - Gebäude- und Nutzungsinformationen
@@ -56,13 +56,13 @@ ALKIS-Daten werden über die **NAS-Schnittstelle** bereitgestellt:
 - **Zugang**: Über Landesvermessungsämter
 - **Dokumentation**: GeoInfoDok 7.1 (AdV)
 
-Weitere Details zur Integration von ALKIS-Daten in die Wärmeplanung finden sich im Bereich [Datenintegration](/standards/datenintegration/).
+Weitere Details zur Integration von ALKIS-Daten in die Wärmeplanung finden sich im Bereich [Datenintegration](../../../standards/Datenintegration/index.md).
 
 ## Verwandte Bereiche
 
-- **Standard**: [ALKIS](/standards/alkis/)
-- **Integration**: [Datenintegration](/standards/datenintegration/) (ALKIS-XPlanung-Datenaustausch)
-- **Praxisinfo**: [KWW-Halle](/stakeholder/bund/kww-halle/) (Datenkompass, Konferenz-Unterlagen)
+- **Standard**: [ALKIS](../../../standards/ALKIS/index.md)
+- **Integration**: [Datenintegration](../../../standards/Datenintegration/index.md) (ALKIS-XPlanung-Datenaustausch)
+- **Praxisinfo**: [KWW-Halle](../KWW-Halle/index.md) (Datenkompass, Konferenz-Unterlagen)
 
 ## Externe Links
 

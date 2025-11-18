@@ -23,18 +23,18 @@ Die XLeitstelle fungiert als zentrale Geschäfts- und Koordinierungsstelle für 
 
 Die XLeitstelle koordiniert drei zentrale Standards für die digitale Verwaltung:
 
-### [XPlanung](/standards/xplanung/)
+### [XPlanung](../../../standards/XPlanung/index.md)
 - **Anwendungsbereich**: Raumbezogene Planwerke (Bauleitpläne, Raumordnung)
 - **Status**: Seit 2003 in Entwicklung, seit 2023 Pflichtstandard
 - **Wärmeplanung**: Fachschema Wärmeplan als Erweiterung
 - **Dokumentation**: [XPlanung Releases](https://xleitstelle.de/xplanung/releases-xplanung)
 
-### [XBau](/standards/xbau/)
+### [XBau](../../../standards/XBau/index.md)
 - **Anwendungsbereich**: Baugenehmigungsverfahren
 - **Relevanz für Wärmewende**: Genehmigungen für Heizungseinbau, energetische Sanierung
 - **Dokumentation**: [XBau Releases](https://xleitstelle.de/xbau/releases-xbau)
 
-### [XTrasse](/standards/xtrasse/)
+### [XTrasse](../../../standards/XTrasse/index.md)
 - **Anwendungsbereich**: Modellierung von Leitungsnetzen (Breitband, Energie)
 - **Relevanz für Wärmenetze**: Trassenplanung, Leitungsverläufe
 - **Spezifikation**: [XTrasse 1.2 (PDF)](https://xleitstelle.de/sites/default/files/2024-06/spezifikation1.2.pdf)
@@ -60,7 +60,7 @@ Die XLeitstelle hat ein spezialisiertes Fachschema für kommunale Wärmepläne e
 
 ## Verwandte Bereiche
 
-- **Standards**: [XPlanung](/standards/xplanung/), [XBau](/standards/xbau/), [XTrasse](/standards/xtrasse/)
+- **Standards**: [XPlanung](../../../standards/XPlanung/index.md), [XBau](../../../standards/XBau/index.md), [XTrasse](../../../standards/XTrasse/index.md)
 - **Rechtsgrundlage**: IT-Planungsrat Beschluss 2017/37 (XPlanung/XBau Pflichtstandard seit 2023)
 
 ## Externe Links

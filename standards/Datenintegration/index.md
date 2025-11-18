@@ -15,21 +15,21 @@ Die Integration von ALKIS, XPlanung und XTrasse ist entscheidend für eine erfol
 
 Die kommunale Wärmeplanung erfordert das Zusammenspiel **dreier komplementärer Standards**:
 
-### [ALKIS](/standards/alkis/) - Oberirdische Bestandsdaten
+### [ALKIS](../ALKIS/index.md) - Oberirdische Bestandsdaten
 - **Funktion**: Amtliche Liegenschaftsdaten (Ist-Zustand oberirdisch)
 - **Daten**: Gebäude, Flurstücke, Nutzungen, Geometrien
 - **Zeitbezug**: Gegenwart (Bestand)
 - **Räumlich**: Oberirdische Objekte
 - **Wichtig**: Enthält **keine Leitungsnetze**
 
-### [XTrasse](/standards/xtrasse/) - Leitungsnetze
+### [XTrasse](../XTrasse/index.md) - Leitungsnetze
 - **Funktion**: Modellierung von Leitungsinfrastrukturen (Bestand und Planung)
 - **Daten**: Wärmenetze, Gas, Strom, Wasser, Abwasser
 - **Zeitbezug**: Gegenwart UND Zukunft
 - **Räumlich**: Ober- und unterirdisch
 - **Besonderheit**: Schließt Lücke von ALKIS bei Netzinfrastrukturen
 
-### [XPlanung](/standards/xplanung/) - Planungsdokumente
+### [XPlanung](../XPlanung/index.md) - Planungsdokumente
 - **Funktion**: Digitaler Austausch von Planungsdaten (Soll-Zustand)
 - **Daten**: Wärmepläne, Bauleitpläne, Festsetzungen
 - **Zeitbezug**: Zukunft (Planung)
@@ -120,6 +120,6 @@ Umfassende Analyse des Zusammenspiels von ALKIS, XPlanung und XTrasse. Erklärt 
 
 ## Verwandte Bereiche
 
-- **Standards**: [ALKIS](/standards/alkis/), [XPlanung](/standards/xplanung/), [XTrasse](/standards/xtrasse/)
-- **Organisationen**: [AdV](/stakeholder/bund/adv/), [XLeitstelle](/stakeholder/bund/xleitstelle/)
-- **Praxishilfen**: [KWW-Halle](/stakeholder/bund/kww-halle/) (Datenkompass)
+- **Standards**: [ALKIS](../ALKIS/index.md), [XPlanung](../XPlanung/index.md), [XTrasse](../XTrasse/index.md)
+- **Organisationen**: [AdV](../../stakeholder/bund/AdV/index.md), [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+- **Praxishilfen**: [KWW-Halle](../../stakeholder/bund/KWW-Halle/index.md) (Datenkompass)

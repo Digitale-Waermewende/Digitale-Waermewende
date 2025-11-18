@@ -49,7 +49,7 @@ XBau ermöglicht durchgängig digitale Verfahren:
 
 ## Verwaltende Organisation
 
-**[XLeitstelle Planen und Bauen](/stakeholder/bund/xleitstelle/)**
+**[XLeitstelle Planen und Bauen](../../stakeholder/bund/XLeitstelle/index.md)**
 - Koordination der XBau-Entwicklung
 - Pflege der Spezifikation
 - Bereitstellung von Validatoren
@@ -62,6 +62,6 @@ XBau ermöglicht durchgängig digitale Verfahren:
 
 ## Verwandte Bereiche
 
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
-- **Weitere Standards**: [XPlanung](/standards/xplanung/), [XTrasse](/standards/xtrasse/)
+- **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+- **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XTrasse](../XTrasse/index.md)
 - **Rechtsgrundlage**: Gebäudeenergiegesetz (GEG), Landesbauordnungen

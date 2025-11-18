@@ -69,7 +69,7 @@ ALKIS liefert die **Grundlage für Wärmebedarfsermittlung**:
 ### Wichtige Einschränkung
 
 ⚠️ **Was ALKIS NICHT enthält**:
-- **Keine Leitungsnetze** (Wärme, Gas, Strom, Wasser) → siehe [XTrasse](/standards/xtrasse/)
+- **Keine Leitungsnetze** (Wärme, Gas, Strom, Wasser) → siehe [XTrasse](../XTrasse/index.md)
 - **Keine unterirdischen Infrastrukturen**
 - **Keine Energieverbrauchsdaten**
 - **Keine Heizungsanlagen**
@@ -78,10 +78,10 @@ ALKIS liefert die **Grundlage für Wärmebedarfsermittlung**:
 ### Integration mit anderen Standards
 ALKIS ist Teil eines **dreigliedrigen Systems**:
 - **ALKIS**: Oberirdische Bestandsdaten (Gebäude, Flurstücke)
-- **[XTrasse](/standards/xtrasse/)**: Leitungsnetze (Wärmenetze, Gas, etc.)
-- **[XPlanung](/standards/xplanung/)**: Planungsdokumente (Wärmepläne)
+- **[XTrasse](../XTrasse/index.md)**: Leitungsnetze (Wärmenetze, Gas, etc.)
+- **[XPlanung](../XPlanung/index.md)**: Planungsdokumente (Wärmepläne)
 
-Ausführliche Informationen zur Integration: **[Datenintegration](/standards/datenintegration/)**
+Ausführliche Informationen zur Integration: **[Datenintegration](../Datenintegration/index.md)**
 
 ## ALKIS-Informationen für die Wärmeplanung
 
@@ -96,7 +96,7 @@ Ausführliche Informationen zur Integration: **[Datenintegration](/standards/dat
 
 ## Verwaltende Organisation
 
-**[AdV - Arbeitsgemeinschaft der Vermessungsverwaltungen](/stakeholder/bund/adv/)**
+**[AdV - Arbeitsgemeinschaft der Vermessungsverwaltungen](../../stakeholder/bund/AdV/index.md)**
 - Koordination der 16 Landesvermessungsverwaltungen
 - Entwicklung und Pflege des ALKIS-Standards
 - Dokumentation: GeoInfoDok 7.1
@@ -121,7 +121,7 @@ Ausführliche Analysen zur Integration von ALKIS in die Wärmeplanung:
 
 ## Verwandte Bereiche
 
-- **Organisation**: [AdV](/stakeholder/bund/adv/)
-- **Integration**: [Datenintegration](/standards/datenintegration/) (ALKIS-XPlanung-XTrasse Zusammenspiel)
-- **Weitere Standards**: [XPlanung](/standards/xplanung/), [XTrasse](/standards/xtrasse/)
-- **Praxisinfos**: [KWW-Halle](/stakeholder/bund/kww-halle/) (Datenkompass, KWW-Konferenz PDF)
+- **Organisation**: [AdV](../../stakeholder/bund/AdV/index.md)
+- **Integration**: [Datenintegration](../Datenintegration/index.md) (ALKIS-XPlanung-XTrasse Zusammenspiel)
+- **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XTrasse](../XTrasse/index.md)
+- **Praxisinfos**: [KWW-Halle](../../stakeholder/bund/KWW-Halle/index.md) (Datenkompass, KWW-Konferenz PDF)

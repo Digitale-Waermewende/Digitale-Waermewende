@@ -73,7 +73,7 @@ Ein zentraler Vorteil von XTrasse ist die **Koordination mit anderen Leitungsnet
 
 ## Verwaltende Organisation
 
-**[XLeitstelle Planen und Bauen](/stakeholder/bund/xleitstelle/)**
+**[XLeitstelle Planen und Bauen](../../stakeholder/bund/XLeitstelle/index.md)**
 - Koordination der XTrasse-Entwicklung
 - Pflege der Spezifikation
 - Bereitstellung von Dokumentation
@@ -87,7 +87,7 @@ Ein zentraler Vorteil von XTrasse ist die **Koordination mit anderen Leitungsnet
 
 ### Verhältnis zu ALKIS und XPlanung
 Ausführliche Analyse des Zusammenspiels aller drei Standards für die Wärmeplanung:
-- **[ALKIS-XPlanung-XTrasse Verhältnis](/standards/datenintegration/)** - Technische Integration der drei komplementären Systeme
+- **[ALKIS-XPlanung-XTrasse Verhältnis](../Datenintegration/index.md)** - Technische Integration der drei komplementären Systeme
 
 ### Primärquellen und Dokumentation
 - **Spezifikation**: [XTrasse 2.0](https://xleitstelle.de/sites/default/files/2024-06/spezifikation1.2.pdf)
@@ -96,6 +96,6 @@ Ausführliche Analyse des Zusammenspiels aller drei Standards für die Wärmepla
 
 ## Verwandte Bereiche
 
-- **Organisation**: [XLeitstelle](/stakeholder/bund/xleitstelle/)
-- **Integration**: [Datenintegration](/standards/datenintegration/) (ALKIS-XPlanung-XTrasse Zusammenspiel)
-- **Weitere Standards**: [XPlanung](/standards/xplanung/), [XBau](/standards/xbau/), [ALKIS](/standards/alkis/)
+- **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+- **Integration**: [Datenintegration](../Datenintegration/index.md) (ALKIS-XPlanung-XTrasse Zusammenspiel)
+- **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XBau](../XBau/index.md), [ALKIS](../ALKIS/index.md)
