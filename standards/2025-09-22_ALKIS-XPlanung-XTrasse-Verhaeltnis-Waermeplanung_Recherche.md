@@ -16,22 +16,14 @@ ALKIS (Amtliches Liegenschaftskatasterinformationssystem), XPlanung und XTrasse 
 
 Für die Wärmeplanung ist die Kombination aller drei Systeme erforderlich: ALKIS liefert Gebäudedaten, XTrasse kann Wärmenetze abbilden, und XPlanung ermöglicht die standardisierte Darstellung der Wärmepläne.
 
-## Wichtige Klarstellungen
 
-### ❌ Falsche Annahme 1
-"ALKIS ist ein Vorgänger von XPlanung"
-
-### ✅ Richtigstellung 1
-ALKIS und XPlanung sind **parallel entwickelte, sich ergänzende Systeme**:
+**ALKIS und XPlanung sind parallel entwickelte, sich ergänzende Systeme**:
 - Beide entstanden ab 2003 zeitgleich
 - Unterschiedliche Zwecke und Anwendungsbereiche
 - Technische Harmonisierung, aber keine Nachfolgebeziehung
 
-### ❌ Falsche Annahme 2
-"ALKIS kann Leitungsnetze und Trassen verwalten"
 
-### ✅ Richtigstellung 2
-ALKIS erfasst **NUR oberirdisch sichtbare Objekte**:
+**ALKIS erfasst NUR oberirdisch sichtbare Objekte**:
 - Flurstücke, Gebäude, Nutzungsflächen
 - KEINE unterirdischen Infrastrukturen oder Leitungsnetze
 - Für Trassen ist XTrasse zuständig
