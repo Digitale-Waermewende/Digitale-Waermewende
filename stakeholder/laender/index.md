@@ -1,20 +1,16 @@
 ---
-layout: page
+layout: default
 title: Länder
+parent: Stakeholder
+nav_order: 2
+has_children: true
+permalink: /stakeholder/laender/
 ---
 
 # Bundesländer
 
-- [Baden-Württemberg](./Baden-Wuerttemberg/)
-- [Bayern](./Bayern/)
-- [Brandenburg](./Brandenburg/)
-- [Hessen](./Hessen/)
-- [Mecklenburg-Vorpommern](./Mecklenburg-Vorpommern/)
-- [Niedersachsen](./Niedersachsen/)
-- [Nordrhein-Westfalen](./Nordrhein-Westfalen/)
-- [Rheinland-Pfalz](./Rheinland-Pfalz/)
-- [Saarland](./Saarland/)
-- [Sachsen](./Sachsen/)
-- [Sachsen-Anhalt](./Sachsen-Anhalt/)
-- [Schleswig-Holstein](./Schleswig-Holstein/)
-- [Thüringen](./Thueringen/)
+Landesspezifische Implementierungen der Wärmeplanung und digitale Standards auf Länderebene.
+
+## Alle Bundesländer
+
+Die folgenden Bundesländer sind mit ihren spezifischen Wärmeplanungs-Dokumenten, Datenstandards und XPlanung-Implementierungen dokumentiert:
