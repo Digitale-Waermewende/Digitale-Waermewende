@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Bremen"
+parent: Bremen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/bremen/xplanung/
+---
+
 # XPlanung – Bremen (HB) – Deep Research
 
 *Stand: 2025-09-22*

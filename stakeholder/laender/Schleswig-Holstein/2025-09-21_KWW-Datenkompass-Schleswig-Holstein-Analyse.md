@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Schleswig-Holstein"
+parent: Schleswig-Holstein
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/schleswig-holstein/kww-datenkompass/
+---
+
 # KWW-Datenkompass Schleswig-Holstein - Detailanalyse
 
 ## Metadaten

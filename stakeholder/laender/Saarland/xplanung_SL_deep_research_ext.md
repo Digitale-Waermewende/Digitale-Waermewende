@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Saarland"
+parent: Saarland
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/saarland/xplanung/
+---
+
 # XPlanung im Saarland (SL) — Deep Research (erweitert)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

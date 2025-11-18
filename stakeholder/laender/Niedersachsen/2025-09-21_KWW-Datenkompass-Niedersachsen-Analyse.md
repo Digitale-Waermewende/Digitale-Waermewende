@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Niedersachsen"
+parent: Niedersachsen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/niedersachsen/kww-datenkompass/
+---
+
 # KWW-Datenkompass Niedersachsen - Detailanalyse
 
 ## Metadaten

@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Hessen"
+parent: Hessen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/hessen/kww-datenkompass/
+---
+
 # KWW-Datenkompass Hessen - Detailanalyse
 
 ## Metadaten

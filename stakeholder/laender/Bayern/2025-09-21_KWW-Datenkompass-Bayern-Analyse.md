@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Bayern"
+parent: Bayern
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/bayern/kww-datenkompass/
+---
+
 # KWW-Datenkompass Bayern - Detailanalyse
 
 ## Metadaten

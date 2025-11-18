@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Sachsen-Anhalt"
+parent: Sachsen-Anhalt
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/sachsen-anhalt/xplanung/
+---
+
 # XPlanung in Sachsen-Anhalt (ST) — Deep Research
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

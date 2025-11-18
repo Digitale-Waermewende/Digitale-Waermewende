@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Bayern"
+parent: Bayern
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/bayern/xplanung/
+---
+
 # XPlanung in Bayern (BY) — Deep Research (mit Capabilities)
 *Stand: 22.09.2025 — Link‑Check: **geprüft am 22.09.2025***
 

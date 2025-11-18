@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Nordrhein-Westfalen"
+parent: Nordrhein-Westfalen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/nordrhein-westfalen/xplanung/
+---
+
 # XPlanung in Nordrhein-Westfalen (NW) — Deep Research (erweitert)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

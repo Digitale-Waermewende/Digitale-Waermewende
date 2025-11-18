@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Hessen"
+parent: Hessen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/hessen/xplanung/
+---
+
 # XPlanung in Hessen (HE) — Deep Research (erweitert)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

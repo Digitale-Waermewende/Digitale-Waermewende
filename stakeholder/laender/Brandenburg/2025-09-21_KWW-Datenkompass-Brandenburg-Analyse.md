@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Brandenburg"
+parent: Brandenburg
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/brandenburg/kww-datenkompass/
+---
+
 # KWW-Datenkompass Brandenburg - Detailanalyse
 
 ## Metadaten

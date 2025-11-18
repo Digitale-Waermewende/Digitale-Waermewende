@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Baden-Württemberg"
+parent: Baden-Württemberg
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/baden-wuerttemberg/xplanung/
+---
+
 # XPlanung in Baden‑Württemberg (BW) — Deep Research (mit Capabilities)
 *Stand: 22.09.2025 — Link‑Check: **geprüft am 22.09.2025***
 

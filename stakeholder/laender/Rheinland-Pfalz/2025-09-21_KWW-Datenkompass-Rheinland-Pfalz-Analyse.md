@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Rheinland-Pfalz"
+parent: Rheinland-Pfalz
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/rheinland-pfalz/kww-datenkompass/
+---
+
 # KWW-Datenkompass Rheinland-Pfalz - Detailanalyse
 
 ## Metadaten

@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Brandenburg"
+parent: Brandenburg
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/brandenburg/xplanung/
+---
+
 # XPlanung in Brandenburg (BB) — Deep Research (mit Capabilities)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

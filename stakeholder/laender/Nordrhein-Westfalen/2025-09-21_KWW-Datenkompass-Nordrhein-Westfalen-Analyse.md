@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Nordrhein-Westfalen"
+parent: Nordrhein-Westfalen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/nordrhein-westfalen/kww-datenkompass/
+---
+
 # KWW-Datenkompass Nordrhein-Westfalen - Detailanalyse
 
 ## Metadaten

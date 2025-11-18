@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Rheinland-Pfalz"
+parent: Rheinland-Pfalz
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/rheinland-pfalz/xplanung/
+---
+
 # XPlanung in Rheinland-Pfalz (RP) — Deep Research (erweitert)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

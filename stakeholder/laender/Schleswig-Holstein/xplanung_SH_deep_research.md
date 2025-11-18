@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Schleswig-Holstein"
+parent: Schleswig-Holstein
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/schleswig-holstein/xplanung/
+---
+
 # XPlanung – Schleswig-Holstein (SH) – Deep Research
 
 *Stand: 2025-09-22*

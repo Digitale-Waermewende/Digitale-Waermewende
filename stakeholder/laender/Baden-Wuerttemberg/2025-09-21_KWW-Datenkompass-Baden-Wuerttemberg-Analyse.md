@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Baden-Württemberg"
+parent: Baden-Württemberg
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/baden-wuerttemberg/kww-datenkompass/
+---
+
 # KWW-Datenkompass Baden-Württemberg - Detailanalyse
 
 ## Metadaten

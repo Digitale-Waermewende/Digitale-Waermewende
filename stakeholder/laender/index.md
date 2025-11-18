@@ -13,4 +13,14 @@ Landesspezifische Implementierungen der Wärmeplanung und digitale Standards auf
 
 ## Alle Bundesländer
 
-Die folgenden Bundesländer sind mit ihren spezifischen Wärmeplanungs-Dokumenten, Datenstandards und XPlanung-Implementierungen dokumentiert:
+Alle 16 Bundesländer sind in der Navigation auf der linken Seite aufgelistet. Jedes Bundesland enthält:
+
+- **KWW-Datenkompass**: Bundeslandspezifische Datenbeschaffung für alle 11 Themengruppen nach WPG Anlage 1
+- **XPlanung-Implementierung**: Umsetzungsstand digitaler Standards für Bauleitplanung
+
+### Legende
+
+- 📊 KWW-Datenkompass verfügbar
+- 🗺️ XPlanung-Dokumentation verfügbar
+
+**Hinweis**: Die Navigation wird automatisch von Just the Docs aus den Front Matter-Definitionen der Bundesländer-Seiten generiert. Alle Bundesländer sind alphabetisch sortiert.

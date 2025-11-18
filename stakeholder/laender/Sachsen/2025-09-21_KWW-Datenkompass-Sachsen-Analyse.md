@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Sachsen"
+parent: Sachsen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/sachsen/kww-datenkompass/
+---
+
 # KWW-Datenkompass Sachsen - Detailanalyse
 
 ## Metadaten

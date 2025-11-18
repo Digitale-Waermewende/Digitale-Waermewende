@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Mecklenburg-Vorpommern"
+parent: Mecklenburg-Vorpommern
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/mecklenburg-vorpommern/xplanung/
+---
+
 # XPlanung – Mecklenburg‑Vorpommern (MV) – Deep Research
 
 *Stand: 2025-09-22*

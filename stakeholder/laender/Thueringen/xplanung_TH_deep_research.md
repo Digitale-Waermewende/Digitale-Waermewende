@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Thüringen"
+parent: Thüringen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/thueringen/xplanung/
+---
+
 # XPlanung in Thüringen (TH) — Deep Research
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

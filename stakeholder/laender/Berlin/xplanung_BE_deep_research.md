@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Berlin"
+parent: Berlin
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/berlin/xplanung/
+---
+
 # XPlanung in Berlin (BE) — Deep Research  
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***  
 

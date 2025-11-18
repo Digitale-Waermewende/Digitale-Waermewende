@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Hamburg"
+parent: Hamburg
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/hamburg/xplanung/
+---
+
 # XPlanung – Hamburg (HH) – Deep Research
 
 *Stand: 2025-09-22*

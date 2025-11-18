@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Sachsen"
+parent: Sachsen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/sachsen/xplanung/
+---
+
 # XPlanung in Sachsen (SN) — Deep Research (mit Capabilities)
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 

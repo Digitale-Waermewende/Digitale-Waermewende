@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Sachsen-Anhalt"
+parent: Sachsen-Anhalt
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/sachsen-anhalt/kww-datenkompass/
+---
+
 # KWW-Datenkompass Sachsen-Anhalt - Detailanalyse
 
 ## Metadaten

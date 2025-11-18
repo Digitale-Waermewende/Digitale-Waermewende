@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Thüringen"
+parent: Thüringen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/thueringen/kww-datenkompass/
+---
+
 # KWW-Datenkompass Thüringen - Detailanalyse
 
 ## Metadaten

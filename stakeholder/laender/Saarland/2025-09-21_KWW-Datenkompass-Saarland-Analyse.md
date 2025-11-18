@@ -1,3 +1,12 @@
+---
+layout: default
+title: "KWW-Datenkompass Saarland"
+parent: Saarland
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/saarland/kww-datenkompass/
+---
+
 # KWW-Datenkompass Saarland - Detailanalyse
 
 ## Metadaten

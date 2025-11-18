@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XPlanung Niedersachsen"
+parent: Niedersachsen
+grand_parent: Länder
+nav_exclude: true
+permalink: /stakeholder/laender/niedersachsen/xplanung/
+---
+
 # XPlanung in Niedersachsen (NI) — Deep Research
 *Stand: 22.09.2025 — Link-Check: **geprüft am 22.09.2025***
 
