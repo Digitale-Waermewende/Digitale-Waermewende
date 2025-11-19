@@ -163,7 +163,7 @@ title: Standards Übersicht
 
 # Unsere Standards
 
-{% include svg/standards-uebersicht.svg %}
+{% raw %}{% include svg/standards-uebersicht.svg %}{% endraw %}
 ```
 
 **Vorteil:** Wiederverwendbar in mehreren Seiten
