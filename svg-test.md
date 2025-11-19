@@ -14,7 +14,7 @@ Diese Seite demonstriert die Verwendung von klickbaren SVG-Grafiken in Markdown-
 
 Das folgende Diagramm zeigt die wichtigsten Standards für die digitale Wärmewende und ihre koordinierende Organisation. **Klicken Sie auf die farbigen Boxen**, um zu den entsprechenden Bereichen zu navigieren:
 
-<object data="assets/images/test-diagram.svg" type="image/svg+xml" width="800" height="500">
+<object data="{{ '/assets/images/test-diagram.svg' | relative_url }}" type="image/svg+xml" width="800" height="500">
   <p>Ihr Browser unterstützt keine eingebetteten SVG-Grafiken. Bitte verwenden Sie einen modernen Browser wie Chrome, Firefox oder Edge.</p>
 </object>
 
