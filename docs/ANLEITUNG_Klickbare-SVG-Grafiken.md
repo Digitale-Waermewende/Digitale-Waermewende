@@ -47,7 +47,7 @@ Speichere die SVG-Datei z.B. in `assets/images/`:
   </text>
 
   <!-- Klickbares Element 1 -->
-  <a xlink:href="../standards/XPlanung/index.html">
+  <a xlink:href="/Digitale-Waermewende/standards/xplanung/" target="_top">
     <rect x="50" y="100" width="200" height="100" fill="#4CAF50" rx="10"/>
     <text x="150" y="145" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
       XPlanung
@@ -59,7 +59,7 @@ Speichere die SVG-Datei z.B. in `assets/images/`:
   </a>
 
   <!-- Klickbares Element 2 -->
-  <a xlink:href="../standards/XBau/index.html">
+  <a xlink:href="/Digitale-Waermewende/standards/xbau/" target="_top">
     <rect x="300" y="100" width="200" height="100" fill="#2196F3" rx="10"/>
     <text x="400" y="145" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
       XBau
@@ -86,32 +86,38 @@ title: Meine Seite
 
 Klicken Sie auf die Elemente im Diagramm:
 
-<object data="assets/images/beispiel-diagramm.svg" type="image/svg+xml" width="600" height="400">
+<object data="{{ '/assets/images/beispiel-diagramm.svg' | relative_url }}" type="image/svg+xml" width="600" height="400">
   Ihr Browser unterstützt keine eingebetteten SVG-Grafiken.
 </object>
 ```
 
-**Wichtig:** Pfadangabe relativ zur finalen HTML-Seite!
+**Wichtig:**
+- Für die SVG-Einbettung: Jekyll `relative_url` Filter verwenden
+- Für Links innerhalb der SVG: Absolute Pfade mit baseurl und `target="_top"`
 
 ### Schritt 3: Pfade richtig setzen
 
 **In SVG-Datei (Links):**
 ```xml
-<!-- Für eine SVG in assets/images/ auf eine Seite in standards/ -->
-<a xlink:href="../standards/XPlanung/index.html">
-
-<!-- Für eine SVG auf Root-Ebene auf eine Unterseite -->
-<a xlink:href="standards/XPlanung/index.html">
+<!-- WICHTIG: Verwende absolute Pfade mit baseurl und target="_top" -->
+<!-- Das target="_top" sorgt dafür, dass der Link im Hauptfenster öffnet, nicht im <object> Frame -->
+<a xlink:href="/Digitale-Waermewende/standards/xplanung/" target="_top">
+<a xlink:href="/Digitale-Waermewende/stakeholder/bund/xleitstelle/" target="_top">
 ```
 
 **In Markdown (Einbettung):**
 ```markdown
-<!-- Von Root-Ebene (index.md) -->
-<object data="assets/images/diagramm.svg" ...>
-
-<!-- Von Unterverzeichnis (standards/XPlanung/index.md) -->
-<object data="../../assets/images/diagramm.svg" ...>
+<!-- Verwende Jekyll's relative_url Filter für die SVG-Einbettung -->
+<object data="{{ '/assets/images/diagramm.svg' | relative_url }}" type="image/svg+xml" width="600" height="400">
+  Ihr Browser unterstützt keine eingebetteten SVG-Grafiken.
+</object>
 ```
+
+**Warum diese Pfade?**
+- **SVG-Links benötigen absolute Pfade** weil sie im `<object>` Kontext ausgeführt werden
+- **`target="_top"`** ist essentiell - ohne dies würde die Zielseite im SVG-Frame geladen
+- **Jekyll Permalinks verwenden** (lowercase, trailing slash): `/standards/xplanung/` nicht `/standards/XPlanung/index.html`
+- **`relative_url` Filter** fügt automatisch den baseurl hinzu: `/Digitale-Waermewende/assets/...`
 
 ## Methode 2: Inline SVG direkt im Markdown
 
