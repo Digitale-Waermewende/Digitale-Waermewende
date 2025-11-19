@@ -6,6 +6,7 @@ baseurl: /Digitale-Waermewende
 
 # Just the Docs Theme - Automatische Navigation für alle Markdown-Dateien
 remote_theme: just-the-docs/just-the-docs
+theme: null
 
 # Theme-Konfiguration
 color_scheme: light # oder "dark" für dunkles Theme
