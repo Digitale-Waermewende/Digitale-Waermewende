@@ -89,6 +89,11 @@ Vollständiger Objektartenkatalog des XPlanung Fachschemas Wärmeplan mit über 
 **[XPlanung Monitoring Umsetzungsstand](2025-09-22_XPlanung-Monitoring-Umsetzungsstand_Recherche.md)**
 Verifizierte Quellen zum Umsetzungsstand von XPlanung in Deutschland. Bundeslandspezifische Übersicht der verfügbaren XPlanung-Dienste und Monitoring-Ansätze.
 
+### GitLab Repositories und Entwicklungsressourcen
+
+**[XLeitstelle GitLab Repository auf OpenCode](2025-11-19_XLeitstelle-GitLab-OpenCode_Research.md)**
+Umfassende Recherche zur OpenCode-Plattform und den XLeitstelle GitLab-Repositories. Dokumentiert verfügbare Open-Source-Tools (XPlan-Tools, Validierungsregeln, Testdaten) sowie XTrasse- und XBreitband-Repositories mit Relevanz für Wärmenetzplanung.
+
 ## Externe Ressourcen
 
 ### XLeitstelle

@@ -25,5 +25,13 @@ Dieses Repository folgt den Regeln aus `STRUCTURE_GUIDE.md`:
 - Datenstandards und Schnittstellen dokumentieren
 - Primärquellen sammeln und kommentieren
 
+### Workflows
+
+#### Deep Research
+- **Dokumentation**: `docs/WORKFLOW_Deep-Research.md`
+- **Zweck**: Standardisierter Prozess für prompt-basierte Research-Projekte
+- **Umfang**: Research, Dokumentation, Ablage und Verlinkung
+- **Verwendung**: Nutze die Prompt-Vorlagen aus der Workflow-Datei für neue Deep Research Aufträge
+
 ## Kontext
 Dieses Repository dokumentiert die komplexe Stakeholder-Landschaft der digitalen Wärmewende in Deutschland mit Fokus auf offene Datenstandards für die Wärmeplanung.

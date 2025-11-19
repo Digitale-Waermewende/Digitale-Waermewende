@@ -54,6 +54,9 @@ Die XLeitstelle hat ein spezialisiertes Fachschema für kommunale Wärmepläne e
 - **GitLab Repository**: [XLeitstelle OpenCode](https://gitlab.opencode.de/xleitstelle)
 - **Testdaten**: [XPlanung Testdaten](https://gitlab.opencode.de/xleitstelle/xplanung/testdaten)
 
+### GitLab Entwicklungsressourcen
+- **[XLeitstelle GitLab Repository auf OpenCode](../../../standards/XPlanung/2025-11-19_XLeitstelle-GitLab-OpenCode_Research.md)** - Umfassende Recherche zu allen XLeitstelle-Repositories (XPlanung, XBau, XTrasse, XBreitband) auf der OpenCode-Plattform
+
 ### Dokumentation
 - **Handreichung XPlanung**: [Handreichung 3. Auflage (PDF)](https://xleitstelle.de/sites/default/files/2023-01/Handreichung_3_Auflage_2023-01-04.pdf)
 - **Leitfaden XPlanung**: [Leitfaden 2. Auflage (PDF)](https://xleitstelle.de/sites/default/files/2023-07/Leitfaden_XPlanung_2_Auflage.pdf)
