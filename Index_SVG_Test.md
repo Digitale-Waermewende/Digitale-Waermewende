@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SVG-Test - Klickbare Diagramme
-nav_order: 100
+title: SVG-Test
+nav_order: 4
 has_children: false
 permalink: /svg-test/
 ---
