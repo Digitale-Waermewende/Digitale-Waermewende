@@ -83,6 +83,13 @@ Ein zentraler Vorteil von XTrasse ist die **Koordination mit anderen Leitungsnet
 - **Spezifikation**: [XTrasse 1.2 (PDF)](https://xleitstelle.de/sites/default/files/2024-06/spezifikation1.2.pdf)
 - **XLeitstelle**: [XLeitstelle Website](https://xleitstelle.de)
 
+## Dokumente in diesem Bereich
+
+### Verhältnis zu XBreitband
+
+**[Verhältnis von XTrasse zu XBreitband](2025-11-19_XTrasse-XBreitband-Verhaeltnis_Research.md)**
+Umfassende Analyse der Beziehung zwischen XTrasse (Datenmodell für Leitungsnetze) und XBreitband (Nachrichtenstandard für Genehmigungsverfahren). Erklärt technische Unterschiede, gesetzlichen Kontext (IT-Planungsrat-Beschluss 2021/40), funktionale Komplementarität und Relevanz für Wärmenetze.
+
 ## Weitere Informationen
 
 ### Verhältnis zu ALKIS und XPlanung
