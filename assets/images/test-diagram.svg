@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Titel -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">
+    Digitale Standards für die Wärmewende - Test-Diagramm
+  </text>
+
+  <!-- Untertitel -->
+  <text x="400" y="55" text-anchor="middle" font-size="14" fill="#666">
+    Klicken Sie auf die Boxen, um zu den entsprechenden Bereichen zu navigieren
+  </text>
+
+  <!-- XPlanung Box -->
+  <a xlink:href="../../standards/XPlanung/index.html">
+    <rect x="50" y="100" width="200" height="120" fill="#4CAF50" rx="10" stroke="#2E7D32" stroke-width="2"/>
+    <text x="150" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XPlanung</text>
+    <text x="150" y="160" text-anchor="middle" font-size="12" fill="white">Bauleitplanung</text>
+    <text x="150" y="180" text-anchor="middle" font-size="12" fill="white">Wärmepläne</text>
+    <text x="150" y="200" text-anchor="middle" font-size="12" fill="white">Festsetzungen</text>
+    <title>Zum XPlanung-Standard - Bauleitplanung und kommunale Wärmepläne</title>
+  </a>
+
+  <!-- XTrasse Box -->
+  <a xlink:href="../../standards/XTrasse/index.html">
+    <rect x="300" y="100" width="200" height="120" fill="#2196F3" rx="10" stroke="#1565C0" stroke-width="2"/>
+    <text x="400" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XTrasse</text>
+    <text x="400" y="160" text-anchor="middle" font-size="12" fill="white">Leitungsnetze</text>
+    <text x="400" y="180" text-anchor="middle" font-size="12" fill="white">Wärmenetze</text>
+    <text x="400" y="200" text-anchor="middle" font-size="12" fill="white">Fernwärme</text>
+    <title>Zum XTrasse-Standard - Leitungsinfrastruktur und Wärmenetze</title>
+  </a>
+
+  <!-- XBau Box -->
+  <a xlink:href="../../standards/XBau/index.html">
+    <rect x="550" y="100" width="200" height="120" fill="#FF9800" rx="10" stroke="#E65100" stroke-width="2"/>
+    <text x="650" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XBau</text>
+    <text x="650" y="160" text-anchor="middle" font-size="12" fill="white">Baugenehmigung</text>
+    <text x="650" y="180" text-anchor="middle" font-size="12" fill="white">Heizungsanlagen</text>
+    <text x="650" y="200" text-anchor="middle" font-size="12" fill="white">Energetik</text>
+    <title>Zum XBau-Standard - Baugenehmigungsverfahren für Heizungsanlagen</title>
+  </a>
+
+  <!-- XLeitstelle Box (zentral unten) -->
+  <a xlink:href="../../stakeholder/bund/XLeitstelle/index.html">
+    <rect x="300" y="280" width="200" height="120" fill="#9C27B0" rx="10" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="400" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XLeitstelle</text>
+    <text x="400" y="340" text-anchor="middle" font-size="12" fill="white">Koordination</text>
+    <text x="400" y="360" text-anchor="middle" font-size="12" fill="white">Standardentwicklung</text>
+    <text x="400" y="380" text-anchor="middle" font-size="12" fill="white">LGV Hamburg</text>
+    <title>Zur XLeitstelle - Koordinierende Organisation für X-Standards</title>
+  </a>
+
+  <!-- Verbindungslinien -->
+  <line x1="150" y1="220" x2="350" y2="280" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="400" y1="220" x2="400" y2="280" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="650" y1="220" x2="450" y2="280" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Legende -->
+  <text x="400" y="460" text-anchor="middle" font-size="12" fill="#666" font-style="italic">
+    Gestrichelte Linien zeigen organisatorische Zugehörigkeit zur XLeitstelle
+  </text>
+
+  <!-- Hover-Effekte durch CSS (falls unterstützt) -->
+  <style>
+    a:hover rect {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+    a:hover text {
+      text-decoration: underline;
+    }
+  </style>
+</svg>

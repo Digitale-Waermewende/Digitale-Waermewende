@@ -35,6 +35,9 @@ Technische Standards und Schnittstellen für die Wärmeplanung:
 ### 📚 [Dokumentation](docs/)
 Technische Dokumentation und Anleitungen für Beitragende.
 
+### 🎨 [SVG-Test - Klickbare Diagramme](Index_SVG_Test.md)
+Demonstration interaktiver SVG-Grafiken zur Visualisierung von Standards und Stakeholdern.
+
 ---
 
 ## Beitragen
