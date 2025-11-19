@@ -18,6 +18,8 @@ Offene Datenstandards für die kommunale Wärmeplanung in Deutschland.
 
 Dieses Repository dokumentiert die komplexe Stakeholder-Landschaft der digitalen Wärmewende in Deutschland. Es identifiziert relevante Akteure auf Bundes-, Landes- und kommunaler Ebene und analysiert bestehende sowie fehlende Datenstandards für eine effiziente Wärmeplanung.
 
+<!-- Build-Test: 2025-11-19 19:00 -->
+
 ## Hauptbereiche
 
 ### 📊 [Stakeholder-Analyse](stakeholder/)
