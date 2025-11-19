@@ -54,6 +54,13 @@ XBau ermöglicht durchgängig digitale Verfahren:
 - Pflege der Spezifikation
 - Bereitstellung von Validatoren
 
+## Dokumente in diesem Bereich
+
+### XBau für Wärmenetze und Vergleich mit XBreitband
+
+**[XBau für Wärmenetze und Vergleich mit XBreitband](2025-11-19_XBau-Waermenetze-Vergleich-XBreitband_Research.md)**
+Umfassende Analyse von XBau im Kontext der Wärmewende. Klärt Anwendbarkeit auf Wärmenetze (gebäudebezogene Heizungsanlagen: ja, externe Fernwärmeleitungen: nein/Planfeststellung). Detaillierter Vergleich mit XBreitband basierend auf gemeinsamer XBau-Kernmodul-Architektur. Identifiziert Potenzial für XBau-Fachmodul "Planfeststellung".
+
 ## Externe Ressourcen
 
 - **XLeitstelle**: [XBau Releases](https://xleitstelle.de/xbau/releases-xbau)
