@@ -11,7 +11,7 @@
   </text>
 
   <!-- XPlanung Box -->
-  <a xlink:href="/Digitale-Waermewende/standards/xplanung/">
+  <a xlink:href="/Digitale-Waermewende/standards/xplanung/" target="_top">
     <rect x="50" y="100" width="200" height="120" fill="#4CAF50" rx="10" stroke="#2E7D32" stroke-width="2"/>
     <text x="150" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XPlanung</text>
     <text x="150" y="160" text-anchor="middle" font-size="12" fill="white">Bauleitplanung</text>
@@ -21,7 +21,7 @@
   </a>
 
   <!-- XTrasse Box -->
-  <a xlink:href="/Digitale-Waermewende/standards/xtrasse/">
+  <a xlink:href="/Digitale-Waermewende/standards/xtrasse/" target="_top">
     <rect x="300" y="100" width="200" height="120" fill="#2196F3" rx="10" stroke="#1565C0" stroke-width="2"/>
     <text x="400" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XTrasse</text>
     <text x="400" y="160" text-anchor="middle" font-size="12" fill="white">Leitungsnetze</text>
@@ -31,7 +31,7 @@
   </a>
 
   <!-- XBau Box -->
-  <a xlink:href="/Digitale-Waermewende/standards/xbau/">
+  <a xlink:href="/Digitale-Waermewende/standards/xbau/" target="_top">
     <rect x="550" y="100" width="200" height="120" fill="#FF9800" rx="10" stroke="#E65100" stroke-width="2"/>
     <text x="650" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XBau</text>
     <text x="650" y="160" text-anchor="middle" font-size="12" fill="white">Baugenehmigung</text>
@@ -41,7 +41,7 @@
   </a>
 
   <!-- XLeitstelle Box (zentral unten) -->
-  <a xlink:href="/Digitale-Waermewende/stakeholder/bund/xleitstelle/">
+  <a xlink:href="/Digitale-Waermewende/stakeholder/bund/xleitstelle/" target="_top">
     <rect x="300" y="280" width="200" height="120" fill="#9C27B0" rx="10" stroke="#6A1B9A" stroke-width="2"/>
     <text x="400" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="white">XLeitstelle</text>
     <text x="400" y="340" text-anchor="middle" font-size="12" fill="white">Koordination</text>
