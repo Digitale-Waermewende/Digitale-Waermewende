@@ -62,8 +62,10 @@ Verwenden Sie diese Struktur für neue Lessons Learned Einträge:
 ### Prävention für die Zukunft
 
 **Checklists:**
+{% raw %}
 - [ ] Check 1
 - [ ] Check 2
+{% endraw %}
 
 **Workflows:**
 - Neuer Prozess A
@@ -246,10 +248,12 @@ Wenn GitHub Pages nicht aktualisiert wird:
 
 Bei Anleitungen mit Code-Beispielen:
 
-- [ ] Liquid-Tags in Code-Blöcken mit {% raw %}`{% raw %}`{% endraw %} escapen
+{% raw %}
+- [ ] Liquid-Tags in Code-Blöcken mit `{% raw %}` escapen
 - [ ] Geschweife Klammern in YAML-Beispielen prüfen
 - [ ] Nach Commit: GitHub Actions Build-Status prüfen
 - [ ] Bei 404 auf neuen Seiten: Erst Build-Logs prüfen, nicht Cache
+{% endraw %}
 
 #### Repository-Struktur
 
