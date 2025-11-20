@@ -53,6 +53,25 @@ Relevanz für XTrasse und XBreitband (Infrastrukturplanung).
 
 🔗 [Original-Gesetzestext TKG](https://www.gesetze-im-internet.de/tkg_2021/)
 
+### [Bauordnungsrecht](Bauordnungsrecht/)
+Rechtliche Grundlage für bauaufsichtliche Verfahren und XBau-Standard.
+
+🔗 **[Musterbauordnung (MBO)](https://www.bauministerkonferenz.de/Dokumente/42323066.pdf)** - Bauministerkonferenz
+🔗 **[BauNVO](https://www.gesetze-im-internet.de/baunvo/)** - Baunutzungsverordnung
+🔗 **[PlanzV](https://www.gesetze-im-internet.de/planzv_90/)** - Planzeichenverordnung
+
+**Besonderheit:** Landesrecht - 16 Landesbauordnungen orientieren sich an der MBO
+**Beispiele:** [Hamburg (HBauO)](https://www.landesrecht-hamburg.de/bsha/document/jlr-BauOHA2005rahmen) | [Baden-Württemberg (LBO)](https://dejure.org/gesetze/LBO)
+
+### [IT-Staatsvertrag und OZG](IT-Staatsvertrag/)
+Rechtsgrundlagen für digitale Standards (XBau, XPlanung, XBreitband, XTrasse).
+
+🔗 **[IT-Staatsvertrag](https://www.bmi.bund.de/SharedDocs/downloads/DE/veroeffentlichungen/themen/it-digitalpolitik/it-planungsrat-staatsvertrag.pdf)** - BMI
+🔗 **[Onlinezugangsgesetz (OZG)](https://www.gesetze-im-internet.de/ozg/)** - Gesetze im Internet
+
+**Besonderheit:** IT-Planungsrat-Beschlüsse machen XStandards verbindlich
+**Verbindliche Standards:** XBau (seit 2023) | XPlanung (seit 2023) | XBreitband/XTrasse (bis 2026)
+
 ## Hinweise zur Nutzung
 
 ### Original-Gesetzestexte
