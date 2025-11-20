@@ -48,6 +48,20 @@ Jeder Eintrag dokumentiert:
 
 ---
 
+### 2025-11-20 | Laender-Update-Plan archivieren
+
+**Commit:** [wird ergänzt]
+
+**Zusammenfassung:**
+- 1 erledigte TODO-Datei aus docs/
+  - Laender-Update-Plan (12 KB) - Front Matter für alle 30 Länder-Dokumente hinzugefügt, 17 Index-Dateien erstellt
+
+**Grund:** Aufgabe vollständig abgeschlossen (verifiziert durch Stichproben)
+
+**Ziel:** `archive/2025-11-20/docs/`
+
+---
+
 <!-- Template für neue Einträge:
 
 ### YYYY-MM-DD | Kurzbeschreibung
