@@ -16,7 +16,7 @@ Dokumentation von Problemen, Lösungen und gewonnenen Erkenntnissen.
 
 - [Template für neue Einträge](#template-für-neue-einträge)
 - [Lessons Learned](#lessons-learned)
-  - [2025-11-19: Jekyll Build-Fehler durch {% raw %}{% include %}{% endraw %} in Code-Beispiel](#2025-11-19-jekyll-build-fehler-durch-include-in-code-beispiel)
+  - [2025-11-19: Jekyll Build-Fehler durch include-Tag in Code-Beispiel](#2025-11-19-jekyll-build-fehler-durch-include-in-code-beispiel)
 
 ---
 
@@ -92,7 +92,9 @@ Verwenden Sie diese Struktur für neue Lessons Learned Einträge:
 
 ## Lessons Learned
 
-### 2025-11-19: Jekyll Build-Fehler durch {% raw %}{% include %}{% endraw %} in Code-Beispiel
+### 2025-11-19: Jekyll Build-Fehler durch include-Tag in Code-Beispiel
+
+{% raw %}
 
 ### Problem
 
@@ -294,5 +296,7 @@ temp/
 - Fehlerhafte Datei: `docs/ANLEITUNG_Klickbare-SVG-Grafiken.md` (Zeile 166)
 
 ---
+
+{% endraw %}
 
 *[Zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)*
