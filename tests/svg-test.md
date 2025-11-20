@@ -1,9 +1,9 @@
 ---
 layout: default
-title: SVG-Test
-nav_order: 4
-has_children: false
-permalink: /svg-test/
+title: SVG-Test Demo
+parent: Tests
+nav_order: 2
+permalink: /tests/svg-test/
 ---
 
 # Test: Klickbare SVG-Grafiken

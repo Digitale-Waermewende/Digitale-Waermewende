@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Anleitung SVG-Grafiken
-parent: Dokumentation
-nav_order: 3
-permalink: /docs/anleitung-svg-grafiken/
+parent: Tests
+nav_order: 1
+permalink: /tests/anleitung-svg-grafiken/
 ---
 
 # Anleitung: Klickbare SVG-Grafiken in Markdown-Dateien
