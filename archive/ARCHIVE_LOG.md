@@ -33,6 +33,21 @@ Jeder Eintrag dokumentiert:
 
 ---
 
+### 2025-11-20 | TODO-Dateien archivieren (Nachträglich)
+
+**Commit:** [wird ergänzt]
+
+**Zusammenfassung:**
+- 2 erledigte TODO-Dateien aus docs/
+  - Jekyll-Navigation-Fix (21 KB) - alle 6 Phasen abgeschlossen
+  - XLeitstelle-Standards-Umstrukturierung (14 KB) - Umstrukturierung umgesetzt
+
+**Grund:** Aufgaben vollständig abgeschlossen
+
+**Ziel:** `archive/2025-11-20/docs/`
+
+---
+
 <!-- Template für neue Einträge:
 
 ### YYYY-MM-DD | Kurzbeschreibung
