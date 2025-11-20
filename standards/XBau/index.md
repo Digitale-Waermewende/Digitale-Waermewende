@@ -69,6 +69,18 @@ Umfassende Analyse von XBau im Kontext der Wärmewende. Klärt Anwendbarkeit auf
 
 ## Verwandte Bereiche
 
+### Rechtliche Grundlagen
+- **[Bauordnungsrecht](../../gesetze/Bauordnungsrecht/)** - Gesetzliche Basis für Baugenehmigungsverfahren
+  - [Musterbauordnung (MBO)](../../gesetze/Bauordnungsrecht/index.md#musterbauordnung-mbo) - Bundesweites Referenzmodell
+  - [Landesbauordnungen](../../gesetze/Bauordnungsrecht/index.md#landesbauordnungen-föderales-konzept) - 16 länderspezifische Umsetzungen
+  - [BauNVO](../../gesetze/Bauordnungsrecht/index.md#baunvo-baunutzungsverordnung) - Nutzungsarten
+  - [PlanzV](../../gesetze/Bauordnungsrecht/index.md#planzv-planzeichenverordnung) - Planzeichenstandards
+- **[Gebäudeenergiegesetz (GEG)](../../gesetze/GEG/)** - Energetische Anforderungen
+  - [§71 GEG](../../gesetze/GEG/index.md#71---anforderungen-an-heizungsanlagen) - 65%-Regelung für Heizungen
+  - [§71a GEG](../../gesetze/GEG/index.md#71a---gebäudeautomation) - Gebäudeautomation
+- **[IT-Staatsvertrag](../../gesetze/IT-Staatsvertrag/)** - IT-PLR-Beschluss 2017/37 (XBau verbindlich)
+- **[Baugesetzbuch (BauGB)](../../gesetze/BauGB/)** - Bauleitplanung (für XPlanung-Verzahnung)
+
+### Organisation und Standards
 - **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 - **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XTrasse](../XTrasse/index.md)
-- **Rechtsgrundlage**: Gebäudeenergiegesetz (GEG), Landesbauordnungen

@@ -43,7 +43,13 @@ Dokumentation des bundesweiten Stakeholder-Dialogs zur Wärmeplanung (seit Juni 
 
 ## Verbindungen
 
+### Gesetzliche Grundlagen
+- **[Wärmeplanungsgesetz (WPG)](../../../gesetze/WPG/)** - Rechtliche Basis für Wärmeplanung
+- **[Gebäudeenergiegesetz (GEG)](../../../gesetze/GEG/)** - Verzahnung mit WPG (§71, §107)
+
+### Organisationen
 - Ergänzt: [KWW-Halle](../KWW-Halle/) (praktische Umsetzung)
-- Rechtliche Basis: Wärmeplanungsgesetz (WPG)
 - Koordination mit: BMWSB, BMWK, dena
-- Bezug zu: XPlanung-Standards für digitale Erfassung
+
+### Standards
+- Bezug zu: [XPlanung](../../../standards/XPlanung/) für digitale Erfassung

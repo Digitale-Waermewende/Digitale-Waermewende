@@ -103,6 +103,13 @@ Ausführliche Analyse des Zusammenspiels aller drei Standards für die Wärmepla
 
 ## Verwandte Bereiche
 
+### Rechtliche Grundlagen
+- **[Telekommunikationsgesetz (TKG)](../../gesetze/TKG/)** - Gesetzliche Basis für XTrasse/XBreitband
+  - [§127 TKG](../../gesetze/TKG/index.md#127---zustimmung-zur-nutzung-öffentlicher-wege) - XBreitband-Verfahren (verpflichtend durch IT-PLR 2021/40)
+  - [§146 TKG](../../gesetze/TKG/index.md#146---mitverlegung) - Koordinierte Verlegung (relevant für Wärmeleitungen)
+- **[IT-Staatsvertrag](../../gesetze/IT-Staatsvertrag/)** - IT-PLR-Beschluss 2021/40 (XTrasse verbindlich)
+
+### Organisation und Standards
 - **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 - **Integration**: [Datenintegration](../Datenintegration/index.md) (ALKIS-XPlanung-XTrasse Zusammenspiel)
 - **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XBau](../XBau/index.md), [ALKIS](../ALKIS/index.md)

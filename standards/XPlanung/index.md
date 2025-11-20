@@ -112,6 +112,15 @@ Umfassende Recherche zur OpenCode-Plattform und den XLeitstelle GitLab-Repositor
 
 ## Verwandte Bereiche
 
+### Rechtliche Grundlagen
+- **[Baugesetzbuch (BauGB)](../../gesetze/BauGB/)** - Gesetzliche Basis für Bauleitplanung
+  - [§5 BauGB](../../gesetze/BauGB/index.md#5---inhalt-des-flächennutzungsplans) - Flächennutzungspläne
+  - [§9 BauGB](../../gesetze/BauGB/index.md#9---inhalt-des-bebauungsplans) - Bebauungspläne
+- **[Bauordnungsrecht](../../gesetze/Bauordnungsrecht/)** - MBO, Landesbauordnungen, BauNVO, PlanzV
+- **[IT-Staatsvertrag](../../gesetze/IT-Staatsvertrag/)** - IT-PLR-Beschluss 2017/37 (XPlanung verbindlich)
+- **[Wärmeplanungsgesetz (WPG)](../../gesetze/WPG/)** - §27: Berücksichtigungspflicht in Bauleitplanung
+
+### Organisation und Standards
 - **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 - **Datenintegration**: [ALKIS-XPlanung Datenaustausch](../Datenintegration/index.md)
 - **Weitere Standards**: [XBau](../XBau/index.md), [XTrasse](../XTrasse/index.md)
