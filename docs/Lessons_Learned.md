@@ -120,7 +120,7 @@ title: Standards Übersicht
 ```
 ```
 
-**Das Problem:** Jekyll verarbeitet Liquid-Tags wie `{% include %}` auch innerhalb von Markdown Code-Blöcken und versuchte, die (nicht existierende) Datei `svg/standards-uebersicht.svg` tatsächlich zu inkludieren.
+**Das Problem:** Jekyll verarbeitet Liquid-Tags wie {% raw %}`{% include %}`{% endraw %} auch innerhalb von Markdown Code-Blöcken und versuchte, die (nicht existierende) Datei `svg/standards-uebersicht.svg` tatsächlich zu inkludieren.
 
 **Auswirkung:**
 - Jekyll Build brach ab
@@ -145,10 +145,10 @@ in docs/ANLEITUNG_Klickbare-SVG-Grafiken.md
 ```
 
 **3. Ursache gefunden:**
-Der `{% include %}` Tag in Zeile 166 wurde von Jekyll als echter Befehl interpretiert, nicht als Code-Beispiel.
+Der {% raw %}`{% include %}`{% endraw %} Tag in Zeile 166 wurde von Jekyll als echter Befehl interpretiert, nicht als Code-Beispiel.
 
 **4. Lösung implementiert:**
-Code-Beispiel mit `{% raw %}` und `{% endraw %}` Tags umschließen:
+Code-Beispiel mit {% raw %}`{% raw %}`{% endraw %} und {% raw %}`{% endraw %}`{% endraw %} Tags umschließen:
 
 ```markdown
 # Unsere Standards
@@ -166,7 +166,7 @@ Code-Beispiel mit `{% raw %}` und `{% endraw %}` Tags umschließen:
 #### 1. Jekyll Liquid-Tag Verarbeitung
 
 **Problem:**
-Jekyll verarbeitet Liquid-Tags (`{% ... %}`, `{{ ... }}`) überall im Dokument, auch in Code-Blöcken.
+Jekyll verarbeitet Liquid-Tags ({% raw %}`{% ... %}`{% endraw %}, {% raw %}`{{ ... }}`{% endraw %}) überall im Dokument, auch in Code-Blöcken.
 
 **Lösung:**
 Code-Beispiele mit Liquid-Tags müssen escapiert werden:
@@ -179,7 +179,7 @@ Code-Beispiele mit Liquid-Tags müssen escapiert werden:
 ```
 
 **Best Practice:**
-- Immer `{% raw %}` ... `{% endraw %}` verwenden für Liquid-Code-Beispiele
+- Immer {% raw %}`{% raw %}`{% endraw %} ... {% raw %}`{% endraw %}`{% endraw %} verwenden für Liquid-Code-Beispiele
 - Gilt auch für Inline-Code: {% raw %}`{{ variable }}`{% endraw %}
 - Alternative: HTML Entity Codes verwenden
 
@@ -248,12 +248,10 @@ Wenn GitHub Pages nicht aktualisiert wird:
 
 Bei Anleitungen mit Code-Beispielen:
 
-{% raw %}
-- [ ] Liquid-Tags in Code-Blöcken mit `{% raw %}` escapen
+- [ ] Liquid-Tags in Code-Blöcken mit raw-Tags escapen
 - [ ] Geschweife Klammern in YAML-Beispielen prüfen
 - [ ] Nach Commit: GitHub Actions Build-Status prüfen
 - [ ] Bei 404 auf neuen Seiten: Erst Build-Logs prüfen, nicht Cache
-{% endraw %}
 
 #### Repository-Struktur
 
