@@ -63,8 +63,18 @@ Die XLeitstelle hat ein spezialisiertes Fachschema für kommunale Wärmepläne e
 
 ## Verwandte Bereiche
 
-- **Standards**: [XPlanung](../../../standards/XPlanung/index.md), [XBau](../../../standards/XBau/index.md), [XTrasse](../../../standards/XTrasse/index.md)
-- **Rechtsgrundlage**: IT-Planungsrat Beschluss 2017/37 (XPlanung/XBau Pflichtstandard seit 2023)
+### Gesetzliche Grundlagen
+- **[IT-Staatsvertrag](../../../gesetze/IT-Staatsvertrag/)** - Rechtliche Basis für IT-Planungsrat und XStandards
+  - IT-PLR-Beschluss 2017/37: XPlanung/XBau verbindlich seit 2023
+  - IT-PLR-Beschluss 2021/40: XBreitband/XTrasse verbindlich bis 2026
+
+### Organisationen
+- **[IT-Planungsrat](../IT-Planungsrat/)** - Beschließt verbindliche Standards, XLeitstelle setzt operativ um
+
+### Standards
+- **[XPlanung](../../../standards/XPlanung/index.md)** - Räumliche Planung
+- **[XBau](../../../standards/XBau/index.md)** - Baugenehmigungsverfahren
+- **[XTrasse](../../../standards/XTrasse/index.md)** - Leitungsnetze
 
 ## Externe Links
 

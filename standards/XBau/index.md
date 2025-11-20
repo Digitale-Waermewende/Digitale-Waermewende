@@ -78,9 +78,10 @@ Umfassende Analyse von XBau im Kontext der Wärmewende. Klärt Anwendbarkeit auf
 - **[Gebäudeenergiegesetz (GEG)](../../gesetze/GEG/)** - Energetische Anforderungen
   - [§71 GEG](../../gesetze/GEG/index.md#71---anforderungen-an-heizungsanlagen) - 65%-Regelung für Heizungen
   - [§71a GEG](../../gesetze/GEG/index.md#71a---gebäudeautomation) - Gebäudeautomation
-- **[IT-Staatsvertrag](../../gesetze/IT-Staatsvertrag/)** - IT-PLR-Beschluss 2017/37 (XBau verbindlich)
+- **[IT-Staatsvertrag](../../gesetze/IT-Staatsvertrag/)** - IT-PLR-Beschluss 2017/37 (XBau verbindlich seit 2023)
 - **[Baugesetzbuch (BauGB)](../../gesetze/BauGB/)** - Bauleitplanung (für XPlanung-Verzahnung)
 
 ### Organisation und Standards
-- **Organisation**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+- **Governance**: [IT-Planungsrat](../../stakeholder/bund/IT-Planungsrat/) - Beschließt Standards
+- **Betrieb**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md) - Operative Umsetzung
 - **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XTrasse](../XTrasse/index.md)

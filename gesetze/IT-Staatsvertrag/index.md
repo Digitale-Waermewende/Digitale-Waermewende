@@ -422,9 +422,10 @@ Für TKG § 127-Verfahren (Zustimmung zur Nutzung öffentlicher Wege für Teleko
 
 ### Verwandte Stakeholder
 
+- **[IT-Planungsrat](../../stakeholder/bund/IT-Planungsrat/)** - Zentrales politisches Steuerungsgremium für IT-Standardisierung
 - **[XLeitstelle](../../stakeholder/bund/XLeitstelle/)** - Betrieb und Pflege der XStandards
-- **[FITKO - Föderale IT-Kooperation](../../stakeholder/bund/FITKO/)** - Operative Unterstützung des IT-Planungsrats
-- **[BMI - Bundesministerium des Innern](../../stakeholder/bund/BMI/)** - Federführung für IT-Staatsvertrag und OZG
+- **[FITKO - Föderale IT-Kooperation](https://www.fitko.de/)** - Operative Unterstützung des IT-Planungsrats
+- **[BMI - Bundesministerium des Innern](https://www.bmi.bund.de/)** - Federführung für IT-Staatsvertrag und OZG
 
 ---
 
