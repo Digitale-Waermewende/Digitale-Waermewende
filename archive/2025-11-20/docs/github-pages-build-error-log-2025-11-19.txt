@@ -1,0 +1,80 @@
+GitHub Pages Build Error Log - 2025-11-19
+===========================================
+
+Dieser Log zeigt einen FEHLER beim Jekyll Build.
+
+Logging at level: debug
+Configuration file: /github/workspace/./_config.yml
+GitHub Pages: github-pages v232
+GitHub Pages: jekyll v3.10.0
+Theme: jekyll-theme-primer-0.6.0
+Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+Requiring: jekyll-github-metadata
+Requiring: jekyll-seo-tag
+Requiring: jekyll-seo-tag
+Requiring: jekyll-coffeescript
+Requiring: jekyll-commonmark-ghpages
+Requiring: jekyll-gist
+Requiring: jekyll-github-metadata
+Requiring: jekyll-paginate
+Requiring: jekyll-relative-links
+Requiring: jekyll-optional-front-matter
+Requiring: jekyll-readme-index
+Requiring: jekyll-default-layout
+Requiring: jekyll-titles-from-headings
+Requiring: jekyll-remote-theme
+GitHub Metadata: Initializing...
+Source: /github/workspace/.
+Destination: /github/workspace/./_site
+Incremental build: disabled. Enable with --incremental
+Generating...
+Theme: just-the-docs/just-the-docs
+Theme source: /tmp/jekyll-remote-theme-20251119-7-6mjwk6
+Remote Theme: Using theme just-the-docs/just-the-docs
+Remote Theme: Downloading https://codeload.github.com/just-the-docs/just-the-docs/zip/HEAD to /tmp/jekyll-remote-theme-20251119-7-p844zm.zip
+Remote Theme: Unzipping /tmp/jekyll-remote-theme-20251119-7-p844zm.zip to /tmp/jekyll-remote-theme-20251119-7-6mjwk6
+Requiring: jekyll-seo-tag
+Requiring: jekyll-include-cache
+EntryFilter: excluded /vendor/compress.html
+EntryFilter: excluded /LICENSE
+EntryFilter: excluded /CLAUDE.md
+EntryFilter: excluded /stakeholder/laender/Rheinland-Pfalz/KWW-Datenkompass-Rheinland-Pfalz-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Sachsen/KWW-Datenkompass-Sachsen-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Mecklenburg-Vorpommern/KWW_Datenkompass_Mecklenburg-Vorpommern_01-10-2024.pdf
+EntryFilter: excluded /stakeholder/laender/Hessen/KWW-Datenkompass-Hessen-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Nordrhein-Westfalen/KWW-Datenkompass-Nordrhein-Westfalen-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Sachsen-Anhalt/KWW-Datenkompass-Sachsen-Anhalt-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Brandenburg/KWW-Datenkompass-Brandenburg-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Bayern/KWW-Datenkompass-Bayern-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Baden-Wuerttemberg/KWW-Datenkompass-Baden-Wuerttemberg-2024-10-01.pdf
+EntryFilter: excluded /stakeholder/laender/Niedersachsen/KWW-Datenkompass-Niedersachsen-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Schleswig-Holstein/KWW-Datenkompass-Schleswig-Holstein-2024-10-09.pdf
+EntryFilter: excluded /stakeholder/laender/Saarland/KWW-Datenkompass-Saarland-2024-10-01.pdf
+EntryFilter: excluded /stakeholder/laender/Thueringen/KWW-Datenkompass_Thüringen_09-10-2024_01.pdf
+EntryFilter: excluded /stakeholder/bund/BBSR/BBSR-Analysen-KOMPAKT-07-2024.pdf
+EntryFilter: excluded /stakeholder/bund/BBSR/2025_BBSR_Stakeholder-Dialog-Waermeplanung.pdf
+EntryFilter: excluded /stakeholder/bund/KWW-Halle/KWW-Konferenz_2024_Daten_Jeschke.pdf
+Generating: JekyllOptionalFrontMatter::Generator finished in 0.000748643 seconds.
+Generating: JekyllReadmeIndex::Generator finished in 0.003841418 seconds.
+Generating: Jekyll::Paginate::Pagination finished in 6.783e-06 seconds.
+Generating: JekyllRelativeLinks::Generator finished in 0.077153567 seconds.
+Generating: JekyllDefaultLayout::Generator finished in 0.002005588 seconds.
+Requiring: kramdown-parser-gfm
+Generating: JekyllTitlesFromHeadings::Generator finished in 0.010641349 seconds.
+Rendering: stakeholder/bund/BBSR/2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md
+Pre-Render Hooks: stakeholder/bund/BBSR/2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md
+Rendering Markup: stakeholder/bund/BBSR/2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md
+Rendering Layout: stakeholder/bund/BBSR/2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md
+Layout source: theme
+Include cache miss: /tmp/jekyll-remote-theme-20251119-7-6mjwk6/_includes/components/site_nav.html
+Include cache miss: /tmp/jekyll-remote-theme-20251119-7-6mjwk6/_includes/favicon.html
+Include cache hit: /tmp/jekyll-remote-theme-20251119-7-6mjwk6/_
+
+ANMERKUNGEN:
+- Dieser Log wurde als FEHLER markiert in GitHub Actions
+- Es werden ZWEI Themes geladen: jekyll-theme-primer-0.6.0 UND just-the-docs
+- Der Log bricht ab bei "Include cache hit: /tmp/jekyll-remote-theme..."
+- Es wird mit dem Rendering von stakeholder/bund/BBSR/2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md begonnen
+- Der vollständige Fehler wurde nicht kopiert - vermutlich gibt es danach eine Fehlermeldung
+
+Nächster Schritt: Erfolgreichen Deployment-Log analysieren um Unterschiede zu finden.
