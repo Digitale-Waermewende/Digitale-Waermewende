@@ -50,7 +50,7 @@ Jeder Eintrag dokumentiert:
 
 ### 2025-11-20 | Laender-Update-Plan archivieren
 
-**Commit:** [wird ergänzt]
+**Commit:** `5f0c590` - [View on GitHub](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/5f0c590)
 
 **Zusammenfassung:**
 - 1 erledigte TODO-Datei aus docs/
