@@ -4,7 +4,85 @@ Dokumentation von Problemen, Lösungen und gewonnenen Erkenntnissen.
 
 ---
 
-## 2025-11-19: Jekyll Build-Fehler durch {% include %} in Code-Beispiel
+## Inhaltsverzeichnis
+
+- [Template für neue Einträge](#template-für-neue-einträge)
+- [Lessons Learned](#lessons-learned)
+  - [2025-11-19: Jekyll Build-Fehler durch {% raw %}{% include %}{% endraw %} in Code-Beispiel](#2025-11-19-jekyll-build-fehler-durch-include-in-code-beispiel)
+
+---
+
+## Template für neue Einträge
+
+Verwenden Sie diese Struktur für neue Lessons Learned Einträge:
+
+```markdown
+## YYYY-MM-DD: Kurzer Titel des Problems
+
+### Problem
+
+**Symptom:**
+- Was ist passiert?
+- Welche Fehler wurden beobachtet?
+
+**Ursache:**
+- Warum ist es passiert?
+- Was war die Root Cause?
+
+**Auswirkung:**
+- Welche Konsequenzen hatte das Problem?
+- Wer/Was war betroffen?
+
+### Lösungsweg
+
+1. Schritt 1: Erste Diagnose-Schritte
+2. Schritt 2: Hypothesen testen
+3. Schritt 3: Lösung implementieren
+4. Schritt 4: Verifikation
+
+### Was wir gelernt haben
+
+#### Haupterkenntnisse
+- Erkenntnis 1: Was haben wir verstanden?
+- Erkenntnis 2: Welche Konzepte sind wichtig?
+- Erkenntnis 3: Was war überraschend?
+
+#### Best Practices
+- Was machen wir jetzt anders?
+- Welche Prozesse ändern wir?
+
+### Prävention für die Zukunft
+
+**Checklists:**
+- [ ] Check 1
+- [ ] Check 2
+
+**Workflows:**
+- Neuer Prozess A
+- Neuer Prozess B
+
+### Verwandte Commits
+
+- `hash` - Commit-Beschreibung
+- `hash` - Fix-Beschreibung
+
+### Referenzen
+
+- [Link zu Dokumentation]
+- [Link zu verwandten Issues]
+```
+
+**Hinweise zur Verwendung:**
+- Fügen Sie neue Einträge chronologisch ein (neueste oben)
+- Aktualisieren Sie das Inhaltsverzeichnis
+- Verlinken Sie relevante Commits
+- Fügen Sie Screenshots/Logs als Dateien im `docs/` Ordner hinzu
+
+---
+
+## Lessons Learned
+
+### 2025-11-19: Jekyll Build-Fehler durch {% raw %}{% include %}{% endraw %} in Code-Beispiel
 
 ### Problem
 
@@ -208,44 +286,4 @@ temp/
 
 ---
 
-## Template für neue Einträge
-
-```markdown
-## YYYY-MM-DD: Kurzer Titel des Problems
-
-### Problem
-
-**Symptom:**
-- Was ist passiert?
-
-**Ursache:**
-- Warum ist es passiert?
-
-**Auswirkung:**
-- Welche Konsequenzen?
-
-### Lösungsweg
-
-1. Schritt 1
-2. Schritt 2
-...
-
-### Was wir gelernt haben
-
-#### Haupterkenntnisse
-- Punkt 1
-- Punkt 2
-
-### Prävention für die Zukunft
-
-- Was ändern wir?
-- Welche Checks implementieren?
-
-### Verwandte Commits
-
-- `hash` - Beschreibung
-
-### Referenzen
-
-- Links
-```
+*[Zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)*
