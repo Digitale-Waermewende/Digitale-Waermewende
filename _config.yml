@@ -28,6 +28,10 @@ exclude:
   - LICENSE
   - .gitignore
   - "*.pdf"
+  - "*.backup"
+  - TODO_*.md
+  - archive/
+  - temp/
   - Gemfile
   - Gemfile.lock
   - node_modules/
