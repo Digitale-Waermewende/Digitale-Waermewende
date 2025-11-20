@@ -246,7 +246,7 @@ Wenn GitHub Pages nicht aktualisiert wird:
 
 Bei Anleitungen mit Code-Beispielen:
 
-- [ ] Liquid-Tags in Code-Blöcken mit `{% raw %}` escapen
+- [ ] Liquid-Tags in Code-Blöcken mit {% raw %}`{% raw %}`{% endraw %} escapen
 - [ ] Geschweife Klammern in YAML-Beispielen prüfen
 - [ ] Nach Commit: GitHub Actions Build-Status prüfen
 - [ ] Bei 404 auf neuen Seiten: Erst Build-Logs prüfen, nicht Cache
