@@ -1,3 +1,11 @@
+---
+layout: default
+title: Struktur-Leitfaden
+parent: Dokumentation
+nav_order: 1
+permalink: /docs/structure-guide/
+---
+
 # Struktur-Leitfaden für das Repository Digitale Wärmewende
 
 ## Zweck dieses Dokuments

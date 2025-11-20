@@ -1,3 +1,11 @@
+---
+layout: default
+title: Workflow Deep Research
+parent: Dokumentation
+nav_order: 2
+permalink: /docs/workflow-deep-research/
+---
+
 # Workflow: Prompt-basierte Deep Research
 
 ## Übersicht

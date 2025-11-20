@@ -1,3 +1,11 @@
+---
+layout: default
+title: Lessons Learned
+parent: Dokumentation
+nav_order: 4
+permalink: /docs/lessons-learned/
+---
+
 # Lessons Learned - Digitale Wärmewende Projekt
 
 Dokumentation von Problemen, Lösungen und gewonnenen Erkenntnissen.
