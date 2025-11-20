@@ -64,7 +64,7 @@ Jeder Eintrag dokumentiert:
 
 ### 2025-11-20 | Lessons_Learned.md temporär archiviert (Build-Probleme)
 
-**Commit:** [wird ergänzt]
+**Commit:** `5909215` - [View on GitHub](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/5909215)
 
 **Zusammenfassung:**
 - 1 Datei aus docs/ wegen persistenter Jekyll Build-Fehler
