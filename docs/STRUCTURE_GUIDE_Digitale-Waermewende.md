@@ -100,6 +100,204 @@ Dieses Repository dient der **Unterstützung von KI-Agenten und Menschen**, Orig
 
 Dies ermöglicht direkten Zugriff auf die Original-Ressourcen ohne manuelle Navigation auf der Ziel-Website.
 
+## Markdown-Datei Formatierungsstandards
+
+### Datei-Aufbau
+
+Jede Content-Markdown-Datei folgt dieser Struktur:
+
+```markdown
+---
+[Front Matter Block - siehe oben]
+---
+
+# [Dokumententitel]
+
+## Metadaten
+- **Organisation**: [Herausgeber/Quelle]
+- **Erfassungsdatum**: YYYY-MM-DD
+- **Typ**: [Gesetz|Leitfaden|Recherche|Analyse|...]
+- **URLs**:
+  - [Beschreibung Link 1](https://vollständige-url.de)
+  - [Beschreibung Link 2](https://andere-url.de)
+- **Lokal gespeichert**: [Pfad zur PDF-Datei falls vorhanden]
+- **Relevanz**: [Warum ist dieses Dokument wichtig]
+
+## Zusammenfassung
+[2-4 Sätze Kernaussage]
+
+## [Weitere Abschnitte nach Bedarf]
+...
+```
+
+### URL-Formatierung
+
+**Alle URLs MÜSSEN als klickbare Links formatiert sein**:
+
+❌ **FALSCH** (Plain Text):
+```markdown
+- URL: https://www.example.de/dokument
+```
+
+✅ **RICHTIG** (Option 1 - mit Beschreibung):
+```markdown
+- [Dokumententitel](https://www.example.de/dokument)
+```
+
+✅ **RICHTIG** (Option 2 - URL als Link):
+```markdown
+- <https://www.example.de/dokument>
+```
+
+✅ **RICHTIG** (Option 3 - in Metadaten):
+```markdown
+## Metadaten
+- **URLs**:
+  - [BBSR Stakeholder-Dialog](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/jahr/2024/stakeholder-dialog-waermeplanung/01-start.html)
+  - [BBSR Wärmeplanung Forschung](https://www.bbsr.bund.de/BBSR/DE/forschung/fachbeitraege/wohnen-immobilien/wohnungswirtschaft/kommunale-waermeplanung/waermeplanung.html)
+```
+
+**Empfehlung**:
+- In Metadaten: Option 3 (mit beschreibendem Text)
+- Im Fließtext: Option 1 (mit Kontext)
+- Für technische Referenzen: Option 2 (volle URL sichtbar)
+
+### Interne Verlinkung zwischen Index-Dateien
+
+**WICHTIG**: Für interne Links zwischen Index-Dateien und Dokumenten MÜSSEN **relative Pfade** verwendet werden, NICHT Permalinks.
+
+#### Warum relative Pfade?
+
+**Permalinks funktionieren nur nach Jekyll-Build**:
+```markdown
+❌ FALSCH: [XPlanung](/standards/xplanung/)
+```
+- Funktioniert nur auf GitHub Pages nach dem Build
+- Funktioniert NICHT im rohen Markdown auf GitHub
+- Funktioniert NICHT in lokalen Previews
+
+**Relative Pfade funktionieren überall**:
+```markdown
+✅ RICHTIG: [XPlanung](../../../standards/XPlanung/index.md)
+```
+- Funktioniert im rohen Markdown auf GitHub
+- Funktioniert nach Jekyll-Build auf GitHub Pages
+- Funktioniert in lokalen Editoren und Previews
+- Unabhängig von baseurl-Konfiguration
+
+#### Pfad-Berechnungs-Regeln
+
+**Von stakeholder/bund/[Organisation]/index.md zu:**
+
+- **standards/[Standard]/index.md**:
+  ```markdown
+  [XPlanung](../../../standards/XPlanung/index.md)
+  ```
+  Pfadlogik: 3x hoch (`../` zu bund, `../` zu stakeholder, `../` zu root), dann runter zu `standards/XPlanung/index.md`
+
+- **stakeholder/bund/[AndereOrg]/index.md**:
+  ```markdown
+  [KWW-Halle](../KWW-Halle/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu bund), gleiche Ebene, runter zu `KWW-Halle/index.md`
+
+**Von standards/index.md zu:**
+
+- **standards/[Standard]/index.md**:
+  ```markdown
+  [XPlanung](XPlanung/index.md)
+  ```
+  Pfadlogik: Direkt runter zu Unterordner
+
+- **stakeholder/bund/[Org]/index.md**:
+  ```markdown
+  [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
+
+**Von standards/[Standard]/index.md zu:**
+
+- **standards/[AndererStandard]/index.md**:
+  ```markdown
+  [XTrasse](../XTrasse/index.md)
+  ```
+  Pfadlogik: 1x hoch (`../` zu standards), gleiche Ebene, runter zu `XTrasse/index.md`
+
+- **stakeholder/bund/[Org]/index.md**:
+  ```markdown
+  [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+  ```
+  Pfadlogik: 2x hoch (`../` zu standards, `../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
+
+#### Vollständige Beispiele
+
+**Beispiel 1: XLeitstelle verlinkt auf Standards**
+
+Datei: `stakeholder/bund/XLeitstelle/index.md`
+```markdown
+## Verwaltete Standards
+- [XPlanung](../../../standards/XPlanung/index.md)
+- [XBau](../../../standards/XBau/index.md)
+- [XTrasse](../../../standards/XTrasse/index.md)
+```
+
+**Beispiel 2: Standard verlinkt auf Organisation**
+
+Datei: `standards/XPlanung/index.md`
+```markdown
+## Verwaltende Organisation
+[XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
+```
+
+**Beispiel 3: Standard verlinkt auf andere Standards**
+
+Datei: `standards/ALKIS/index.md`
+```markdown
+## Verwandte Standards
+- [XPlanung](../XPlanung/index.md)
+- [XTrasse](../XTrasse/index.md)
+```
+
+**Beispiel 4: Links zu Dokumenten im gleichen Ordner**
+
+Datei: `stakeholder/bund/BBSR/index.md`
+```markdown
+## Dokumente
+- [BBSR Wärmeplanung Forschung](2025-09-21_BBSR_Waermeplanung-Forschung.md)
+```
+Pfadlogik: Gleicher Ordner, kein `../` nötig
+
+### Index-Seiten für Ebene 3 (Organisationen/Themen)
+
+Ebene-3-Indexseiten (`BBSR/index.md`, `Baden-Wuerttemberg/index.md`, etc.) dienen als **Inhaltsverzeichnis** für Ebene-4-Dokumente:
+
+```markdown
+---
+layout: default
+title: BBSR
+parent: Bund
+grand_parent: Stakeholder
+nav_order: 1
+has_children: true
+permalink: /stakeholder/bund/bbsr/
+---
+
+# Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)
+
+## Über das BBSR
+[Kurze Beschreibung der Organisation]
+
+## Dokumente
+
+### Forschung und Analysen
+- [BBSR Wärmeplanung Forschung](2025-09-21_BBSR_Waermeplanung-Forschung.md) - Wissenschaftliche Begleitung des Wärmeplanungsgesetzes
+- [BBSR Stakeholder-Dialog Ergebnispapier](2025-09-21_BBSR_Stakeholder-Dialog-Ergebnispapier.md) - Dokumentation des bundesweiten Dialogs
+- [BBSR Analysen KOMPAKT 07/2024](2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md) - Status quo der kommunalen Wärmeplanung
+
+## Externe Links
+- [BBSR Website](https://www.bbsr.bund.de/)
+- [BBSR Forschungsprogramm ExWoSt](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/exwost-node.html)
+```
 ## Jekyll Theme und GitHub Pages Konfiguration
 
 ### Übersicht
@@ -319,204 +517,147 @@ Organisationen und Standards verweisen wechselseitig aufeinander:
 [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
 ```
 
-## Markdown-Datei Formatierungsstandards
+### Konzept: Gesetze
 
-### Datei-Aufbau
+**Zweck**: Zentrale Dokumentation relevanter Gesetze mit Links zu Original-Texten und AI-Analysen.
 
-Jede Content-Markdown-Datei folgt dieser Struktur:
+#### Grundprinzipien für Gesetzes-Dokumentation
 
-```markdown
----
-[Front Matter Block - siehe oben]
----
+1. **Original-Gesetzestexte verlinken**
+   - Primärquelle: [Gesetze im Internet](https://www.gesetze-im-internet.de/)
+   - Deep-Links zu einzelnen Paragraphen verwenden
+   - Stand des Gesetzes angeben
 
-# [Dokumententitel]
+2. **Klare Kennzeichnung von Inhalten**
+   - **Original-Zitate**: Blockquote-Format (>) mit Quellenangabe
+   - **AI-Analysen**: Deutlicher Disclaimer mit Datum und Modell
+   - **Rechtlicher Hinweis**: Am Ende jeder Analyse
 
-## Metadaten
-- **Organisation**: [Herausgeber/Quelle]
-- **Erfassungsdatum**: YYYY-MM-DD
-- **Typ**: [Gesetz|Leitfaden|Recherche|Analyse|...]
-- **URLs**:
-  - [Beschreibung Link 1](https://vollständige-url.de)
-  - [Beschreibung Link 2](https://andere-url.de)
-- **Lokal gespeichert**: [Pfad zur PDF-Datei falls vorhanden]
-- **Relevanz**: [Warum ist dieses Dokument wichtig]
+3. **Flache Hierarchie**
+   - Standard: Alle Dateien direkt im Gesetzes-Ordner
+   - Optional: Thematische Unterordner bei >10 Paragraphen
 
-## Zusammenfassung
-[2-4 Sätze Kernaussage]
+#### Ordnerstruktur
 
-## [Weitere Abschnitte nach Bedarf]
-...
+```
+gesetze/
+├── index.md                      # Hauptübersicht aller Gesetze
+├── WPG/
+│   ├── index.md                  # Wärmeplanungsgesetz Übersicht
+│   ├── wpg-§3-begriffe.md       # AI-Analyse zu §3
+│   └── zusammenfassung.md        # Gesamtübersicht (AI)
+├── BauGB/
+│   ├── index.md                  # Baugesetzbuch Übersicht
+│   ├── baugb-§9-bauplanung.md   # Einzelparagraph
+│   └── xplanung-relevanz.md      # Thematische Übersicht
+├── TKG/
+│   └── index.md                  # Telekommunikationsgesetz
+└── GEG/
+    └── index.md                  # Gebäudeenergiegesetz
 ```
 
-### URL-Formatierung
+#### Deep-Link-Format zu Paragraphen
 
-**Alle URLs MÜSSEN als klickbare Links formatiert sein**:
+**Basis-URL**: `https://www.gesetze-im-internet.de/`
 
-❌ **FALSCH** (Plain Text):
+**Gesamt-Gesetz**: `https://www.gesetze-im-internet.de/[gesetz-id]/`
+
+**Einzelner Paragraph**: `https://www.gesetze-im-internet.de/[gesetz-id]/__[nummer].html`
+
+**Beispiele**:
+- WPG: `https://www.gesetze-im-internet.de/wpg/`
+- WPG §3: `https://www.gesetze-im-internet.de/wpg/__3.html`
+- BauGB: `https://www.gesetze-im-internet.de/bbaug/`
+- BauGB §9: `https://www.gesetze-im-internet.de/bbaug/__9.html`
+
+#### Kennzeichnung von Gesetzeszitaten
+
+**Original-Zitat** (immer mit Blockquote und Quelle):
 ```markdown
-- URL: https://www.example.de/dokument
+> **§3 Begriffsbestimmungen**
+>
+> (1) [Vollständiger Wortlaut...]
+>
+> (2) [Vollständiger Wortlaut...]
+
+**Quelle:** [§3 WPG](https://www.gesetze-im-internet.de/wpg/__3.html), Gesetze im Internet
 ```
 
-✅ **RICHTIG** (Option 1 - mit Beschreibung):
+**AI-Analyse** (immer mit Disclaimer):
 ```markdown
-- [Dokumententitel](https://www.example.de/dokument)
+## AI-Analyse
+
+⚠️ **Hinweis:** Die folgende Analyse wurde von Claude (Anthropic) erstellt und stellt keine Rechtsberatung dar.
+
+**Erstellt:** 2025-11-20
+**AI-Modell:** Claude Sonnet 4.5 (Anthropic)
+
+### Zusammenfassung
+
+[AI-generierte Analyse...]
 ```
 
-✅ **RICHTIG** (Option 2 - URL als Link):
+**Rechtlicher Disclaimer** (am Ende jeder Analyse):
 ```markdown
-- <https://www.example.de/dokument>
+⚠️ **Rechtlicher Hinweis:**
+Diese AI-Analyse dient ausschließlich informativen Zwecken und ersetzt keine qualifizierte Rechtsberatung. Für rechtsverbindliche Auskünfte konsultieren Sie bitte einen Rechtsanwalt oder die zuständige Behörde.
+
+**Primärquelle:** [Link zum Original auf Gesetze im Internet]
 ```
 
-✅ **RICHTIG** (Option 3 - in Metadaten):
-```markdown
-## Metadaten
-- **URLs**:
-  - [BBSR Stakeholder-Dialog](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/jahr/2024/stakeholder-dialog-waermeplanung/01-start.html)
-  - [BBSR Wärmeplanung Forschung](https://www.bbsr.bund.de/BBSR/DE/forschung/fachbeitraege/wohnen-immobilien/wohnungswirtschaft/kommunale-waermeplanung/waermeplanung.html)
-```
+#### Querverweise zwischen Bereichen
 
-**Empfehlung**:
-- In Metadaten: Option 3 (mit beschreibendem Text)
-- Im Fließtext: Option 1 (mit Kontext)
-- Für technische Referenzen: Option 2 (volle URL sichtbar)
-
-### Interne Verlinkung zwischen Index-Dateien
-
-**WICHTIG**: Für interne Links zwischen Index-Dateien und Dokumenten MÜSSEN **relative Pfade** verwendet werden, NICHT Permalinks.
-
-#### Warum relative Pfade?
-
-**Permalinks funktionieren nur nach Jekyll-Build**:
-```markdown
-❌ FALSCH: [XPlanung](/standards/xplanung/)
-```
-- Funktioniert nur auf GitHub Pages nach dem Build
-- Funktioniert NICHT im rohen Markdown auf GitHub
-- Funktioniert NICHT in lokalen Previews
-
-**Relative Pfade funktionieren überall**:
-```markdown
-✅ RICHTIG: [XPlanung](../../../standards/XPlanung/index.md)
-```
-- Funktioniert im rohen Markdown auf GitHub
-- Funktioniert nach Jekyll-Build auf GitHub Pages
-- Funktioniert in lokalen Editoren und Previews
-- Unabhängig von baseurl-Konfiguration
-
-#### Pfad-Berechnungs-Regeln
-
-**Von stakeholder/bund/[Organisation]/index.md zu:**
-
-- **standards/[Standard]/index.md**:
-  ```markdown
-  [XPlanung](../../../standards/XPlanung/index.md)
-  ```
-  Pfadlogik: 3x hoch (`../` zu bund, `../` zu stakeholder, `../` zu root), dann runter zu `standards/XPlanung/index.md`
-
-- **stakeholder/bund/[AndereOrg]/index.md**:
-  ```markdown
-  [KWW-Halle](../KWW-Halle/index.md)
-  ```
-  Pfadlogik: 1x hoch (`../` zu bund), gleiche Ebene, runter zu `KWW-Halle/index.md`
-
-**Von standards/index.md zu:**
-
-- **standards/[Standard]/index.md**:
-  ```markdown
-  [XPlanung](XPlanung/index.md)
-  ```
-  Pfadlogik: Direkt runter zu Unterordner
-
-- **stakeholder/bund/[Org]/index.md**:
-  ```markdown
-  [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
-  ```
-  Pfadlogik: 1x hoch (`../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
-
-**Von standards/[Standard]/index.md zu:**
-
-- **standards/[AndererStandard]/index.md**:
-  ```markdown
-  [XTrasse](../XTrasse/index.md)
-  ```
-  Pfadlogik: 1x hoch (`../` zu standards), gleiche Ebene, runter zu `XTrasse/index.md`
-
-- **stakeholder/bund/[Org]/index.md**:
-  ```markdown
-  [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
-  ```
-  Pfadlogik: 2x hoch (`../` zu standards, `../` zu root), dann runter zu `stakeholder/bund/XLeitstelle/index.md`
-
-#### Vollständige Beispiele
-
-**Beispiel 1: XLeitstelle verlinkt auf Standards**
-
-Datei: `stakeholder/bund/XLeitstelle/index.md`
-```markdown
-## Verwaltete Standards
-- [XPlanung](../../../standards/XPlanung/index.md)
-- [XBau](../../../standards/XBau/index.md)
-- [XTrasse](../../../standards/XTrasse/index.md)
-```
-
-**Beispiel 2: Standard verlinkt auf Organisation**
-
-Datei: `standards/XPlanung/index.md`
-```markdown
-## Verwaltende Organisation
-[XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md)
-```
-
-**Beispiel 3: Standard verlinkt auf andere Standards**
-
-Datei: `standards/ALKIS/index.md`
+**Von Gesetzen zu Standards**:
 ```markdown
 ## Verwandte Standards
-- [XPlanung](../XPlanung/index.md)
-- [XTrasse](../XTrasse/index.md)
+- [XPlanung](../../standards/XPlanung/) - Digitale Bauleitplanung nach BauGB §9
 ```
 
-**Beispiel 4: Links zu Dokumenten im gleichen Ordner**
-
-Datei: `stakeholder/bund/BBSR/index.md`
+**Von Standards zu Gesetzen**:
 ```markdown
-## Dokumente
-- [BBSR Wärmeplanung Forschung](2025-09-21_BBSR_Waermeplanung-Forschung.md)
+## Rechtliche Grundlagen
+- [Baugesetzbuch (BauGB)](../../gesetze/BauGB/) - Gesetzliche Basis für Bauleitplanung
+- [§9 BauGB](../../gesetze/BauGB/baugb-§9-bauplanung.md) - Inhalt des Bebauungsplans
 ```
-Pfadlogik: Gleicher Ordner, kein `../` nötig
 
-### Index-Seiten für Ebene 3 (Organisationen/Themen)
-
-Ebene-3-Indexseiten (`BBSR/index.md`, `Baden-Wuerttemberg/index.md`, etc.) dienen als **Inhaltsverzeichnis** für Ebene-4-Dokumente:
-
+**Von Stakeholdern zu Gesetzen**:
 ```markdown
+## Relevante Gesetze
+- [Wärmeplanungsgesetz (WPG)](../../gesetze/WPG/) - Bundesgesetz zur Wärmeplanung
+```
+
+#### Front Matter für Gesetzes-Index
+
+```yaml
 ---
 layout: default
-title: BBSR
-parent: Bund
-grand_parent: Stakeholder
+title: Wärmeplanungsgesetz
+parent: Gesetze
 nav_order: 1
 has_children: true
-permalink: /stakeholder/bund/bbsr/
+permalink: /gesetze/wpg/
 ---
-
-# Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)
-
-## Über das BBSR
-[Kurze Beschreibung der Organisation]
-
-## Dokumente
-
-### Forschung und Analysen
-- [BBSR Wärmeplanung Forschung](2025-09-21_BBSR_Waermeplanung-Forschung.md) - Wissenschaftliche Begleitung des Wärmeplanungsgesetzes
-- [BBSR Stakeholder-Dialog Ergebnispapier](2025-09-21_BBSR_Stakeholder-Dialog-Ergebnispapier.md) - Dokumentation des bundesweiten Dialogs
-- [BBSR Analysen KOMPAKT 07/2024](2025-09-21_BBSR-Analysen-KOMPAKT-07-2024.md) - Status quo der kommunalen Wärmeplanung
-
-## Externe Links
-- [BBSR Website](https://www.bbsr.bund.de/)
-- [BBSR Forschungsprogramm ExWoSt](https://www.bbsr.bund.de/BBSR/DE/forschung/programme/exwost/exwost-node.html)
 ```
+
+#### Front Matter für Paragraphen-Analyse
+
+```yaml
+---
+layout: default
+title: "§3 Begriffsbestimmungen"
+parent: Wärmeplanungsgesetz
+grand_parent: Gesetze
+nav_exclude: true  # Optional bei vielen Paragraphen
+permalink: /gesetze/wpg/paragraph-3/
+---
+```
+
+#### Relevante Gesetze für Digitale Wärmewende
+
+- **WPG** - Wärmeplanungsgesetz (Hauptgesetz)
+- **BauGB** - Baugesetzbuch (für XPlanung relevant)
+- **GEG** - Gebäudeenergiegesetz (Schnittstellen zur Wärmeplanung)
+- **TKG** - Telekommunikationsgesetz (für XTrasse/XBreitband)
 
 **Wichtig**:
 - Manuelle Links zu allen Ebene-4-Dokumenten
