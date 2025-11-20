@@ -62,6 +62,20 @@ Jeder Eintrag dokumentiert:
 
 ---
 
+### 2025-11-20 | Lessons_Learned.md temporär archiviert (Build-Probleme)
+
+**Commit:** [wird ergänzt]
+
+**Zusammenfassung:**
+- 1 Datei aus docs/ wegen persistenter Jekyll Build-Fehler
+  - Lessons_Learned.md - Zu viele verschachtelte Liquid-Tags verursachen Build-Fehler
+
+**Grund:** Vermeidung weiterer Build-Failures, wird später überarbeitet
+
+**Ziel:** `archive/2025-11-20/docs/`
+
+---
+
 <!-- Template für neue Einträge:
 
 ### YYYY-MM-DD | Kurzbeschreibung
