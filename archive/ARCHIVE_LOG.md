@@ -17,13 +17,15 @@ Jeder Eintrag dokumentiert:
 
 ### 2025-11-20 | Erstes Repository-Aufräumen
 
-**Commit:** [wird ergänzt nach Commit]
+**Commit:** `11e286c` - [View on GitHub](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/11e286c)
 
 **Zusammenfassung:**
-- 32 .backup Dateien aus stakeholder/laender/ und standards/XPlanung/
+- 32 .backup Dateien (164 KB) aus stakeholder/laender/ und standards/XPlanung/
 - 3 Analyse-/Dokumentationsdateien aus docs/ (erledigt/obsolet)
 - 2 Root-Level Dateien (docs.md, stakeholder.md - obsolet)
-- 1 Setup-Dokumentation (github-pages-setup.md - abgeschlossen)
+- 1 Build-Error-Log (Debugging abgeschlossen)
+- STRUCTURE_GUIDE nach docs/ verschoben
+- TODO-Liste nach temp/ verschoben
 
 **Grund:** Initiales Aufräumen nach Projektstrukturierung und Jekyll-Migration
 
