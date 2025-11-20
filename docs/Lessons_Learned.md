@@ -116,8 +116,7 @@ title: Standards Übersicht
 
 # Unsere Standards
 
-{% include svg/standards-uebersicht.svg %}
-```
+{% raw %}{% include svg/standards-uebersicht.svg %}{% endraw %}
 ```
 
 **Das Problem:** Jekyll verarbeitet Liquid-Tags wie {% raw %}`{% include %}`{% endraw %} auch innerhalb von Markdown Code-Blöcken und versuchte, die (nicht existierende) Datei `svg/standards-uebersicht.svg` tatsächlich zu inkludieren.
