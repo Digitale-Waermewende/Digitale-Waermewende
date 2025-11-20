@@ -35,7 +35,7 @@ Jeder Eintrag dokumentiert:
 
 ### 2025-11-20 | TODO-Dateien archivieren (Nachträglich)
 
-**Commit:** [wird ergänzt]
+**Commit:** `bb75794` - [View on GitHub](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/bb75794)
 
 **Zusammenfassung:**
 - 2 erledigte TODO-Dateien aus docs/
