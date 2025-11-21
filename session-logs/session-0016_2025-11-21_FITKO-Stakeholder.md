@@ -9,10 +9,11 @@ permalink: /session-log/session-0016/
 # Session 0016 - 2025-11-21 - FITKO als Stakeholder dokumentiert
 
 **Datum**: 2025-11-21
-**Commits**: [2f91fd7](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/2f91fd7)
+**Commits**: [2f91fd7](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/2f91fd7), [44fc0ea](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/44fc0ea), [9b47724](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/9b47724)
 
-## User-Eingabe
+## User-Eingaben
 
+### 1. FITKO Stakeholder erstellen
 ```
 Erstelle in Digitale-Waermewende\stakeholder einen Ordner und eine Index-Datei für FITKO,
 recherchiere das Selbstverständnis der Organisation, die Aufgaben und Projekte, im Zusammenhang
@@ -20,12 +21,21 @@ mit der XLeitstelle. Dokumentiere die 5-10 relevante Primärquellen in der Index
 commit, push und session-log
 ```
 
+### 2. FITKO nach bund/ verschieben
+```
+Bitte verschiebe FITKO in Digitale-Waermewende\stakeholder\bund danach commit und push sowie
+update des session log
+```
+
 ## Ergebnisse
 
-**Commits**: [2f91fd7](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/2f91fd7)
+**Commits**:
+- [2f91fd7](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/2f91fd7) - FITKO Stakeholder-Seite erstellt
+- [44fc0ea](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/44fc0ea) - Session 0016 Log erstellt
+- [9b47724](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/9b47724) - FITKO nach stakeholder/bund/ verschoben
 
 **Neue Seiten**:
-- [FITKO](/stakeholder/fitko/)
+- [FITKO](/stakeholder/bund/fitko/)
 
 **Geänderte Seiten**:
 - (keine)
@@ -34,9 +44,11 @@ commit, push und session-log
 
 ### FITKO als neuer Stakeholder dokumentiert
 
-**Platzierung**: stakeholder/FITKO/ (nicht stakeholder/bund/FITKO)
-- Eigene Top-Level-Kategorie (wie IT-Planungsrat unter stakeholder/bund/)
-- Begründung: FITKO ist föderale Organisation (nicht reine Bundesebene)
+**Platzierung**: stakeholder/bund/FITKO/ (korrigiert von stakeholder/FITKO/)
+- **Initial**: Eigene Top-Level-Kategorie (wie IT-Planungsrat)
+- **Korrigiert**: Unter stakeholder/bund/ verschoben (Commit [9b47724](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/9b47724))
+- **Begründung**: FITKO ist Bundesebene (ähnlich IT-Planungsrat, XLeitstelle)
+- **Front-Matter angepasst**: parent: Bund, grand_parent: Stakeholder, permalink: /stakeholder/bund/fitko/
 
 ### Recherche-Strategie
 
