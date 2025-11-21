@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Prozess- und Messaging-Modell"
+parent: XBau
+grand_parent: Standards
+nav_exclude: true
+permalink: /standards/xbau/prozess-messaging-modell-research/
+---
+
 # XBau Deep Research Report: Prozess- und Messaging-Modell mit Vergleich zu XBreitband
 
 **Erfassungsdatum**: 2025-11-21
