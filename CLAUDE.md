@@ -2,13 +2,47 @@
 
 ## Wichtige Hinweise für Claude Code
 
+### Front-Matter Pflicht (KRITISCH!)
+
+**JEDE .md Datei MUSS mit Front-Matter beginnen!**
+
+**Warum wichtig?**
+- Ohne Front-Matter → erscheint fälschlicherweise in Hauptnavigation
+- `nav_exclude: true` → verhindert Sidebar-Clutter bei Ebene 4+ Dokumenten
+- Jekyll braucht diese Metadaten für korrekte Hierarchie
+
+**Research/Deep-Dive Dokumente** (Ebene 4):
+```yaml
+---
+layout: default
+title: "[Kurztitel]"
+parent: [Standard/Organisation]
+grand_parent: [Standards/Bund/Länder]
+nav_exclude: true
+permalink: /pfad/zum/dokument/
+---
+```
+
+**Vor jedem Commit**: Prüfen dass Front-Matter vorhanden ist!
+
+### Detaillierte Dokumentation
+
+Für spezifische Details siehe:
+- **[Front-Matter Templates](docs/FRONTMATTER_TEMPLATES.md)** - YAML Front-Matter für alle Navigationsebenen
+- **[URL Guidelines](docs/URL_GUIDELINES.md)** - URL-Formatierung und interne Verlinkung
+- **[Navigation Rules](docs/NAVIGATION_RULES.md)** - Jekyll Theme, Navigation, Hierarchie
+- **[PDF Workflow](docs/PDF_WORKFLOW.md)** - Umgang mit PDF-Dateien und Git LFS
+- **[Structure Guide](docs/STRUCTURE_GUIDE_Digitale-Waermewende.md)** - Hauptdokument
+
 ### Datum-Format
+
 **WICHTIG**: Bei Dateinamen immer das aktuelle Datum im Format YYYY-MM-DD verwenden.
 - Nutze das Datum aus der `<env>` Umgebungsvariable
-- Format: 2025-09-21 (nicht 2025-01-21!)
+- Format: 2025-11-21 (nicht 2025-01-21!)
 - Verwende "Erfassungsdatum" statt "Datum" in Metadaten zur Klarheit
 
 ### Repository-Struktur
+
 Dieses Repository folgt den Regeln aus `STRUCTURE_GUIDE.md`:
 - Dateinamen: `YYYY-MM-DD_[Organisation]_[Titel].md`
 - Primärquellen werden nach dem Template in STRUCTURE_GUIDE dokumentiert
