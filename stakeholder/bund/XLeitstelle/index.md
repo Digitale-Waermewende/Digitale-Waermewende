@@ -4,7 +4,7 @@ title: XLeitstelle
 parent: Bund
 grand_parent: Stakeholder
 nav_order: 3
-has_children: false
+has_children: true
 permalink: /stakeholder/bund/xleitstelle/
 ---
 
@@ -60,6 +60,21 @@ Die XLeitstelle hat ein spezialisiertes Fachschema für kommunale Wärmepläne e
 ### Dokumentation
 - **Handreichung XPlanung**: [Handreichung 3. Auflage (PDF)](https://xleitstelle.de/sites/default/files/2023-01/Handreichung_3_Auflage_2023-01-04.pdf)
 - **Leitfaden XPlanung**: [Leitfaden 2. Auflage (PDF)](https://xleitstelle.de/sites/default/files/2023-07/Leitfaden_XPlanung_2_Auflage.pdf)
+
+## Dokumente in diesem Bereich
+
+### Navigation und Sitemap
+
+**[XLeitstelle.de - Navigation und Sitemap-Analyse](2025-11-21_XLeitstelle-Navigation-Sitemap.md)**
+
+Detaillierte Dokumentation der Navigation zu XPlanung- und Wärmeplan-Objektkatalogen auf xleitstelle.de:
+- **Problem**: Keine XML-Sitemap verfügbar, HTML-Frames erschweren Zugang
+- **Lösungen**: Direkte URLs zu Objektkatalogen (Version 0.84 und 0.7)
+- **Katalogstruktur**: WP_Basisobjekte, WP_Objekte (Bestand, Potenzial, Darstellung), WP_Sonstiges
+- **Best Practices**: Frame-freie overview-summary.html nutzen, Katalog-URL-Muster für direkten Zugriff
+- **Beispiele**: Detaillierte Attributbeschreibungen (z.B. WP_WaermeverbrauchLinie)
+
+Praktischer Leitfaden für effiziente Navigation zu detaillierten Objekt- und Attributbeschreibungen, die in der regulären Website-Navigation schwer zu finden sind.
 
 ## Verwandte Bereiche
 

@@ -319,24 +319,141 @@ Trotz JavaScript-Problem konnten folgende Informationen bestätigt werden:
 
 ---
 
+## Vergleich: GitLab OpenCode vs. xleitstelle.de
+
+### Bestätigung: OpenCode-spezifisches Problem
+
+**Getestet am**: 2025-11-21 23:45
+
+**Hypothese**: JavaScript-Navigation ist spezifisch für GitLab OpenCode, xleitstelle.de ist vollständig zugänglich
+
+**Testergebnisse**: ✓ Bestätigt
+
+### xleitstelle.de - VOLLSTÄNDIG ZUGÄNGLICH
+
+**Test 1: Hauptseite** (https://www.xleitstelle.de)
+
+**WebFetch-Zugriff**: ✓ Erfolgreich
+
+**Sichtbare Inhalte**:
+- **Hauptnavigation**: XPlanung, XBau, XTrasse, XBreitband, Service-Bereiche
+- **News-Bereich**: Aktuelle Meldungen (z.B. "XPlanung 6.0 veröffentlicht")
+- **Service-Karten**: Direktlinks zu Dokumentationen, Validatoren, Tools
+- **Team-Informationen**: Kontaktdaten, Organigramm
+- **Downloads verfügbar**:
+  - Handreichung XPlanung (PDF)
+  - Leitfaden XPlanung (PDF)
+  - Spezifikationen (XBau, XPlanung-Versionen, XBreitband)
+- **Externe Ressourcen**: Links zu Behörden (FITKO, IT-PLR)
+
+**Test 2: Release-Seite** (https://xleitstelle.de/xplanung/releases)
+
+**WebFetch-Zugriff**: ✓ Erfolgreich
+
+**Sichtbare Inhalte**:
+- Versionsinformationen (XPlanung 6.0, 5.4, etc.)
+- **Direktdownloads**:
+  - HTML-Kataloge
+  - PDF-Spezifikationen
+  - XML-Schemas (.xsd-Dateien)
+  - Testdatensätze
+- Release Notes
+- Changelog
+
+**Schlussfolgerung**: xleitstelle.de nutzt **traditionelle HTML-Seiten** mit vollständig serverseitig gerenderten Inhalten → **WebFetch-kompatibel**
+
+### gitlab.opencode.de - NICHT ZUGÄNGLICH
+
+**Test 3: XLeitstelle-Gruppe** (https://gitlab.opencode.de/xleitstelle)
+
+**WebFetch-Zugriff**: ✗ Nur Metadaten
+
+**Sichtbare Inhalte**:
+- Gruppenbeschreibung (statischer Text)
+- JavaScript CDATA-Blöcke (nicht ausführbar)
+- Leeres `<div id="app"></div>`
+
+**NICHT sichtbar**:
+- Repository-Listen
+- Dateistrukturen
+- README-Inhalte (in Unterverzeichnissen)
+
+**Test 4: JSON-Schema-Repository** (https://gitlab.opencode.de/xleitstelle/xplanung/schemas/json)
+
+**WebFetch-Zugriff**: ✗ Nur Metadaten
+
+**Sichtbare Metadaten**:
+- 6 Commits (Anzahl)
+- 1 Branch (main)
+- README vorhanden (Existenz bestätigt)
+
+**NICHT sichtbar**:
+- Dateiinhalte (.json-Schemas)
+- README-Text
+- Verzeichnisstruktur
+
+**Schlussfolgerung**: gitlab.opencode.de nutzt **JavaScript SPA** (Single Page Application) mit clientseitigem Rendering → **WebFetch-inkompatibel**
+
+### Technischer Vergleich
+
+| Aspekt | xleitstelle.de | gitlab.opencode.de |
+|--------|----------------|-------------------|
+| **Rendering** | Serverseitig (HTML) | Clientseitig (JavaScript) |
+| **Architektur** | Traditionelle Website | SPA (Single Page Application) |
+| **HTML-Quelltext** | Vollständige Inhalte | Leeres Gerüst (`<div id="app"></div>`) |
+| **WebFetch-Zugriff** | ✓ Vollständig | ✗ Nur Metadaten |
+| **Sichtbarkeit** | Navigation, Downloads, Texte | Nur JavaScript-Code |
+| **Primäre Funktion** | Dokumentation, Downloads | Code-Versionierung |
+
+### Empfehlung: xleitstelle.de als Primärquelle
+
+**Für Spezifikationen und Dokumentation**:
+- ✓ xleitstelle.de (vollständig zugänglich)
+- → Direktdownloads verfügbar
+- → Keine JavaScript-Hürden
+
+**Für Quellcode und Entwicklung**:
+- ✗ gitlab.opencode.de (WebFetch nicht nutzbar)
+- → Git-Clone erforderlich
+- → GitLab API für automatisierte Zugriffe
+
+**Best Practice**:
+1. **Primär**: xleitstelle.de für Spezifikationen, PDFs, XML-Schemas
+2. **Sekundär**: gitlab.opencode.de nur via Git-Clone für:
+   - JSON-Schema-Entwicklung (in Entwicklung, noch nicht in Downloads)
+   - Tools (XNT - Nachrichtengenerator)
+   - Testdaten (versioniert)
+
+---
+
 ## Zusammenfassung
 
 **Problem**: GitLab OpenCode nutzt JavaScript-Rendering, WebFetch kann Inhalte nicht extrahieren
+
+**Bestätigung**: Problem ist **OpenCode-spezifisch**
+- gitlab.opencode.de: JavaScript SPA → WebFetch-inkompatibel
+- xleitstelle.de: Traditionelles HTML → WebFetch-kompatibel ✓
 
 **Betroffene URLs**:
 - https://gitlab.opencode.de/xleitstelle
 - https://gitlab.opencode.de/xleitstelle/xplanung/schemas/json
 - https://gitlab.opencode.de/xleitstelle/xtrasse/spezifikation/-/tree/main/json
 
-**Lösung**:
-- Git-Clone für vollständigen Zugriff
-- GitLab API für automatisierte Abfragen
-- Alternative Primärquellen (xleitstelle.de, docs.fitko.de)
+**Zugängliche Alternativen**:
+- https://www.xleitstelle.de (Hauptseite)
+- https://xleitstelle.de/xplanung/releases (Downloads)
+- https://docs.fitko.de/fit-standards/ (Dokumentation)
 
-**Status**: Dokumentiert für weitere Analyse
+**Lösung**:
+- **Primär**: xleitstelle.de für Spezifikationen und Downloads
+- **Sekundär**: Git-Clone für GitLab-Repository-Inhalte
+- GitLab API für automatisierte Abfragen (optional)
+
+**Status**: Problem verifiziert, Workarounds dokumentiert
 
 ---
 
 **Erstellt am**: 2025-11-21 23:30
+**Aktualisiert am**: 2025-11-21 23:45 (Vergleichstest xleitstelle.de vs. GitLab OpenCode)
 **Zweck**: Problemdokumentation und Workaround-Strategien
 **Bezug**: Geo-Datenformate Deep Research (Kapitel 7: XLeitstelle-Bereitstellung)
