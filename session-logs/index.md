@@ -20,6 +20,7 @@ Jede Session ist in einer separaten Datei dokumentiert und über die Links in de
 
 | Session | Datum | Titel | Commits | Link |
 |---------|-------|-------|---------|------|
+| 0015 | 2025-11-21 | Session Log Umstrukturierung und XTrasse Bestandsdokumentation | e6173be, 31b4324, 8abcff5, fc22781, ea7ba2e | [Details](session-0015_2025-11-21_Session-Log-Umstrukturierung-XTrasse-Bestandsdokumentation.md) |
 | 0014 | 2025-11-21 | Planungstypen in Deutschland dokumentiert | 819df37, 9b676e8 | [Details](session-0014_2025-11-21_Planungstypen-Deutschland.md) |
 | 0013 | 2025-11-21 | Objektartenkatalog-Vergleich: XPlanung, Wärmeplan und XTrasse | dd087fd, 5f6ec17, 0b1db76, 566384a, 26327b2 | [Details](session-0013_2025-11-21_Objektartenkatalog-Vergleich.md) |
 | 0012 | 2025-11-21 | XLeitstelle Navigation und OpenCode-Zugriffsproblematik | 44d0bb0 | [Details](session-0012_2025-11-21_XLeitstelle-Navigation.md) |
@@ -38,9 +39,9 @@ Jede Session ist in einer separaten Datei dokumentiert und über die Links in de
 
 ## Statistik
 
-- **Sessions**: 13
-- **Commits**: 30+
-- **Neue Seiten**: 20+
-- **Geänderte Seiten**: 40+
+- **Sessions**: 14
+- **Commits**: 35+
+- **Neue Seiten**: 25+
+- **Geänderte Seiten**: 45+
 
 **Letzte Aktualisierung**: 2025-11-21
