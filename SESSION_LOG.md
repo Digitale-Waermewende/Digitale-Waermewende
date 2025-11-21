@@ -32,17 +32,52 @@ Digitale-Waermewende\docs\STRUCTURE_GUIDE_Digitale-Waermewende.md einarbeiten k�
 ```
 
 #### 2. Rückfrage von Claude
+```
+Ich habe ein umfassendes Konzept für die Dokumentation unserer Claude Code Kommunikation erstellt.
+[Beschreibung des Konzepts mit Kernelemente, Beispiel-Session, Workflow, Templates]
+
+Möchtest du, dass ich jetzt:
+1. Die initiale SESSION_LOG.md erstelle?
+2. Den STRUCTURE_GUIDE aktualisiere?
+3. Die heutige Session(s) nachträglich dokumentiere?
+
+Oder möchtest du erst das Konzept in docs/SESSION_LOG_KONZEPT.md reviewen und
+Änderungswünsche äußern?
+```
+
+**User-Antwort**:
+```
 Das Konzept ist schon ganz gut. Die Dokumentation was gemacht wurde ist mir allerdings
 etwas zu umfangreich. Mir reicht z.B. die reine Angabe der Commit-ID und nicht nochmals
 der Text. Bitte passe das Konzept so an, dass wir kompakter werden und präsentiere das
 Ergebnis für das Beispiel IT-Planungsrat.
+```
 
-**User-Antwort**: Konzept anpassen auf kompakte Form
+#### 3. Weitere Rückfrage von Claude
+```
+Perfekt! Ich habe das Konzept deutlich kompakter gemacht. Hier ist das Beispiel für
+die IT-Planungsrat Session:
+[Kompaktes Beispiel präsentiert]
 
-#### 3. Weitere Rückfrage
+Passt das so für dich?
+```
+
+**User-Antwort**:
+```
 Sind die neuen Seiten im Resultat nach dem Jekyll build klickbar?
+```
 
-**User-Antwort**: Ja (führte zu Anpassung: Permalinks statt relative Pfade)
+#### 4. Rückfrage von Claude
+```
+Gute Frage! Lass mich das prüfen. Die Links im Beispiel verwenden relative Pfade,
+die im Markdown funktionieren, aber nach dem Jekyll-Build könnten die Permalinks
+besser sein.
+[Anpassung auf Permalinks]
+
+Soll ich jetzt die initiale SESSION_LOG.md erstellen und den STRUCTURE_GUIDE aktualisieren?
+```
+
+**User-Antwort**: Ja
 
 ### Ergebnisse
 

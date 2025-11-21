@@ -1034,9 +1034,9 @@ Das Session Log dokumentiert alle Claude Code Sessions zur Nachvollziehbarkeit d
 - Datum | Start-/Endzeit | Commit-Hashes mit GitHub-Links
 
 **User-Eingaben**:
-- Wörtliche Dokumentation aller Terminal-Eingaben
-- Claude's Rückfragen (falls vorhanden)
-- User-Antworten
+- **Wörtliche** Dokumentation aller Terminal-Eingaben (in Code-Blöcken)
+- **Wörtliche** Claude's Rückfragen (in Code-Blöcken, falls vorhanden)
+- **Wörtliche** User-Antworten (in Code-Blöcken)
 
 **Ergebnisse**:
 - Commit-Links zu GitHub
@@ -1065,6 +1065,17 @@ Das Session Log dokumentiert alle Claude Code Sessions zur Nachvollziehbarkeit d
 
 #### 1. Initiale Anfrage
 ```
+[Wörtliche User-Eingabe aus Terminal]
+```
+
+#### 2. Rückfrage von Claude (falls vorhanden)
+```
+[Wörtliche Rückfrage von Claude]
+```
+
+**User-Antwort**:
+```
+[Wörtliche Antwort des Users]
 ```
 
 ### Ergebnisse

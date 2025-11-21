@@ -61,16 +61,20 @@ Chronologische Dokumentation aller Claude Code Sessions für das Repository Digi
 
 #### 1. Initiale Anfrage
 ```
-[Exakte User-Eingabe im Terminal]
+[Wörtliche User-Eingabe im Terminal]
 ```
 
 #### 2. Rückfrage von Claude (falls vorhanden)
-[Claude's Rückfrage]
+```
+[Wörtliche Rückfrage von Claude]
+```
 
 **User-Antwort**:
 ```
-[Exakte Antwort des Users]
+[Wörtliche Antwort des Users]
 ```
+
+**WICHTIG**: Alle Eingaben und Rückfragen müssen **wörtlich** in Code-Blöcken dokumentiert werden, nicht paraphrasiert oder zusammengefasst.
 
 ### Ergebnisse
 
@@ -170,6 +174,17 @@ git push
 
 #### 1. Initiale Anfrage
 ```
+[Wörtliche User-Eingabe]
+```
+
+#### 2. Rückfrage von Claude (falls vorhanden)
+```
+[Wörtliche Rückfrage von Claude]
+```
+
+**User-Antwort**:
+```
+[Wörtliche Antwort]
 ```
 
 ### Ergebnisse
