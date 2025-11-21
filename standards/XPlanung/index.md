@@ -84,6 +84,9 @@ Umfassende Recherche zu XPlanung, der XLeitstelle und digitalen Standards für d
 **[XPlanung Wärmeplan Objektartenkatalog](2025-09-22_XPlanung-Waermeplan-Objektartenkatalog-Komplett.md)**
 Vollständiger Objektartenkatalog des XPlanung Fachschemas Wärmeplan mit über 40 spezifischen Objektarten für die kommunale Wärmeplanung.
 
+**[Objektartenkatalog-Vergleich: XPlanung, Wärmeplan und XTrasse](2025-11-21_Objektartenkatalog-Vergleich-XPlanung-Waermeplan-XTrasse.md)**
+Vergleichende Analyse der drei Objektartenkataloge (XPlanung 6.1, Wärmeplan 0.84, XTrasse 2.0). Dokumentiert gemeinsame Basisklassen-Hierarchie (XP_Basisobjekte), fachspezifische Objektgruppen (BP_*, WP_*, BST_*) und wichtige Synergien wie den Fernwärme-Dreiklang (BP_Fernwaerme ↔ WP_Fernwaermenetz ↔ BST_Fernwaerme). Zeigt Package-Strukturen, Vererbungshierarchien und die Komplementarität der Standards für die digitale Wärmeplanung.
+
 ### Umsetzungsstand und Monitoring
 
 **[XPlanung Monitoring Umsetzungsstand](2025-09-22_XPlanung-Monitoring-Umsetzungsstand_Recherche.md)**
