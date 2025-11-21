@@ -87,6 +87,9 @@ Vollständiger Objektartenkatalog des XPlanung Fachschemas Wärmeplan mit über 
 **[Objektartenkatalog-Vergleich: XPlanung, Wärmeplan und XTrasse](2025-11-21_Objektartenkatalog-Vergleich-XPlanung-Waermeplan-XTrasse.md)**
 Vergleichende Analyse der drei Objektartenkataloge (XPlanung 6.1, Wärmeplan 0.84, XTrasse 2.0). Dokumentiert gemeinsame Basisklassen-Hierarchie (XP_Basisobjekte), fachspezifische Objektgruppen (BP_*, WP_*, BST_*) und wichtige Synergien wie den Fernwärme-Dreiklang (BP_Fernwaerme ↔ WP_Fernwaermenetz ↔ BST_Fernwaerme). Zeigt Package-Strukturen, Vererbungshierarchien und die Komplementarität der Standards für die digitale Wärmeplanung.
 
+**[Planungstypen in Deutschland: Bebauungsplan, Flächennutzungsplan, Landschaftsplan und Raumordnung](2025-11-21_Planungstypen-Bebauungsplan-Flaechennutzungsplan-Landschaftsplan-Raumordnung.md)**
+Umfassende Erklärung der vier zentralen Planungstypen des deutschen Planungsrechts mit gesetzlichen Grundlagen (BauGB, BNatSchG, ROG). Dokumentiert Definitionen, rechtliche Vorschriften, hierarchische Beziehungen und Relevanz für die Wärmeplanung. Zeigt die Planungshierarchie von der Raumordnung über Flächennutzungsplan bis zum verbindlichen Bebauungsplan sowie die parallele Landschaftsplanung. Enthält Primärquellen-Referenzen zu allen relevanten Gesetzen und erklärt die digitale Modellierung in XPlanung (BP_*, FP_*, LP_*, RP_*).
+
 ### Umsetzungsstand und Monitoring
 
 **[XPlanung Monitoring Umsetzungsstand](2025-09-22_XPlanung-Monitoring-Umsetzungsstand_Recherche.md)**
