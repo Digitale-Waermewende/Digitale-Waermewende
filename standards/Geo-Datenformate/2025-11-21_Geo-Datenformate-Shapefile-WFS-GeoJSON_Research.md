@@ -2050,10 +2050,105 @@ https://geodienste.example.de/wfs?
 
 ---
 
+## 11. Nachtrag: Problem mit GitLab OpenCode JavaScript-Navigation
+
+**Erfassungsdatum**: 2025-11-21 (Nachtrag)
+
+### Problem identifiziert
+
+Bei der Recherche zu XLeitstelle-Repositories auf **gitlab.opencode.de** wurde ein systematisches Problem festgestellt:
+
+**GitLab OpenCode nutzt JavaScript-basierte Navigation**, die automatisierte Zugriffe (WebFetch-Tools) verhindert.
+
+### Betroffene URLs
+
+Die folgenden XLeitstelle-Repository-URLs sind über WebFetch **nicht vollständig zugänglich**:
+
+1. **XPlanung JSON-Schemas**:
+   - URL: https://gitlab.opencode.de/xleitstelle/xplanung/schemas/json
+   - Status: Repository existiert (6 Commits, 1 Branch, README vorhanden)
+   - Problem: Dateiinhalte nicht über WebFetch extrahierbar
+
+2. **XTrasse JSON-Schemas**:
+   - URL: https://gitlab.opencode.de/xleitstelle/xtrasse/spezifikation/-/tree/main/json
+   - Status: Seite zeigt "Loading", Inhalte nicht sichtbar
+   - Problem: JavaScript-Rendering erforderlich
+
+3. **XLeitstelle Hauptseite**:
+   - URL: https://gitlab.opencode.de/xleitstelle
+   - Beschreibung: "Veröffentlichungen der XLeitstelle bezüglich der Standards XTrasse, XPlanung, XBau, XBreitband"
+   - Problem: Repository-Liste nicht über WebFetch extrahierbar (JavaScript CDATA-Blöcke)
+
+### Technische Ursache
+
+GitLab OpenCode rendert Repository-Inhalte **clientseitig** über JavaScript:
+- HTML-Quelltext besteht hauptsächlich aus JavaScript-Code (CDATA-Blöcke)
+- Tracking-Skripte: Snowplow, Matomo Analytics
+- Repository-Dateilisten werden nach dem Laden generiert
+- WebFetch-Tools erhalten nur HTML-Gerüst ohne gerenderte Inhalte
+
+### Workaround-Möglichkeiten
+
+**Für manuelle Recherche:**
+1. Browser-basierter Zugriff auf https://gitlab.opencode.de/xleitstelle
+2. Navigation zu Unterverzeichnissen über GitLab-UI
+3. Direkte Repository-Clone via Git:
+   ```bash
+   git clone https://gitlab.opencode.de/xleitstelle/xplanung.git
+   git clone https://gitlab.opencode.de/xleitstelle/xtrasse.git
+   ```
+
+**Für automatisierte Recherche:**
+- GitLab API verwenden statt WebFetch
+- Repository-Clone und lokale Analyse
+
+### Auswirkung auf Recherche
+
+**Nicht recherchierbar über WebFetch:**
+- Genaue Dateistruktur der JSON-Schema-Repositories
+- Verfügbare JSON-Schema-Versionen
+- Konkrete JSON-Schema-Dateien (.json)
+- README-Inhalte der Unterverzeichnisse
+
+**Recherchierbar (über andere Quellen):**
+- xleitstelle.de (Spezifikationen, PDFs)
+- docs.fitko.de (Dokumentation)
+- xrepository.de (Standards-Metadaten)
+
+### Empfehlung
+
+Für zukünftige Recherchen zu XLeitstelle-Repositories:
+1. **Primärquelle**: xleitstelle.de (Download-Bereich, Spezifikationen)
+2. **Alternative**: Direkte Git-Clone der Repositories
+3. **Dokumentation**: docs.fitko.de (föderale IT-Standards)
+4. **Metadaten**: xrepository.de (Standard-URNs)
+
+### Bestätigte Informationen (trotz Problem)
+
+Aus den verfügbaren Quellen konnten folgende Informationen bestätigt werden:
+
+**XLeitstelle JSON-Schema-Entwicklung:**
+- JSON-FG (OGC Features and Geometries JSON) in Entwicklung
+- Veröffentlichung für 2025 geplant
+- Repositories existieren auf gitlab.opencode.de
+- XML-Schemas (GML) sind primäres Format (verfügbar)
+
+**Bekannte Repositories:**
+- xleitstelle/xplanung (inklusive schemas/json Unterverzeichnis)
+- xleitstelle/xtrasse/spezifikation (inklusive json Unterverzeichnis)
+- xleitstelle/xbau
+- xleitstelle/xbreitband
+
+### Dokumentiert für weitere Analyse
+
+Siehe separate Datei: **temp/XLeitstelle-Repositories.md** (detaillierte Repository-Analyse)
+
+---
+
 **Ende des Reports**
 
 **Quellen gesamt:** 60+ Primärquellen (OGC, IETF, ISO, ESRI, XLeitstelle, INSPIRE)
 
-**Umfang:** 7 Teilbereiche vollständig recherchiert
+**Umfang:** 7 Teilbereiche vollständig recherchiert + 1 Nachtrag (JavaScript-Problem)
 
-**Stand:** 2025-11-21
+**Stand:** 2025-11-21 (Update: 2025-11-21 23:30)
