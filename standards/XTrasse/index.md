@@ -85,6 +85,11 @@ Ein zentraler Vorteil von XTrasse ist die **Koordination mit anderen Leitungsnet
 
 ## Dokumente in diesem Bereich
 
+### Verhältnis zu XPlanung und Wärmeplan
+
+**[Objektartenkatalog-Vergleich: XPlanung, Wärmeplan und XTrasse](../XPlanung/2025-11-21_Objektartenkatalog-Vergleich-XPlanung-Waermeplan-XTrasse.md)**
+Umfassende Analyse der Objektartenkataloge aller drei Standards. Zeigt gemeinsame Basisklassen-Hierarchie (XP_Basisobjekte), fachspezifische Objektgruppen (BP_*, WP_*, BST_*, BRA_*, IGP_*) und wichtige Synergien (Fernwärme-Dreiklang, ALKIS-Integration, Schutzgebiete). Dokumentiert Package-Strukturen, Vererbungshierarchien und Komplementarität der Standards.
+
 ### Verhältnis zu XBreitband
 
 **[Verhältnis von XTrasse zu XBreitband](2025-11-19_XTrasse-XBreitband-Verhaeltnis_Research.md)**

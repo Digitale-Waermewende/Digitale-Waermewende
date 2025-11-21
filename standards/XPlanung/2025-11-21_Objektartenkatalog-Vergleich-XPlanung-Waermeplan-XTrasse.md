@@ -645,19 +645,81 @@ Alle drei Standards modellieren Schutzgebiete, aber mit unterschiedlichem Fokus:
 
 ---
 
-## Verwandte Standards
+## 6. Verwandte Standards und Dokumente
 
-### XPlanung
-- [XPlanung Hauptdokument](index.md) - Überblick und Relevanz für Wärmeplanung
+### 6.1 XPlanung
+- **[XPlanung Hauptdokument](index.md)** - Überblick und Relevanz für Wärmeplanung
+- **[XPlanung Wärmeplan Objektartenkatalog Komplett](2025-09-22_XPlanung-Waermeplan-Objektartenkatalog-Komplett.md)** - Detaillierte Dokumentation aller WP_* Objekte
 
-### XTrasse
-- [XTrasse Hauptdokument](../XTrasse/index.md) - Leitungsnetze und Trassenplanung
+### 6.2 XTrasse
+- **[XTrasse Hauptdokument](../XTrasse/index.md)** - Leitungsnetze und Trassenplanung
+  - Besonders relevant: **BST_Fernwaerme** (Bestandsnetze für Fernwärmeleitungen)
+  - Komplementär zu WP_Fernwaermenetz (Wärmeplan) und BP_Fernwaerme (XPlanung)
+
+### 6.3 Weitere Integration
+- **[ALKIS](../ALKIS/index.md)** - Amtliches Liegenschaftskataster (Gebäudedaten, verknüpft über WP_Gebaeude.uuid)
+- **[Datenintegration](../Datenintegration/index.md)** - Zusammenspiel von ALKIS, XPlanung und XTrasse
 
 ---
 
-*Dieses Dokument wird in den folgenden Phasen erweitert mit:*
-- Phase 1 ✅: Katalog-URLs identifiziert (abgeschlossen)
-- Phase 2 ✅: Package-Struktur-Vergleich (abgeschlossen)
-- Phase 3 ✅: Basisklassen-Hierarchie und Vererbung (abgeschlossen)
-- Phase 4 ✅: Fachspezifische Objektgruppen-Analyse (abgeschlossen)
-- Phase 5: Vollständige Integration und bidirektionale Links
+## 7. Zusammenfassung und Ausblick
+
+### 7.1 Kernerkenntnisse
+
+Dieser Vergleich der Objektartenkataloge von XPlanung 6.1, Wärmeplan 0.84 und XTrasse 2.0 zeigt:
+
+1. **Gemeinsame Basis**: Alle drei Standards nutzen XP_Basisobjekte als konzeptionelle Basis
+   - XPlanung + Wärmeplan: Teilen sich die Implementierung (gemeinsames Schema)
+   - XTrasse: Eigene Implementierung (konzeptuell ähnlich, aber eigenständig)
+
+2. **Fachliche Spezialisierung**:
+   - **XPlanung**: 100+ Objekte für Bauleitplanung (BP_*, FP_*, LP_*, RP_*, SO_*)
+   - **Wärmeplan**: 38 Objekte für Energieplanung (WP_*)
+   - **XTrasse**: 60+ Objekte für Leitungsnetze (BST_*, BRA_*, IGP_*, PFS_*, RVP_*)
+
+3. **Wichtige Synergien**:
+   - **Fernwärme-Dreiklang**: BP_Fernwaerme (Planung) ↔ WP_Fernwaermenetz (Energieplanung) ↔ BST_Fernwaerme (Bestand)
+   - **ALKIS-Integration**: WP_Gebaeude.uuid verbindet Geobasisdaten mit Energiefachdaten
+   - **Schutzgebiete**: Alle drei Standards modellieren Naturschutz (BP_Schutzflaeche, WP_Ausschlussgebiet, IGP_Schutzgebiet)
+
+4. **Komplementäre Funktion**:
+   - XPlanung: Flächennutzung (BauGB)
+   - Wärmeplan: Energieplanung (WPG)
+   - XTrasse: Leitungsinfrastruktur (TKG, EnWG)
+
+### 7.2 Praktische Bedeutung für die Wärmeplanung
+
+Die drei Standards bilden zusammen ein **kohärentes Ökosystem** für die digitale Wärmeplanung:
+
+| Phase | Standard | Rolle |
+|-------|----------|-------|
+| **Bauleitplanung** | XPlanung (BP_Fernwaerme) | Rechtliche Festsetzung von Versorgungsgebieten (§9 BauGB) |
+| **Wärmeplanung** | Wärmeplan (WP_*) | Modellierung von Wärmebedarfen, Netzen, Potenzialen (WPG §§23-26) |
+| **Umsetzung** | XTrasse (BST_Fernwaerme) | Technische Dokumentation und Trassenplanung (TKG, EnWG) |
+
+### 7.3 Bidirektionale Referenzierung
+
+Für eine vollständige Integration sollten die Standards über `uuid` oder `gml:id` Attribute referenziert werden:
+
+```
+BP_Fernwaerme.gml:id ← Referenz → WP_Fernwaermenetz.gml:id ← Referenz → BST_Fernwaerme.gml:id
+        ↓                                    ↓                                   ↓
+   Bauleitplan                          Wärmeplan                        Bestandsnetz
+```
+
+### 7.4 Ausblick
+
+Zukünftige Entwicklungen könnten umfassen:
+- Formalisierte Cross-Referenzen zwischen den Standards
+- Gemeinsame Codelisten für Schutzgebiete und Energieträger
+- Harmonisierung der Fernwärme-Objektarten (BP_Fernwaerme, WP_Fernwaermenetz, BST_Fernwaerme)
+- Integration mit weiteren Fachdaten (BImSchG-Emissionsdaten, EnWG-Netzdaten)
+
+---
+
+*Dokument vollständig - alle 5 Phasen abgeschlossen:*
+- Phase 1 ✅: Katalog-URLs identifiziert
+- Phase 2 ✅: Package-Struktur-Vergleich
+- Phase 3 ✅: Basisklassen-Hierarchie und Vererbung
+- Phase 4 ✅: Fachspezifische Objektgruppen-Analyse
+- Phase 5 ✅: Vollständige Integration und bidirektionale Links
