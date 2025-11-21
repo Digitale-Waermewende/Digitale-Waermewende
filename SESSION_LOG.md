@@ -14,6 +14,35 @@ Chronologische Dokumentation aller Claude Code Sessions für das Repository Digi
 
 ---
 
+## Session 007 - 2025-11-21 18:30 - Session Log Reihenfolge korrigiert
+
+**Metadaten**: 2025-11-21 | 18:30 - 18:35 | Commits: [8c52cad](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/8c52cad)
+
+### User-Eingaben
+
+#### 1. Initiale Anfrage
+```
+Die Sessions 005 und 006 im sessionlog zwischen 004 und 003 platziert worden. Bitte korrigiere das.
+```
+
+### Ergebnisse
+
+**Commits**: [8c52cad](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/8c52cad)
+
+**Neue Seiten**:
+- (keine)
+
+**Geänderte Seiten**:
+- [Session Log](/session-log/)
+
+### Entscheidungen
+
+- Korrekte chronologische Reihenfolge wiederhergestellt: 006, 005, 004, 003, 002 (neueste oben)
+- Duplikate von Sessions 005 und 006 entfernt (waren doppelt vorhanden)
+- Sessions waren fälschlicherweise in der Reihenfolge 004, 006, 005, 003, 002
+
+---
+
 ## Session 006 - 2025-11-21 17:35 - Indexseite vollständig aktualisiert
 
 **Metadaten**: 2025-11-21 | 17:35 - 17:50 | Commits: [16d6bfe](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/16d6bfe)
@@ -306,9 +335,9 @@ Bitte jetzt noch die Querverweise.
 ---
 
 **Statistik**:
-- Sessions: 6
-- Commits: 6
+- Sessions: 7
+- Commits: 7
 - Neue Seiten: 5
-- Geänderte Seiten: 19
+- Geänderte Seiten: 20
 
-**Letzte Aktualisierung**: 2025-11-21 17:50
+**Letzte Aktualisierung**: 2025-11-21 18:35
