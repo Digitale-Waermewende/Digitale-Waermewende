@@ -95,6 +95,11 @@ Umfassende Analyse der Objektartenkataloge aller drei Standards. Zeigt gemeinsam
 **[Verhältnis von XTrasse zu XBreitband](2025-11-19_XTrasse-XBreitband-Verhaeltnis_Research.md)**
 Umfassende Analyse der Beziehung zwischen XTrasse (Datenmodell für Leitungsnetze) und XBreitband (Nachrichtenstandard für Genehmigungsverfahren). Erklärt technische Unterschiede, gesetzlichen Kontext (IT-Planungsrat-Beschluss 2021/40), funktionale Komplementarität und Relevanz für Wärmenetze.
 
+### Rechtlicher Status: Bestandsdokumentation
+
+**[XTrasse für Bestandsdokumentation unterirdischer Infrastruktur - Rechtlicher Status](2025-11-21_XTrasse-Bestandsdokumentation-Rechtlicher-Status.md)**
+Beantwortet die Frage, ob es einen amtlichen IT-Planungsrat-Beschluss für die mittelfristige Nutzung von XTrasse zur Bestandsdokumentation gibt. Analysiert IT-PLR-Beschluss 2021/40 (verbindlich nur für Breitband), XTrasse 2.0 Spezifikation (Anwendungsfall "Bestandsplan" technisch vorhanden), BST_* Objektarten (BST_Fernwaerme, BST_Gas, BST_Strom, BST_Wasser) und unterscheidet zwischen technischer Möglichkeit und rechtlicher Verbindlichkeit. Fazit: Technisch möglich, rechtlich nicht verbindlich.
+
 ## Weitere Informationen
 
 ### Verhältnis zu ALKIS und XPlanung
