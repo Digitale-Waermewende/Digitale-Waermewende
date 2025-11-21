@@ -16,7 +16,7 @@ Chronologische Dokumentation aller Claude Code Sessions für das Repository Digi
 
 ## Session 004 - 2025-11-21 16:20 - Session Log Konzept und Implementierung
 
-**Metadaten**: 2025-11-21 | 16:20 - 17:00 | Commits: (pending)
+**Metadaten**: 2025-11-21 | 16:20 - 17:00 | Commits: [9edb4e1](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/9edb4e1)
 
 ### User-Eingaben
 
@@ -46,7 +46,7 @@ Sind die neuen Seiten im Resultat nach dem Jekyll build klickbar?
 
 ### Ergebnisse
 
-**Commits**: (wird bei finalem Commit ergänzt)
+**Commits**: [9edb4e1](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/9edb4e1)
 
 **Neue Seiten**:
 - [Session Log Konzept](/docs/session-log-konzept/)
