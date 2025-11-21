@@ -468,6 +468,183 @@ XP_Plan (XTrasse-Version)
 
 ---
 
+## 5. Fachspezifische Objektgruppen im Vergleich
+
+Diese Sektion analysiert die fachspezifischen Objektgruppen (Fachobjekte), die über die gemeinsamen Basisklassen hinausgehen.
+
+### 5.1 XPlanung 6.1 - Bebauungsplan-Objekte (BP_*)
+
+**Zweck**: Modellierung von Bebauungsplänen gemäß BauGB §§ 8-10
+
+| Objektgruppe | Package | Beispielobjekte | Typische Attribute |
+|--------------|---------|-----------------|-------------------|
+| **Baugebiete** | BP_Bebauung | BP_BauGrenze, BP_Baugebiet, BP_GeschossFlaeche | Art der baulichen Nutzung (§ 9 Abs. 1 Nr. 1 BauGB), GRZ, GFZ |
+| **Verkehr** | BP_Verkehr | BP_Strassenverkehrsflaeche, BP_Parkierungsflaeche | Verkehrsart, Nutzungsart |
+| **Grünflächen** | BP_Landwirtschaft_Wald_und_Grünflächen | BP_Gruenflaeche, BP_Waldflaeche, BP_Landwirtschaftsflaeche | Zweckbestimmung, Nutzungsart |
+| **Ver- und Entsorgung** | BP_Ver_und_Entsorgung | BP_VerEntsorgung, BP_Fernwaerme | Versorgungsart (Gas, Fernwärme, Strom, Wasser) |
+| **Naturschutz** | BP_Naturschutz_Landschaftsbild_Naturhaushalt | BP_Schutzflaeche, BP_AusgleichsFlaeche | Schutzziel, Ausgleichsmaßnahmen |
+| **Wasser** | BP_Wasser | BP_Gewaesser, BP_Wasserwirtschaft | Gewässerart, Hochwasserschutz |
+| **Gemeinbedarf** | BP_Gemeinbedarf_Spiel_Sportanlagen | BP_GemeinbedarfsFlaeche, BP_SpielSportanlage | Zweckbestimmung (Schule, Kita, Sport) |
+| **Umwelt** | BP_Umwelt | BP_Immissionsschutz, BP_KlimaLuftboden | Emissionsarten, Schutzmaßnahmen |
+
+**Anzahl Fachobjekte**: 100+ konkrete Objektarten
+
+**Besonderheit**: Sehr detaillierte Modellierung von §9 BauGB Festsetzungen
+
+---
+
+### 5.2 Wärmeplan 0.84 - Wärmeplan-Objekte (WP_*)
+
+**Zweck**: Modellierung kommunaler Wärmepläne gemäß WPG §§ 23-26
+
+#### 5.2.1 Hauptobjektgruppen
+
+| Objektgruppe | Anzahl | Beispielobjekte | Typische Attribute | Geometrie |
+|--------------|--------|-----------------|-------------------|-----------|
+| **Gebäude** | 2 | WP_Gebaeude ⭐, WP_GebaeudeWaermebedarf | uuid (ALKIS-ID), baualtersklasse, gebaeudetyp | Fläche |
+| **Netzinfrastruktur** | 8 | WP_Fernwaermenetz, WP_Nahwaermenetz, WP_Bestandsnetz, WP_Leitung | Netzart, Betreiber, Vorlauftemperatur | Fläche/Linie |
+| **Verbrauchsobjekte** | 4 | WP_WaermeverbrauchLinie, WP_Waermebedarf, WP_Waermesenke | Wärmedichte (kWh/m), Verbrauch (MWh/a) | Linie/Fläche |
+| **Anschlussgebiete** | 5 | WP_Anschlusszwang, WP_Versorgungsgebiet, WP_AnschlussSynthMethan | Anschlussart, Energieträger, Rechtsstatus | Fläche |
+| **Planungsobjekte** | 6 | WP_Netzausbaugebiet, WP_Transformationsgebiet, WP_Quartiersloesung | Umsetzungszeitraum, Maßnahmen | Fläche |
+| **Potenziale** | 7 | WP_GeothermischesPotenzialgeb, WP_Solarthermieflaeche, WP_IndustrielleAbwaerme | Potenzial (MWh/a), Nutzungsgrad | Fläche/Punkt |
+| **Erzeugung/Speicher** | 5 | WP_Energieerzeugungsanlage, WP_Waermespeicher, WP_Einspeisepunkt | Leistung (MW), Kapazität (MWh) | Punkt/Fläche |
+| **Schutzgebiete** | 1 | WP_Ausschlussgebiet | Schutzgrund, Rechtsgrundlage | Fläche |
+
+**Anzahl Fachobjekte**: 38 konkrete Objektarten (30+ in WP_Objekte, 6 Datentypen in WP_Sonstiges)
+
+#### 5.2.2 Besonderheiten Wärmeplan
+
+- **ALKIS-Integration**: WP_Gebaeude.uuid referenziert ALKIS-Gebäude-IDs (16-stellig)
+- **Komplexe Datentypen**: WP_EnergieTraegerVerbrauch, WP_SektorVerbrauch (in WP_Sonstiges)
+- **Zeitbezug**: Verbrauchsdaten mit Referenzjahr, Versionierung über WP_Version
+- **Aggregationsebenen**: Gebäude → Baublock → Bereich → Plan
+
+---
+
+### 5.3 XTrasse 2.0 - Leitungsnetz-Objekte (BST_*, BRA_*, IGP_*, PFS_*, RVP_*)
+
+**Zweck**: Modellierung von Leitungsnetzen (Bestand + Planung) gemäß TKG, EnWG
+
+#### 5.3.1 BST_* (Bestandsnetze)
+
+**Zweck**: Dokumentation vorhandener Leitungsnetze
+
+| Objektgruppe | Beispielobjekte | Typische Attribute | Geometrie |
+|--------------|-----------------|-------------------|-----------|
+| **Leitungen** | BST_Leitung, BST_Leitungsabschnitt | Sparte (Wärme/Gas/Strom/Wasser/Telekom), Durchmesser, Material | Linie |
+| **Verknüpfungen** | BST_Anschlusspunkt, BST_Muffe, BST_Schacht | Anschlussart, Tiefe | Punkt |
+| **Verteiler** | BST_Verteiler, BST_Hausanschluss | Versorgungsart, Anzahl Anschlüsse | Punkt |
+| **Sparten** | BST_Fernwaerme, BST_Gas, BST_Strom, BST_Wasser | Betreiber, Eigentümer, Baujahr | Linie/Fläche |
+
+**Anzahl Fachobjekte**: 20+ konkrete Objektarten
+
+**Besonderheit**: **BST_Fernwaerme** ist direkt relevant für Wärmeplanung! Dokumentiert bestehende Fernwärmenetze.
+
+#### 5.3.2 BRA_* (Breitbandausbau)
+
+**Zweck**: Glasfaserausbau gemäß TKG
+
+| Objektgruppe | Beispielobjekte | Typische Attribute |
+|--------------|-----------------|-------------------|
+| **Infrastruktur** | BRA_Trasse, BRA_Kabeltrasse, BRA_Leerrohr | Ausbaustand, Förderung |
+
+**Anzahl Fachobjekte**: 10+ konkrete Objektarten
+
+#### 5.3.3 IGP_*, PFS_*, RVP_* (Infrastrukturausbau-Verfahren)
+
+**Zweck**: Verfahrensdokumentation für Infrastrukturausbau
+
+| Domäne | Zweck | Beispielobjekte |
+|--------|-------|-----------------|
+| **IGP** (Infrastrukturgebieteplan) | Ausweisen von Infrastrukturgebieten | IGP_Gebiet, IGP_Trasse |
+| **PFS** (Planfeststellung) | Planfeststellungsverfahren | PFS_Trasse, PFS_Bauwerk |
+| **RVP** (Raumverträglichkeitsprüfung) | Alternativenprüfung | RVP_Trassenkorridore, RVP_Varianten |
+
+**Anzahl Fachobjekte**: 30+ konkrete Objektarten (zusammen)
+
+---
+
+### 5.4 Objektgruppen-Vergleichstabelle
+
+| Fachbereich | XPlanung 6.1 | Wärmeplan 0.84 | XTrasse 2.0 | Überschneidungen |
+|-------------|--------------|----------------|-------------|------------------|
+| **Bebauungsplan** | ✓ (BP_* 100+ Objekte) | ✗ | ✗ | - |
+| **Flächennutzungsplan** | ✓ (FP_* 80+ Objekte) | ✗ | ✗ | - |
+| **Landschaftsplan** | ✓ (LP_* 40+ Objekte) | ✗ | ✗ | - |
+| **Raumordnung** | ✓ (RP_* 50+ Objekte) | ✗ | ✗ | - |
+| **Wärmeplanung** | ✗ | ✓ (WP_* 38 Objekte) | ✗ | - |
+| **Gebäude (ALKIS)** | ⚠️ (indirekt über BP_Gebaeude) | ✓ (WP_Gebaeude mit uuid) | ✗ | WP_Gebaeude referenziert ALKIS |
+| **Fernwärme** | ⚠️ (BP_Fernwaerme nur Planung) | ✓ (WP_Fernwaermenetz) | ✓ (BST_Fernwaerme Bestand) | **ÜBERSCHNEIDUNG!** |
+| **Gas-Netze** | ⚠️ (BP_Gas nur Planung) | ⚠️ (WP_AnschlussSynthMethan) | ✓ (BST_Gas Bestand) | Potenzielle Überschneidung |
+| **Leitungsnetze (allgemein)** | ✗ | ⚠️ (WP_Leitung für Wärme) | ✓ (BST_* alle Sparten) | Komplementär |
+| **Trassenplanung** | ✗ | ✗ | ✓ (BRA_*, IGP_*, PFS_*, RVP_*) | - |
+| **Naturschutz** | ✓ (BP_Schutzflaeche) | ⚠️ (WP_Ausschlussgebiet) | ⚠️ (IGP_Schutzgebiet) | Ähnliche Konzepte |
+
+**Legende**:
+- ✓ = Vorhanden und umfangreich
+- ⚠️ = Teilweise vorhanden oder nur spezifischer Aspekt
+- ✗ = Nicht vorhanden
+
+---
+
+### 5.5 Wichtige Synergien und Überschneidungen
+
+#### 5.5.1 Fernwärme-Dreiklang ⭐
+
+**Problem**: Fernwärme-Infrastruktur wird in allen drei Standards modelliert:
+
+| Standard | Objektart | Fokus | Use Case |
+|----------|-----------|-------|----------|
+| **XPlanung** | BP_Fernwaerme | Bauleitplanung | Festsetzung von Fernwärme-Versorgungsgebieten (§9 BauGB) |
+| **Wärmeplan** | WP_Fernwaermenetz | Energieplanung | Modellierung bestehender + geplanter Fernwärmenetze (WPG §25) |
+| **XTrasse** | BST_Fernwaerme | Bestandsdokumentation | Technische Dokumentation vorhandener Fernwärmeleitungen |
+
+**Lösung**: Bidirektionale Referenzierung über `uuid` oder `gml:id`
+
+#### 5.5.2 ALKIS-Integration über WP_Gebaeude ⭐⭐⭐
+
+**WP_Gebaeude.uuid** ist das Schlüsselattribut für die Verknüpfung mit ALKIS (Amtliches Liegenschaftskataster):
+
+```
+ALKIS (Gebäude-ID: 16-stellig)
+    ↓
+WP_Gebaeude.uuid
+    ↓
+WP_GebaeudeWaermebedarf.gehoertZuBereich (Referenz auf WP_Gebaeude)
+    ↓
+Energieverbrauchsdaten (MWh/a)
+```
+
+**Bedeutung**: Ermöglicht die Verknüpfung von amtlichen Geobasisdaten (ALKIS) mit Energiefachdaten (Wärmeplan)
+
+#### 5.5.3 Schutzgebiete (Naturschutz)
+
+Alle drei Standards modellieren Schutzgebiete, aber mit unterschiedlichem Fokus:
+
+| Standard | Objektart | Rechtliche Basis | Zweck |
+|----------|-----------|------------------|-------|
+| XPlanung | BP_Schutzflaeche | BNatSchG, BauGB §9 | Bauleitplanerische Festsetzung von Schutzgebieten |
+| Wärmeplan | WP_Ausschlussgebiet | WPG, BNatSchG | Gebiete ohne Wärmenetz-Ausbau (Schutzgrund) |
+| XTrasse | IGP_Schutzgebiet | TKG, BNatSchG | Restriktionen für Trassenplanung |
+
+**Potenzial**: Einheitliche Referenzierung von Schutzgebieten über externe Codelisten (z.B. BfN-Schutzgebietsverzeichnis)
+
+---
+
+### 5.6 Fazit: Komplementäre Fachdomänen
+
+| Frage | Antwort | Begründung |
+|-------|---------|------------|
+| **Gibt es verschiedene Gruppen von Objekten?** | Ja | BP_* (Bauleitplanung), WP_* (Energieplanung), BST_*/BRA_* (Leitungsnetze) |
+| **Gibt es gemeinsame Gruppen in allen drei Bereichen?** | Ja, auf Basisklassen-Ebene | XP_Basisobjekte (XP_Objekt, XP_Plan, XP_Bereich, Geometrieklassen) |
+| **Gibt es Gruppen nur in ein oder zwei Bereichen?** | Ja | BP_*/FP_*/LP_*/RP_*/SO_* nur in XPlanung, WP_* nur in Wärmeplan, BST_*/BRA_*/IGP_*/PFS_*/RVP_* nur in XTrasse |
+| **Gibt es Überschneidungen bei Fachobjekten?** | Ja, bei Fernwärme und Schutzgebieten | BP_Fernwaerme (Planung) ↔ WP_Fernwaermenetz (Energieplanung) ↔ BST_Fernwaerme (Bestand) |
+| **Sind die Standards komplementär?** | Ja | XPlanung = Flächennutzung (BauGB), Wärmeplan = Energieplanung (WPG), XTrasse = Leitungsinfrastruktur (TKG/EnWG) |
+
+**Kernaussage**: Die drei Standards decken komplementäre Fachdomänen ab, haben aber bei Fernwärme und Schutzgebieten thematische Überschneidungen. Die gemeinsame Basisklassen-Hierarchie (XP_Basisobjekte) ermöglicht eine konsistente GML-basierte Modellierung.
+
+---
+
 ## Verwandte Standards
 
 ### XPlanung
@@ -482,5 +659,5 @@ XP_Plan (XTrasse-Version)
 - Phase 1 ✅: Katalog-URLs identifiziert (abgeschlossen)
 - Phase 2 ✅: Package-Struktur-Vergleich (abgeschlossen)
 - Phase 3 ✅: Basisklassen-Hierarchie und Vererbung (abgeschlossen)
-- Phase 4: Fachspezifische Objektgruppen-Analyse
-- Phase 5: Praktische Beispiele und Navigation
+- Phase 4 ✅: Fachspezifische Objektgruppen-Analyse (abgeschlossen)
+- Phase 5: Vollständige Integration und bidirektionale Links
