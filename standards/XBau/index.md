@@ -56,6 +56,11 @@ XBau ermöglicht durchgängig digitale Verfahren:
 
 ## Dokumente in diesem Bereich
 
+### Prozess- und Messaging-Modell mit Vergleich zu XBreitband
+
+**[XBau Prozess- und Messaging-Modell - Deep Research mit Vergleich zu XBreitband](2025-11-21_XBau-Prozess-Messaging-Modell-Vergleich-XBreitband_Research.md)**
+Umfassende Analyse des XBau-Standards mit detaillierter Beschreibung des Prozessmodells (5 Phasen: Antragstellung, Prüfung, TöB-Beteiligung, Bescheid, Genehmigungsfiktion) und Messaging-Modells (über 100 Nachrichtentypen). Dokumentiert modularen Aufbau (XBau-Kernmodul + Fachmodule), Bezüge zu XPlanung (indirekte Integration als komplementäre Standards) und systematischen Vergleich mit XBreitband. Arbeitet Gemeinsamkeiten (gemeinsames Kernmodul, XÖV 3.0, TöB-Beteiligung) und Unterschiede (Datenmodell-Integration: XBau↔XPlanung lose gekoppelt vs. XBreitband↔XTrasse eng integriert) heraus. Basis für Verständnis der XBau-Standardfamilie.
+
 ### XBau für Wärmenetze und Vergleich mit XBreitband
 
 **[XBau für Wärmenetze und Vergleich mit XBreitband](2025-11-19_XBau-Waermenetze-Vergleich-XBreitband_Research.md)**
