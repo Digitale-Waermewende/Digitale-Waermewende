@@ -1,10 +1,11 @@
 ---
 layout: default
 title: FITKO
-parent: Stakeholder
-nav_order: 20
+parent: Bund
+grand_parent: Stakeholder
+nav_order: 3
 has_children: false
-permalink: /stakeholder/fitko/
+permalink: /stakeholder/bund/fitko/
 ---
 
 # FITKO - Föderale IT-Kooperation
