@@ -83,14 +83,14 @@ XBreitband definiert **11 spezialisierte Nachrichtentypen**:
 - Abgabe strukturierter Stellungnahmen
 - Äußerung zu Bedenken und Auflagen
 
-## Verhältnis zu XTrasse
+## Verhältnis zu XTrasse: Enge technische Integration
 
 **XBreitband** (Nachrichtenstandard) und **XTrasse** (Datenmodell) sind **eng verzahnt**:
 
-- **Ohne Trassenplan ist eine Antragsnachricht meist nicht vollständig**
+- XTrasse-Trassenplan ist **integraler Bestandteil** der Antragsnachricht
 - XTrasse-Pläne werden **direkt in XBreitband-Nachrichten integriert**
-- Gemeinsame Datenfelder für Baumaßnahmen
-- **Viel direktere Beziehung** als XBau ↔ XPlanung
+- **Direkte strukturelle Bezüge** im Datenmodell
+- XTrasse basiert auf **XPlanung-Grundstruktur** (gemeinsame Basisklassen)
 
 **XTrasse liefert**:
 - Genaue Trassenverläufe (GML-Format)
@@ -102,6 +102,11 @@ XBreitband definiert **11 spezialisierte Nachrichtentypen**:
 - XTrasse-Daten als Antragsbestandteil
 - Referenzen zu XTrasse-Objekten
 - Koordinaten und Trassenpläne für Bescheide
+
+**Grund für enge Integration**:
+- Tiefbau: Trassen sind **kontinuierliche lineare Infrastrukturen** über viele Grundstücke
+- Leitungsverlegung erfordert **präzise Georeferenzierung** jedes Trassenmeters
+- **Exakte 3D-Leitungsverläufe** als zentrale Datengrundlage erforderlich
 
 ## Relevanz für Wärmenetze
 
@@ -138,7 +143,41 @@ Obwohl XBreitband primär für Telekommunikation entwickelt wurde, sind **Prozes
 ### Prozess- und Messaging-Modell Research
 
 **[XBreitband Prozess- und Messaging-Modell - Deep Research](2025-11-21_XBreitband-Prozess-Messaging-Modell_Research.md)**
-Umfassende Analyse des XBreitband-Standards mit detaillierter Beschreibung des 3-Phasen-Prozessmodells (Antragstellung, TöB-Beteiligung, Bescheiderteilung) und des Messaging-Modells mit 11 Nachrichtentypen. Dokumentiert Primärquellen, technische Details (XÖV 3.0, XBau Kernmodul), Akteure und Rollen sowie das enge Verhältnis zu XTrasse. Basis für späteren Vergleich mit XBau.
+Umfassende Analyse des XBreitband-Standards mit detaillierter Beschreibung des 3-Phasen-Prozessmodells (Antragstellung, TöB-Beteiligung, Bescheiderteilung) und des Messaging-Modells mit 11 Nachrichtentypen. Dokumentiert Primärquellen, technische Details (XÖV 3.0, XBau Kernmodul), Akteure und Rollen sowie das enge Verhältnis zu XTrasse. Basis für Vergleich mit XBau.
+
+### Vergleich mit XBau
+
+**XBau vs. XBreitband - Systematischer Vergleich** (siehe [XBau Research](../xbau/2025-11-21_XBau-Prozess-Messaging-Modell-Vergleich-XBreitband_Research.md))
+
+Der detaillierte Vergleich zwischen XBau-Hochbau und XBreitband zeigt fundamentale Unterschiede in der Datenmodell-Integration:
+
+**Gemeinsamkeiten**:
+- Gemeinsames **XBau-Kernmodul 1.2** mit identischen generischen Nachrichten (1120, 1121, 1141, 1142, Rückweisung)
+- **XÖV 3.0 Framework** und XÖV-Bibliothek 2022-12-15 als technische Basis
+- Ähnliche **Prozessstruktur**: Antrag → Prüfung → TöB-Beteiligung → Bescheid
+- Beide IT-Planungsrat-Standards mit rechtlicher Verbindlichkeit
+- **XLeitstelle Hamburg** als gemeinsamer Betreiber
+
+**Unterschiede**:
+- **Nachrichtenanzahl**: XBreitband 11 Typen vs. XBau 100+ Typen
+- **Rechtliche Grundlage**: §127 TKG (Bundesgesetz) vs. Musterbauordnung/16 Landesbauordnungen
+- **Länderspezifik**: Gering vs. Hoch (16 unterschiedliche Bundesländer)
+- **Anwendungsbereich**: Tiefbau (Leitungsverlegung) vs. Hochbau (Gebäude)
+- **Grundstücksbezug**: Viele Grundstücke vs. Ein/wenige Grundstücke
+
+**Hauptunterschied - Datenmodell-Integration**:
+
+*XBreitband ↔ XTrasse:* **ENGE KOPPLUNG**
+- XTrasse-Trassenplan ist **integraler Bestandteil** der Antragsnachricht
+- **Direkte strukturelle Bezüge** im Datenmodell
+- XTrasse basiert auf XPlanung-Grundstruktur
+- **Grund**: Trassen sind kontinuierliche lineare Infrastrukturen, die präzise 3D-Georeferenzierung erfordern
+
+*XBau ↔ XPlanung:* **LOSE KOPPLUNG**
+- XPlanung-Bebauungspläne als **externe Prüfgrundlage**
+- **Keine direkten XML-Referenzen** zwischen Standards
+- Integration über GIS-Systeme
+- **Grund**: Gebäude sind diskrete Objekte auf definierten Grundstücken, abstrakte bauordnungsrechtliche Prüfung ausreichend
 
 ## Verwandte Bereiche
 
@@ -152,4 +191,5 @@ Umfassende Analyse des XBreitband-Standards mit detaillierter Beschreibung des 3
 - **Governance**: [IT-Planungsrat](../../stakeholder/bund/it-planungsrat/) - Beschließt Standards (Beschluss 2021/40)
 - **Betrieb**: [XLeitstelle](../../stakeholder/bund/xleitstelle/) - Entwicklung und Pflege XBreitband
 - **Datenmodell**: [XTrasse](../xtrasse/) - Leitungsdatenmodell (eng verzahnt mit XBreitband)
-- **Weitere Standards**: [XPlanung](../xplanung/), [XBau](../xbau/), [ALKIS](../alkis/)
+- **Vergleich**: [XBau](../xbau/) - Hochbau-Standard mit XBau-Kernmodul als gemeinsamer Basis
+- **Weitere Standards**: [XPlanung](../xplanung/), [ALKIS](../alkis/)
