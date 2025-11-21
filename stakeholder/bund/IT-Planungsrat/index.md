@@ -194,9 +194,11 @@ Einrichtung der **[XLeitstelle](../XLeitstelle/)** (Leitstelle Planen und Bauen)
 
 **Standards:**
 
-**XBreitband:**
-- Standardisiertes Datenformat für Genehmigungsverfahren im Breitbandausbau
-- Anwendungsfall: "Zustimmung nach TKG" (Telekommunikationsgesetz)
+**[XBreitband](../../../standards/xbreitband/):**
+- Nachrichtenstandard für Genehmigungsverfahren im Breitbandausbau
+- Hauptanwendungsfall: Zustimmungsverfahren nach §127 TKG
+- 11 Nachrichtentypen für strukturierte Behördenkommunikation
+- **Eng verzahnt mit XTrasse**: Trassenplan als integraler Antragsbestandteil
 
 **[XTrasse](../../../standards/XTrasse/):**
 - Datenstandard für die Modellierung von Leitungsnetzen
@@ -230,7 +232,7 @@ Programmplanung für die Registermodernisierung mit NOOTS bis 2025
 | **[XPlanung](../../../standards/XPlanung/)** | Räumliche Planung | Verbindlich | 2017/37 |
 | **[XBau](../../../standards/XBau/)** | Bauaufsichtliche Verfahren | Verbindlich | 2017/37 |
 | **[XTrasse](../../../standards/XTrasse/)** | Leitungsnetze | Umsetzung bis 2026 | 2021/40 |
-| **XBreitband** | Breitbandausbau-Genehmigungen | Umsetzung bis 2026 | 2021/40 |
+| **[XBreitband](../../../standards/xbreitband/)** | Breitbandausbau-Genehmigungen | Umsetzung bis 2026 | 2021/40 |
 | **String.Latin (DIN 91379)** | Zeichenunterstützung | Ab 01.11.2024 | 2019/53 |
 | **XBezahldienste** | Online-Zahlverfahren | Ab 01.01.2026 | 2023/51 |
 | **DCAT-AP.de** | Open Data Metadaten | Verbindlich | 2018/30 |

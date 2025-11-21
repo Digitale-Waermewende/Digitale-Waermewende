@@ -74,7 +74,8 @@ Die XLeitstelle hat ein spezialisiertes Fachschema für kommunale Wärmepläne e
 ### Standards
 - **[XPlanung](../../../standards/XPlanung/index.md)** - Räumliche Planung
 - **[XBau](../../../standards/XBau/index.md)** - Baugenehmigungsverfahren
-- **[XTrasse](../../../standards/XTrasse/index.md)** - Leitungsnetze
+- **[XTrasse](../../../standards/XTrasse/index.md)** - Leitungsnetze (Datenmodell)
+- **[XBreitband](../../../standards/xbreitband/)** - Breitbandausbau (Nachrichtenstandard)
 
 ## Externe Links
 

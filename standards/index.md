@@ -12,7 +12,7 @@ Technische Standards bilden das Rückgrat der digitalen Wärmeplanung in Deutsch
 
 ## Übersicht der Standards
 
-Die digitale Wärmeplanung basiert auf **fünf komplementären Standards**, die unterschiedliche Aspekte der Planung und Datenhaltung abdecken:
+Die digitale Wärmeplanung basiert auf **sechs komplementären Standards**, die unterschiedliche Aspekte der Planung, Datenhaltung und Verwaltungskommunikation abdecken:
 
 ### [XPlanung](XPlanung/index.md) - Planungsdokumente
 - **Funktion**: Standard für raumbezogene Planwerke (Bauleitpläne, Wärmepläne)
@@ -20,10 +20,16 @@ Die digitale Wärmeplanung basiert auf **fünf komplementären Standards**, die 
 - **Wärmeplanung**: Fachschema Wärmeplan für kommunale Wärmepläne
 - **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
-### [XTrasse](XTrasse/index.md) - Leitungsinfrastruktur
+### [XTrasse](XTrasse/index.md) - Leitungsinfrastruktur (Datenmodell)
 - **Funktion**: Standard für Modellierung von Leitungsnetzen
 - **Relevanz**: Wärmenetze, Gas-, Strom-, Wassernetze
 - **Status**: Seit 2021 verbindlich für Breitband
+- **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
+
+### [XBreitband](xbreitband/) - Breitbandausbau (Nachrichtenstandard)
+- **Funktion**: Nachrichtenstandard für Genehmigungsverfahren im Breitbandausbau
+- **Relevanz**: Prozess- und Messaging-Modell für Leitungsverlegung (übertragbar auf Wärmenetze)
+- **Status**: Seit 2021 verbindlich (Umsetzung bis 2026)
 - **Organisation**: [XLeitstelle](../stakeholder/bund/XLeitstelle/index.md)
 
 ### [XBau](XBau/index.md) - Baugenehmigungen
@@ -78,7 +84,7 @@ Alle Standards basieren auf gemeinsamen technischen Grundlagen:
 ## Verwaltende Organisationen
 
 ### XLeitstelle Planen und Bauen
-Verantwortlich für **XPlanung, XBau und XTrasse**:
+Verantwortlich für **XPlanung, XBau, XTrasse und XBreitband**:
 - Zentrale Koordinierungsstelle
 - Entwicklung und Pflege der Standards
 - Bereitstellung von Tools und Dokumentation

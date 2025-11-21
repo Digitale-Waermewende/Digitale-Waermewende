@@ -112,5 +112,6 @@ Ausführliche Analyse des Zusammenspiels aller drei Standards für die Wärmepla
 ### Organisation und Standards
 - **Governance**: [IT-Planungsrat](../../stakeholder/bund/IT-Planungsrat/) - Beschließt Standards
 - **Betrieb**: [XLeitstelle](../../stakeholder/bund/XLeitstelle/index.md) - Operative Umsetzung
+- **Nachrichtenstandard**: [XBreitband](../xbreitband/) - Prozess- und Messaging-Standard (eng verzahnt mit XTrasse)
 - **Integration**: [Datenintegration](../Datenintegration/index.md) (ALKIS-XPlanung-XTrasse Zusammenspiel)
 - **Weitere Standards**: [XPlanung](../XPlanung/index.md), [XBau](../XBau/index.md), [ALKIS](../ALKIS/index.md)
