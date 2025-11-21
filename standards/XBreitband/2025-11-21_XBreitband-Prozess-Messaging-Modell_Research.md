@@ -1,3 +1,12 @@
+---
+layout: default
+title: "XBreitband Prozess-Messaging"
+parent: XBreitband
+grand_parent: Standards
+nav_exclude: true
+permalink: /standards/xbreitband/prozess-messaging-modell-research/
+---
+
 # XBreitband Deep Research Report
 ## Prozess- und Messaging-Modell der XLeitstelle
 

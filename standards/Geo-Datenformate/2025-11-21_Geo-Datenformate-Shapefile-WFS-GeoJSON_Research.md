@@ -1,3 +1,12 @@
+---
+layout: default
+title: "Geo-Datenformate Research"
+parent: Geo-Datenformate
+grand_parent: Standards
+nav_exclude: true
+permalink: /standards/geo-datenformate/shapefile-wfs-geojson-research/
+---
+
 # Deep Research Report: Geo-Datenformate
 ## Shapefile, WFS und GeoJSON - Umfassende Analyse
 
