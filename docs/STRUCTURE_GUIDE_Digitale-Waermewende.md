@@ -1018,6 +1018,75 @@ git commit -m "feat: BBSR Status quo Analyse zur Wärmeplanung dokumentiert"
 git push origin master
 ```
 
+## Session Log - Dokumentation der Claude Code Kommunikation
+
+### Zweck
+Das Session Log dokumentiert alle Claude Code Sessions zur Nachvollziehbarkeit der Repository-Entwicklung.
+
+### Datei
+- **Location**: `SESSION_LOG.md` im Repository-Root
+- **Navigation**: Level 1 (nav_order: 10) - direkt aus Hauptnavigation sichtbar
+- **Format**: Chronologisch, neueste Sessions oben
+
+### Struktur jedes Session-Eintrags
+
+**Metadaten** (kompakt in einer Zeile):
+- Datum | Start-/Endzeit | Commit-Hashes mit GitHub-Links
+
+**User-Eingaben**:
+- Wörtliche Dokumentation aller Terminal-Eingaben
+- Claude's Rückfragen (falls vorhanden)
+- User-Antworten
+
+**Ergebnisse**:
+- Commit-Links zu GitHub
+- Links zu neuen Seiten (Permalinks)
+- Links zu geänderten Seiten (Permalinks)
+
+**Entscheidungen**:
+- Kernentscheidungen als kompakte Bullet-Points
+- Strukturelle und technische Entscheidungen
+
+### Workflow
+1. Session durchführen
+2. Nach Abschluss: SESSION_LOG.md öffnen
+3. Neuen Session-Eintrag an den Anfang einfügen (neueste oben)
+4. Metadaten, Eingaben, Ergebnisse, Entscheidungen dokumentieren
+5. Commit mit `docs: Session [NUMMER] dokumentiert - [Kurztitel]`
+
+### Template für Copy-Paste
+
+```markdown
+## Session [NR] - [YYYY-MM-DD HH:MM] - [KURZTITEL]
+
+**Metadaten**: [Datum] | [HH:MM - HH:MM] | Commits: [hash](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/hash)
+
+### User-Eingaben
+
+#### 1. Initiale Anfrage
+```
+```
+
+### Ergebnisse
+
+**Commits**: [hash](https://github.com/Digitale-Waermewende/Digitale-Waermewende/commit/hash)
+
+**Neue Seiten**:
+- [Titel](/permalink/zur/seite/)
+
+**Geänderte Seiten**:
+- [Titel](/permalink/zur/seite/)
+
+### Entscheidungen
+
+-
+
+---
+```
+
+### Detailliertes Konzept
+Siehe [Session Log Konzept](SESSION_LOG_KONZEPT.md) für vollständiges Konzept mit ausführlichen Beispielen.
+
 ## Offene Fragen zur Diskussion
 
 1. ~~Sollen PDF-Originale auch gespeichert werden oder nur Links?~~ → ✅ JA, wichtige PDFs lokal speichern
